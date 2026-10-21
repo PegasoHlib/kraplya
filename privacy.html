@@ -3,9 +3,15 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Privacy policy · Drop</title>
-<meta name="description" content="Drop is a habit tracker with a timer. It is built so that your data stays yours: Drop has no servers of its own, no accounts, no ads and no analytics.">
+<title>Privacy policy · Kraplya</title>
+<meta name="description" content="Kraplya is a habit tracker with a timer. It is built so that your data stays yours: Kraplya has no servers of its own, no accounts, no ads and no analytics.">
+<meta name="theme-color" content="#22396F">
+<meta property="og:title" content="Privacy policy · Kraplya">
+<meta property="og:description" content="Kraplya is a habit tracker with a timer. It is built so that your data stays yours: Kraplya has no servers of its own, no accounts, no ads and no analytics.">
+<meta property="og:image" content="https://pegasohlib.github.io/kraplya/icon-512.png">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="icon-512.png">
+<link rel="canonical" href="https://pegasohlib.github.io/kraplya/privacy.html">
 <link rel="alternate" hreflang="en" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=en">
 <link rel="alternate" hreflang="uk" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=uk">
 <link rel="alternate" hreflang="es" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=es">
@@ -22,7 +28,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#ECEEF3;--surface:#fff;--surface2:#F2F3F7;--line:#DCDFE8;--ink:#12151C;--ink2:#454B5C;--ink3:#666C7E;--blue:#2A78D6;
+:root{--bg:#ECEEF3;--surface:#fff;--surface2:#F2F3F7;--line:#DCDFE8;--ink:#12151C;--ink2:#454B5C;--ink3:#666C7E;--blue:#2A78D6;--navy1:#22396F;--navy2:#090E1C;
 --h0:#2A78D6;--h1:#EB6834;--h2:#1BAF7A;--h3:#EDA100;--h4:#E87BA4;--h5:#008300;--h6:#6250D6;--h7:#E34948;--shadow:0 1px 2px rgba(18,21,28,.05),0 8px 24px rgba(18,21,28,.06);color-scheme:light}
 @media (prefers-color-scheme:dark){:root{--bg:#0D0F14;--surface:#181B22;--surface2:#21252E;--line:#2C313C;--ink:#EEF0F5;--ink2:#B4BACB;--ink3:#8A91A5;--blue:#5B9EF0;
 --h0:#3987E5;--h1:#D95926;--h2:#199E70;--h3:#C98500;--h4:#D55181;--h5:#2E9A2E;--h6:#9085E9;--h7:#E66767;--shadow:none;color-scheme:dark}}
@@ -31,35 +37,44 @@ html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Onest,system-ui,-apple-system,"Segoe UI",Roboto,"Hiragino Sans","Noto Sans JP",sans-serif;-webkit-text-size-adjust:100%}
 a{color:var(--blue);text-underline-offset:2px}
 code{font:.88em ui-monospace,SFMono-Regular,Consolas,monospace;background:var(--surface2);border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
 .bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
-.bar .in{max-width:760px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:12px}
+.bar .in{max-width:960px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:12px}
 .home{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700;min-width:0}
 .home img{width:32px;height:32px;border-radius:9px;flex:none}
 .home span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .lang{margin-left:auto;position:relative;display:flex;align-items:center;flex:none}
 .lang .ic{position:absolute;left:12px;width:18px;height:18px;pointer-events:none;color:var(--ink2)}
-.lang .chev{position:absolute;right:10px;width:16px;height:16px;pointer-events:none;color:var(--ink3)}
+.lang .chev{position:absolute;right:10px;left:auto;width:16px;height:16px;color:var(--ink3)}
 .lang select{appearance:none;-webkit-appearance:none;font:inherit;font-weight:600;font-size:15px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 34px 8px 38px;min-height:42px;cursor:pointer;max-width:56vw}
-.lang select:focus-visible{outline:3px solid color-mix(in srgb,var(--blue) 45%,transparent);outline-offset:2px}
-main{max-width:760px;margin:0 auto;padding:8px 16px 72px}
+.lang select:focus-visible,.btn:focus-visible,.chips a:focus-visible{outline:3px solid color-mix(in srgb,var(--blue) 45%,transparent);outline-offset:2px}
+main{margin:0 auto;padding:8px 16px 72px}
 .ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.tile{flex:none;width:40px;height:40px;padding:9px;border-radius:12px;color:#fff;background:var(--h0)}
+.t0 .tile,.tile.t0{background:var(--h0)}.t1 .tile,.tile.t1{background:var(--h1)}.t2 .tile,.tile.t2{background:var(--h2)}.t3 .tile,.tile.t3{background:var(--h3)}.t4 .tile,.tile.t4{background:var(--h4)}.t5 .tile,.tile.t5{background:var(--h5)}.t6 .tile,.tile.t6{background:var(--h6)}.t7 .tile,.tile.t7{background:var(--h7)}
+.eyebrow{margin:0 0 10px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--shadow)}
+h1,.display{font-family:Unbounded,Onest,system-ui,sans-serif;font-weight:700;letter-spacing:-.01em;text-wrap:balance}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips a,.chips span{font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px;white-space:nowrap}
+.chips a:hover{border-color:var(--blue);color:var(--blue)}
+footer{max-width:960px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-size:14px;text-align:center}
+footer a{color:var(--ink2)}
+
+main{max-width:760px}
 .hero{text-align:center;padding:36px 4px 8px}
 .logo{display:block;margin:0 auto 14px;border-radius:22px;box-shadow:0 10px 30px rgba(9,14,28,.28)}
 .app{margin:0;font-weight:600;color:var(--ink3);letter-spacing:.02em}
-h1{font-family:Unbounded,Onest,system-ui,sans-serif;font-weight:700;font-size:clamp(28px,6.4vw,40px);line-height:1.12;margin:4px 0 12px;letter-spacing:-.01em;text-wrap:balance}
+h1{font-size:clamp(28px,6.4vw,40px);line-height:1.12;margin:4px 0 12px}
 .date{display:inline-block;margin:0 0 16px;font-size:13.5px;font-weight:600;color:var(--ink2);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
 .lead{margin:0 auto;max-width:600px;font-size:17.5px;color:var(--ink2);text-wrap:pretty}
-.eyebrow{margin:0 0 10px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
 .glance{margin:32px 0 0}
 .glance ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
 .glance li{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow);font-weight:500;line-height:1.45}
-.tile{flex:none;width:40px;height:40px;padding:9px;border-radius:12px;color:#fff;background:var(--h0)}
-.t0 .tile,.tile.t0{background:var(--h0)}.t1 .tile,.tile.t1{background:var(--h1)}.t2 .tile,.tile.t2{background:var(--h2)}.t3 .tile,.tile.t3{background:var(--h3)}.t4 .tile,.tile.t4{background:var(--h4)}.t5 .tile,.tile.t5{background:var(--h5)}.t6 .tile,.tile.t6{background:var(--h6)}.t7 .tile,.tile.t7{background:var(--h7)}
 .toc{margin:28px 0 0}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips a{font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
-.chips a:hover{border-color:var(--blue);color:var(--blue)}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:20px;margin:14px 0 0;box-shadow:var(--shadow)}
+.toc .chips a{display:inline-flex;align-items:center;gap:7px}
+.mini{width:16px;height:16px;color:var(--ink3)}
+.card{margin:14px 0 0}
 .tablecard{margin-top:28px}
 .card h2{font-size:19px;line-height:1.3;margin:0}
 .tablecard h2{margin-bottom:14px}
@@ -67,57 +82,63 @@ h1{font-family:Unbounded,Onest,system-ui,sans-serif;font-weight:700;font-size:cl
 .sec p{margin:8px 0 0;color:var(--ink2)}
 .sec p:first-of-type{margin-top:0}
 table{width:100%;border-collapse:collapse;font-size:15px}
-th,td{text-align:left;vertical-align:top;padding:10px 10px;border-top:1px solid var(--line)}
+th,td{text-align:left;vertical-align:top;padding:10px;border-top:1px solid var(--line)}
 thead th{border-top:0;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);font-weight:700;padding-top:0}
 tbody th{font-weight:600;color:var(--ink);width:38%}
 td{color:var(--ink2)}
-td:last-child{white-space:nowrap;font-weight:600;color:var(--ink)}
+td:last-child{font-weight:600;color:var(--ink)}
 .perms{margin:0;display:grid;gap:8px}
 .perms div{display:grid;grid-template-columns:minmax(150px,34%) 1fr;gap:4px 14px;background:var(--surface2);border-radius:14px;padding:10px 14px}
 .perms dt{font-weight:700}
 .perms dd{margin:0;color:var(--ink2)}
-footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-size:14px;text-align:center}
 @media (max-width:620px){
   .card{padding:16px;border-radius:20px}
+  .hero{padding-top:24px}
+  .glance ul{gap:8px}
+  .glance li{padding:12px}
+  /* The contents become one row that scrolls sideways instead of a tall block of chips. */
+  .toc{margin:22px -16px 0}
+  .toc .eyebrow{padding:0 16px}
+  .toc .chips{flex-wrap:nowrap;overflow-x:auto;padding:0 16px 4px;scroll-snap-type:x proximity;scrollbar-width:none;
+    -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 16px,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,transparent 0,#000 16px,#000 calc(100% - 28px),transparent)}
+  .toc .chips::-webkit-scrollbar{display:none}
+  .toc .chips a{scroll-snap-align:start;flex:none}
   thead{display:none}
   table,tbody,tr,th,td{display:block;width:auto}
   tr{border-top:1px solid var(--line);padding:12px 0}
   tbody tr:first-child{border-top:0;padding-top:0}
   th,td{border:0;padding:0}
   tbody th{width:auto;margin-bottom:6px}
-  td{display:flex;gap:10px;justify-content:space-between;font-size:14.5px;padding:2px 0}
-  td::before{content:attr(data-label);color:var(--ink3);font-weight:600;flex:none;max-width:45%}
-  td:last-child{white-space:normal}
-  td:nth-child(2){flex-direction:column;gap:0}
-  .perms div{grid-template-columns:1fr}
-}
-</style>
+  td{display:grid;grid-template-columns:minmax(90px,38%) 1fr;gap:10px;font-size:14.5px;padding:2px 0}
+  td::before{content:attr(data-label);color:var(--ink3);font-weight:600}
+  .perms div{grid-template-columns:1fr;gap:2px}
+}</style>
 </head>
 <body>
 <div class="bar"><div class="in">
-  <a class="home" href="index.html"><img src="icon.svg" alt=""><span id="appname">Drop</span></a>
-  <label class="lang"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5s1.1-5.9 3.6-8.5z"/></svg><span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)" id="langlabel">Language</span>
+  <a class="home" href="index.html"><img src="icon.svg" alt=""><span id="appname">Kraplya</span></a>
+  <label class="lang"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5s1.1-5.9 3.6-8.5z"/></svg><span class="sr" id="langlabel">Language</span>
     <select id="lang" aria-labelledby="langlabel"><option value="en" lang="en">English</option><option value="uk" lang="uk">Українська</option><option value="es" lang="es">Español</option><option value="pt" lang="pt">Português</option><option value="fr" lang="fr">Français</option><option value="de" lang="de">Deutsch</option><option value="it" lang="it">Italiano</option><option value="sv" lang="sv">Svenska</option><option value="id" lang="id">Bahasa Indonesia</option><option value="ja" lang="ja">日本語</option><option value="kk" lang="kk">Қазақша</option><option value="ru" lang="ru">Русский</option></select><svg class="ic chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg>
   </label>
 </div></div>
 <main>
-<article class="doc" lang="en" data-lang="en" data-title="Privacy policy · Drop">
+<article class="doc" lang="en" data-lang="en" data-title="Privacy policy · Kraplya" data-app="Kraplya" data-langlabel="Language">
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
-    <p class="app">Drop</p>
+    <p class="app">Kraplya</p>
     <h1>Privacy policy</h1>
     <p class="date">Updated 21 October 2026 · in force since 13 October 2026</p>
-    <p class="lead">Drop is a habit tracker with a timer. It is built so that your data stays yours: Drop has no servers of its own, no accounts, no ads and no analytics.</p>
+    <p class="lead">Kraplya is a habit tracker with a timer. It is built so that your data stays yours: Kraplya has no servers of its own, no accounts, no ads and no analytics.</p>
   </header>
 
   <section class="glance" aria-labelledby="en-glance">
     <h2 id="en-glance" class="eyebrow">At a glance</h2>
-    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>Everything you enter is stored on your device.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>Drop has no servers. The developer never receives or sees your data.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>No ads, no analytics, no tracking, no selling of data.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>Google Drive sync is optional and uses only the app’s own hidden folder.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Phone calendar events are read only on the device, and only if you turn this on.</span></li></ul>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>Everything you enter is stored on your device.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>Kraplya has no servers. The developer never receives or sees your data.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>No ads, no analytics, no tracking, no selling of data.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>Google Drive sync is optional and uses only the app’s own hidden folder.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Phone calendar events are read only on the device, and only if you turn this on.</span></li></ul>
   </section>
 
   <nav class="toc" aria-label="On this page">
     <p class="eyebrow">On this page</p>
-    <div class="chips"><a href="#en-data">What the app holds</a><a href="#en-drive">Sync through Google Drive (optional)</a><a href="#en-calendar">Phone calendar (optional)</a><a href="#en-notifications">Notifications and reminders</a><a href="#en-permissions">Permissions the app asks for</a><a href="#en-backups">Backups and import</a><a href="#en-delete">Deleting your data</a><a href="#en-children">Children</a><a href="#en-changes">Changes to this policy</a><a href="#en-contact">Contact</a></div>
+    <div class="chips"><a href="#en-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>What the app holds</a><a href="#en-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>Sync through Google Drive (optional)</a><a href="#en-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Phone calendar (optional)</a><a href="#en-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>Notifications and reminders</a><a href="#en-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>Permissions the app asks for</a><a href="#en-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>Backups and import</a><a href="#en-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>Deleting your data</a><a href="#en-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>Children</a><a href="#en-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>Changes to this policy</a><a href="#en-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>Contact</a></div>
   </nav>
 
   <section class="card tablecard" aria-labelledby="en-table">
@@ -140,7 +161,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
   </section>
   <section class="card sec" id="en-calendar">
     <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>Phone calendar (optional)</h2></div>
-    <p>If you choose to show calendar events in the schedule and allow calendar access, the app reads events from the calendars on your phone (including Google Calendar, if it is set up there): the title, time and colour of each event.</p><p>They are used only to show them in the weekly schedule. Events are read on the device only: they are not stored in the app, not included in backups or Google Drive, and not sent anywhere. The app never changes your calendar.</p><p>An event enters Drop only when you add it to the schedule yourself; then only the title and time you confirmed are kept. You can revoke access in phone settings or turn events off in the schedule.</p>
+    <p>If you choose to show calendar events in the schedule and allow calendar access, the app reads events from the calendars on your phone (including Google Calendar, if it is set up there): the title, time and colour of each event.</p><p>They are used only to show them in the weekly schedule. Events are read on the device only: they are not stored in the app, not included in backups or Google Drive, and not sent anywhere. The app never changes your calendar.</p><p>An event enters Kraplya only when you add it to the schedule yourself; then only the title and time you confirmed are kept. You can revoke access in phone settings or turn events off in the schedule.</p>
     
   </section>
   <section class="card sec" id="en-notifications">
@@ -160,7 +181,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
   </section>
   <section class="card sec" id="en-delete">
     <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>Deleting your data</h2></div>
-    <p>Delete a habit, or uninstall the app, and its data on the device is gone.</p><p>To remove the copy from Google Drive, open Google Drive → Settings → Manage apps → Drop → Delete hidden app data. Turning sync off in Profile stops new copies.</p>
+    <p>Delete a habit, or uninstall the app, and its data on the device is gone.</p><p>To remove the copy from Google Drive, open Google Drive → Settings → Manage apps → Kraplya → Delete hidden app data. Turning sync off in Profile stops new copies.</p>
     
   </section>
   <section class="card sec" id="en-children">
@@ -179,7 +200,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
     
   </section>
 </article>
-<article class="doc" lang="uk" data-lang="uk" data-title="Політика конфіденційності · Крапля" hidden>
+<article class="doc" lang="uk" data-lang="uk" data-title="Політика конфіденційності · Крапля" data-app="Крапля" data-langlabel="Мова" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Крапля</p>
@@ -195,7 +216,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
 
   <nav class="toc" aria-label="На цій сторінці">
     <p class="eyebrow">На цій сторінці</p>
-    <div class="chips"><a href="#uk-data">Які дані є в застосунку</a><a href="#uk-drive">Синхронізація через Google Диск (необов’язково)</a><a href="#uk-calendar">Календар телефону (необов’язково)</a><a href="#uk-notifications">Сповіщення й нагадування</a><a href="#uk-permissions">Які дозволи просить застосунок</a><a href="#uk-backups">Резервні копії та імпорт</a><a href="#uk-delete">Як видалити свої дані</a><a href="#uk-children">Діти</a><a href="#uk-changes">Зміни в цій політиці</a><a href="#uk-contact">Контакт</a></div>
+    <div class="chips"><a href="#uk-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Які дані є в застосунку</a><a href="#uk-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>Синхронізація через Google Диск (необов’язково)</a><a href="#uk-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Календар телефону (необов’язково)</a><a href="#uk-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>Сповіщення й нагадування</a><a href="#uk-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>Які дозволи просить застосунок</a><a href="#uk-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>Резервні копії та імпорт</a><a href="#uk-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>Як видалити свої дані</a><a href="#uk-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>Діти</a><a href="#uk-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>Зміни в цій політиці</a><a href="#uk-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>Контакт</a></div>
   </nav>
 
   <section class="card tablecard" aria-labelledby="uk-table">
@@ -257,7 +278,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
     
   </section>
 </article>
-<article class="doc" lang="es" data-lang="es" data-title="Política de privacidad · Kraplya" hidden>
+<article class="doc" lang="es" data-lang="es" data-title="Política de privacidad · Kraplya" data-app="Kraplya" data-langlabel="Idioma" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -273,7 +294,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
 
   <nav class="toc" aria-label="En esta página">
     <p class="eyebrow">En esta página</p>
-    <div class="chips"><a href="#es-data">Qué datos guarda la app</a><a href="#es-drive">Sincronización con Google Drive (opcional)</a><a href="#es-calendar">Calendario del teléfono (opcional)</a><a href="#es-notifications">Notificaciones y recordatorios</a><a href="#es-permissions">Permisos que pide la app</a><a href="#es-backups">Copias de seguridad e importación</a><a href="#es-delete">Cómo borrar tus datos</a><a href="#es-children">Menores</a><a href="#es-changes">Cambios en esta política</a><a href="#es-contact">Contacto</a></div>
+    <div class="chips"><a href="#es-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Qué datos guarda la app</a><a href="#es-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>Sincronización con Google Drive (opcional)</a><a href="#es-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Calendario del teléfono (opcional)</a><a href="#es-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>Notificaciones y recordatorios</a><a href="#es-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>Permisos que pide la app</a><a href="#es-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>Copias de seguridad e importación</a><a href="#es-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>Cómo borrar tus datos</a><a href="#es-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>Menores</a><a href="#es-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>Cambios en esta política</a><a href="#es-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>Contacto</a></div>
   </nav>
 
   <section class="card tablecard" aria-labelledby="es-table">
@@ -335,7 +356,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
     
   </section>
 </article>
-<article class="doc" lang="pt" data-lang="pt" data-title="Política de privacidade · Kraplya" hidden>
+<article class="doc" lang="pt" data-lang="pt" data-title="Política de privacidade · Kraplya" data-app="Kraplya" data-langlabel="Idioma" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -351,7 +372,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
 
   <nav class="toc" aria-label="Nesta página">
     <p class="eyebrow">Nesta página</p>
-    <div class="chips"><a href="#pt-data">Que dados a app guarda</a><a href="#pt-drive">Sincronização com o Google Drive (opcional)</a><a href="#pt-calendar">Calendário do telemóvel (opcional)</a><a href="#pt-notifications">Notificações e lembretes</a><a href="#pt-permissions">Permissões que a app pede</a><a href="#pt-backups">Cópias de segurança e importação</a><a href="#pt-delete">Como eliminar os teus dados</a><a href="#pt-children">Crianças</a><a href="#pt-changes">Alterações a esta política</a><a href="#pt-contact">Contacto</a></div>
+    <div class="chips"><a href="#pt-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Que dados a app guarda</a><a href="#pt-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>Sincronização com o Google Drive (opcional)</a><a href="#pt-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Calendário do telemóvel (opcional)</a><a href="#pt-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>Notificações e lembretes</a><a href="#pt-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>Permissões que a app pede</a><a href="#pt-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>Cópias de segurança e importação</a><a href="#pt-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>Como eliminar os teus dados</a><a href="#pt-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>Crianças</a><a href="#pt-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>Alterações a esta política</a><a href="#pt-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>Contacto</a></div>
   </nav>
 
   <section class="card tablecard" aria-labelledby="pt-table">
@@ -413,7 +434,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
     
   </section>
 </article>
-<article class="doc" lang="fr" data-lang="fr" data-title="Politique de confidentialité · Kraplya" hidden>
+<article class="doc" lang="fr" data-lang="fr" data-title="Politique de confidentialité · Kraplya" data-app="Kraplya" data-langlabel="Langue" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -429,7 +450,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
 
   <nav class="toc" aria-label="Sur cette page">
     <p class="eyebrow">Sur cette page</p>
-    <div class="chips"><a href="#fr-data">Ce que contient l’application</a><a href="#fr-drive">Synchronisation via Google Drive (facultative)</a><a href="#fr-calendar">Agenda du téléphone (facultatif)</a><a href="#fr-notifications">Notifications et rappels</a><a href="#fr-permissions">Autorisations demandées par l’application</a><a href="#fr-backups">Sauvegardes et importation</a><a href="#fr-delete">Supprimer tes données</a><a href="#fr-children">Enfants</a><a href="#fr-changes">Modifications de cette politique</a><a href="#fr-contact">Contact</a></div>
+    <div class="chips"><a href="#fr-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Ce que contient l’application</a><a href="#fr-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>Synchronisation via Google Drive (facultative)</a><a href="#fr-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Agenda du téléphone (facultatif)</a><a href="#fr-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>Notifications et rappels</a><a href="#fr-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>Autorisations demandées par l’application</a><a href="#fr-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>Sauvegardes et importation</a><a href="#fr-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>Supprimer tes données</a><a href="#fr-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>Enfants</a><a href="#fr-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>Modifications de cette politique</a><a href="#fr-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>Contact</a></div>
   </nav>
 
   <section class="card tablecard" aria-labelledby="fr-table">
@@ -491,7 +512,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
     
   </section>
 </article>
-<article class="doc" lang="de" data-lang="de" data-title="Datenschutzerklärung · Kraplya" hidden>
+<article class="doc" lang="de" data-lang="de" data-title="Datenschutzerklärung · Kraplya" data-app="Kraplya" data-langlabel="Sprache" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -507,7 +528,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
 
   <nav class="toc" aria-label="Auf dieser Seite">
     <p class="eyebrow">Auf dieser Seite</p>
-    <div class="chips"><a href="#de-data">Welche Daten die App enthält</a><a href="#de-drive">Synchronisierung über Google Drive (optional)</a><a href="#de-calendar">Kalender des Handys (optional)</a><a href="#de-notifications">Benachrichtigungen und Erinnerungen</a><a href="#de-permissions">Berechtigungen, die die App anfragt</a><a href="#de-backups">Sicherungen und Import</a><a href="#de-delete">Deine Daten löschen</a><a href="#de-children">Kinder</a><a href="#de-changes">Änderungen dieser Erklärung</a><a href="#de-contact">Kontakt</a></div>
+    <div class="chips"><a href="#de-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Welche Daten die App enthält</a><a href="#de-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>Synchronisierung über Google Drive (optional)</a><a href="#de-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Kalender des Handys (optional)</a><a href="#de-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>Benachrichtigungen und Erinnerungen</a><a href="#de-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>Berechtigungen, die die App anfragt</a><a href="#de-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>Sicherungen und Import</a><a href="#de-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>Deine Daten löschen</a><a href="#de-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>Kinder</a><a href="#de-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>Änderungen dieser Erklärung</a><a href="#de-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>Kontakt</a></div>
   </nav>
 
   <section class="card tablecard" aria-labelledby="de-table">
@@ -569,7 +590,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
     
   </section>
 </article>
-<article class="doc" lang="it" data-lang="it" data-title="Informativa sulla privacy · Kraplya" hidden>
+<article class="doc" lang="it" data-lang="it" data-title="Informativa sulla privacy · Kraplya" data-app="Kraplya" data-langlabel="Lingua" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -585,7 +606,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
 
   <nav class="toc" aria-label="In questa pagina">
     <p class="eyebrow">In questa pagina</p>
-    <div class="chips"><a href="#it-data">Cosa contiene l’app</a><a href="#it-drive">Sincronizzazione tramite Google Drive (facoltativa)</a><a href="#it-calendar">Calendario del telefono (facoltativo)</a><a href="#it-notifications">Notifiche e promemoria</a><a href="#it-permissions">Autorizzazioni richieste dall’app</a><a href="#it-backups">Backup e importazione</a><a href="#it-delete">Eliminare i tuoi dati</a><a href="#it-children">Minori</a><a href="#it-changes">Modifiche a questa informativa</a><a href="#it-contact">Contatti</a></div>
+    <div class="chips"><a href="#it-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Cosa contiene l’app</a><a href="#it-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>Sincronizzazione tramite Google Drive (facoltativa)</a><a href="#it-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Calendario del telefono (facoltativo)</a><a href="#it-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>Notifiche e promemoria</a><a href="#it-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>Autorizzazioni richieste dall’app</a><a href="#it-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>Backup e importazione</a><a href="#it-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>Eliminare i tuoi dati</a><a href="#it-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>Minori</a><a href="#it-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>Modifiche a questa informativa</a><a href="#it-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>Contatti</a></div>
   </nav>
 
   <section class="card tablecard" aria-labelledby="it-table">
@@ -647,7 +668,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
     
   </section>
 </article>
-<article class="doc" lang="sv" data-lang="sv" data-title="Integritetspolicy · Kraplya" hidden>
+<article class="doc" lang="sv" data-lang="sv" data-title="Integritetspolicy · Kraplya" data-app="Kraplya" data-langlabel="Språk" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -663,7 +684,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
 
   <nav class="toc" aria-label="På den här sidan">
     <p class="eyebrow">På den här sidan</p>
-    <div class="chips"><a href="#sv-data">Vad appen innehåller</a><a href="#sv-drive">Synkronisering via Google Drive (valfritt)</a><a href="#sv-calendar">Telefonens kalender (valfritt)</a><a href="#sv-notifications">Aviseringar och påminnelser</a><a href="#sv-permissions">Behörigheter som appen ber om</a><a href="#sv-backups">Säkerhetskopior och import</a><a href="#sv-delete">Radera dina data</a><a href="#sv-children">Barn</a><a href="#sv-changes">Ändringar i den här policyn</a><a href="#sv-contact">Kontakt</a></div>
+    <div class="chips"><a href="#sv-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Vad appen innehåller</a><a href="#sv-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>Synkronisering via Google Drive (valfritt)</a><a href="#sv-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Telefonens kalender (valfritt)</a><a href="#sv-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>Aviseringar och påminnelser</a><a href="#sv-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>Behörigheter som appen ber om</a><a href="#sv-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>Säkerhetskopior och import</a><a href="#sv-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>Radera dina data</a><a href="#sv-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>Barn</a><a href="#sv-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>Ändringar i den här policyn</a><a href="#sv-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>Kontakt</a></div>
   </nav>
 
   <section class="card tablecard" aria-labelledby="sv-table">
@@ -725,7 +746,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
     
   </section>
 </article>
-<article class="doc" lang="id" data-lang="id" data-title="Kebijakan privasi · Kraplya" hidden>
+<article class="doc" lang="id" data-lang="id" data-title="Kebijakan privasi · Kraplya" data-app="Kraplya" data-langlabel="Bahasa" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -741,7 +762,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
 
   <nav class="toc" aria-label="Di halaman ini">
     <p class="eyebrow">Di halaman ini</p>
-    <div class="chips"><a href="#id-data">Apa yang disimpan aplikasi</a><a href="#id-drive">Sinkronisasi melalui Google Drive (opsional)</a><a href="#id-calendar">Kalender ponsel (opsional)</a><a href="#id-notifications">Notifikasi dan pengingat</a><a href="#id-permissions">Izin yang diminta aplikasi</a><a href="#id-backups">Cadangan dan impor</a><a href="#id-delete">Menghapus datamu</a><a href="#id-children">Anak-anak</a><a href="#id-changes">Perubahan kebijakan ini</a><a href="#id-contact">Kontak</a></div>
+    <div class="chips"><a href="#id-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Apa yang disimpan aplikasi</a><a href="#id-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>Sinkronisasi melalui Google Drive (opsional)</a><a href="#id-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Kalender ponsel (opsional)</a><a href="#id-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>Notifikasi dan pengingat</a><a href="#id-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>Izin yang diminta aplikasi</a><a href="#id-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>Cadangan dan impor</a><a href="#id-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>Menghapus datamu</a><a href="#id-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>Anak-anak</a><a href="#id-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>Perubahan kebijakan ini</a><a href="#id-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>Kontak</a></div>
   </nav>
 
   <section class="card tablecard" aria-labelledby="id-table">
@@ -803,7 +824,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
     
   </section>
 </article>
-<article class="doc" lang="ja" data-lang="ja" data-title="プライバシーポリシー · クラプリャ" hidden>
+<article class="doc" lang="ja" data-lang="ja" data-title="プライバシーポリシー · クラプリャ" data-app="クラプリャ" data-langlabel="言語" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">クラプリャ</p>
@@ -819,7 +840,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
 
   <nav class="toc" aria-label="このページの内容">
     <p class="eyebrow">このページの内容</p>
-    <div class="chips"><a href="#ja-data">アプリが保持するデータ</a><a href="#ja-drive">Google ドライブによる同期（任意）</a><a href="#ja-calendar">スマートフォンのカレンダー（任意）</a><a href="#ja-notifications">通知とリマインダー</a><a href="#ja-permissions">アプリが求める権限</a><a href="#ja-backups">バックアップとインポート</a><a href="#ja-delete">データの削除</a><a href="#ja-children">お子さま</a><a href="#ja-changes">このポリシーの変更</a><a href="#ja-contact">お問い合わせ</a></div>
+    <div class="chips"><a href="#ja-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>アプリが保持するデータ</a><a href="#ja-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>Google ドライブによる同期（任意）</a><a href="#ja-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>スマートフォンのカレンダー（任意）</a><a href="#ja-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>通知とリマインダー</a><a href="#ja-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>アプリが求める権限</a><a href="#ja-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>バックアップとインポート</a><a href="#ja-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>データの削除</a><a href="#ja-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>お子さま</a><a href="#ja-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>このポリシーの変更</a><a href="#ja-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>お問い合わせ</a></div>
   </nav>
 
   <section class="card tablecard" aria-labelledby="ja-table">
@@ -881,7 +902,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
     
   </section>
 </article>
-<article class="doc" lang="kk" data-lang="kk" data-title="Құпиялық саясаты · Крапля" hidden>
+<article class="doc" lang="kk" data-lang="kk" data-title="Құпиялық саясаты · Крапля" data-app="Крапля" data-langlabel="Тіл" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Крапля</p>
@@ -897,7 +918,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
 
   <nav class="toc" aria-label="Осы бетте">
     <p class="eyebrow">Осы бетте</p>
-    <div class="chips"><a href="#kk-data">Қолданбада қандай деректер бар</a><a href="#kk-drive">Google Диск арқылы синхрондау (міндетті емес)</a><a href="#kk-calendar">Телефон күнтізбесі (міндетті емес)</a><a href="#kk-notifications">Хабарландырулар мен еске салғыштар</a><a href="#kk-permissions">Қолданба сұрайтын рұқсаттар</a><a href="#kk-backups">Сақтық көшірмелер және импорт</a><a href="#kk-delete">Деректеріңді жою</a><a href="#kk-children">Балалар</a><a href="#kk-changes">Осы саясаттағы өзгерістер</a><a href="#kk-contact">Байланыс</a></div>
+    <div class="chips"><a href="#kk-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Қолданбада қандай деректер бар</a><a href="#kk-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>Google Диск арқылы синхрондау (міндетті емес)</a><a href="#kk-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Телефон күнтізбесі (міндетті емес)</a><a href="#kk-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>Хабарландырулар мен еске салғыштар</a><a href="#kk-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>Қолданба сұрайтын рұқсаттар</a><a href="#kk-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>Сақтық көшірмелер және импорт</a><a href="#kk-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>Деректеріңді жою</a><a href="#kk-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>Балалар</a><a href="#kk-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>Осы саясаттағы өзгерістер</a><a href="#kk-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>Байланыс</a></div>
   </nav>
 
   <section class="card tablecard" aria-labelledby="kk-table">
@@ -959,7 +980,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
     
   </section>
 </article>
-<article class="doc" lang="ru" data-lang="ru" data-title="Политика конфиденциальности · Крапля" hidden>
+<article class="doc" lang="ru" data-lang="ru" data-title="Политика конфиденциальности · Крапля" data-app="Крапля" data-langlabel="Язык" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Крапля</p>
@@ -975,7 +996,7 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
 
   <nav class="toc" aria-label="На этой странице">
     <p class="eyebrow">На этой странице</p>
-    <div class="chips"><a href="#ru-data">Какие данные есть в приложении</a><a href="#ru-drive">Синхронизация через Google Диск (необязательно)</a><a href="#ru-calendar">Календарь телефона (необязательно)</a><a href="#ru-notifications">Уведомления и напоминания</a><a href="#ru-permissions">Какие разрешения запрашивает приложение</a><a href="#ru-backups">Резервные копии и импорт</a><a href="#ru-delete">Как удалить свои данные</a><a href="#ru-children">Дети</a><a href="#ru-changes">Изменения в этой политике</a><a href="#ru-contact">Контакты</a></div>
+    <div class="chips"><a href="#ru-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Какие данные есть в приложении</a><a href="#ru-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>Синхронизация через Google Диск (необязательно)</a><a href="#ru-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Календарь телефона (необязательно)</a><a href="#ru-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>Уведомления и напоминания</a><a href="#ru-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>Какие разрешения запрашивает приложение</a><a href="#ru-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>Резервные копии и импорт</a><a href="#ru-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>Как удалить свои данные</a><a href="#ru-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>Дети</a><a href="#ru-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>Изменения в этой политике</a><a href="#ru-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>Контакты</a></div>
   </nav>
 
   <section class="card tablecard" aria-labelledby="ru-table">
@@ -1043,12 +1064,12 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
 (function () {
   var docs = document.querySelectorAll(".doc"), sel = document.getElementById("lang");
   var have = {}; for (var i = 0; i < docs.length; i++) have[docs[i].dataset.lang] = docs[i];
-  var alias = { "in": "id", "pt-br": "pt", "nb": "sv" };
+  var alias = { "in": "id", "nb": "sv", "no": "sv" };
   function norm(c) { c = (c || "").toLowerCase(); if (alias[c]) c = alias[c]; if (have[c]) return c; c = c.split(/[-_]/)[0]; c = alias[c] || c; return have[c] ? c : null; }
   function pick() {
     var q = new URLSearchParams(location.search).get("lang"); if (norm(q)) return norm(q);
     var h = location.hash.slice(1); if (norm(h)) return norm(h);
-    var hp = h.split("-")[0]; if (h && norm(hp)) return norm(hp);
+    if (h && have[h.split("-")[0]]) return h.split("-")[0];
     try { var s = localStorage.getItem("kraplya-lang"); if (norm(s)) return norm(s); } catch (e) {}
     var nav = navigator.languages || [navigator.language];
     for (var j = 0; j < nav.length; j++) if (norm(nav[j])) return norm(nav[j]);
@@ -1058,15 +1079,17 @@ footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-
     for (var k in have) have[k].hidden = k !== c;
     var d = have[c]; document.documentElement.lang = c; document.title = d.dataset.title;
     sel.value = c;
-    document.getElementById("appname").textContent = d.querySelector(".app").textContent;
-    document.getElementById("langlabel").textContent = sel.options[sel.selectedIndex].text;
+    document.getElementById("appname").textContent = d.dataset.app;
+    document.getElementById("langlabel").textContent = d.dataset.langlabel;
+    var links = document.querySelectorAll("a[data-keep-lang]");
+    for (var m = 0; m < links.length; m++) { var u0 = new URL(links[m].getAttribute("href"), location.href); u0.searchParams.set("lang", c); links[m].href = u0.href; }
     if (save) {
       try { localStorage.setItem("kraplya-lang", c); } catch (e) {}
       var u = new URL(location.href); u.searchParams.set("lang", c); u.hash = ""; history.replaceState(null, "", u);
     }
   }
   show(pick(), false);
-  var h = location.hash.slice(1), t = h && document.getElementById(h); if (t && !t.closest("[hidden]")) t.scrollIntoView();
+  var h = location.hash.slice(1), t = h && document.getElementById(h); if (t && !t.closest("[hidden]")) setTimeout(function () { t.scrollIntoView(); }, 60);
   sel.addEventListener("change", function () { show(sel.value, true); window.scrollTo(0, 0); });
 })();
 </script>
