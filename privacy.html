@@ -1,104 +1,1074 @@
 <!doctype html>
-<html lang="uk">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Крапля — політика конфіденційності</title>
+<title>Privacy policy · Drop</title>
+<meta name="description" content="Drop is a habit tracker with a timer. It is built so that your data stays yours: Drop has no servers of its own, no accounts, no ads and no analytics.">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
+<link rel="alternate" hreflang="en" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=en">
+<link rel="alternate" hreflang="uk" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=uk">
+<link rel="alternate" hreflang="es" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=es">
+<link rel="alternate" hreflang="pt" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=pt">
+<link rel="alternate" hreflang="fr" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=fr">
+<link rel="alternate" hreflang="de" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=de">
+<link rel="alternate" hreflang="it" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=it">
+<link rel="alternate" hreflang="sv" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=sv">
+<link rel="alternate" hreflang="id" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=id">
+<link rel="alternate" hreflang="ja" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=ja">
+<link rel="alternate" hreflang="kk" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=kk">
+<link rel="alternate" hreflang="ru" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=ru">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#ECEEF3;--surface:#fff;--line:#DCDFE8;--ink:#12151C;--ink2:#454B5C;--blue:#2A78D6}
-@media (prefers-color-scheme:dark){:root{--bg:#0D0F14;--surface:#181B22;--line:#2C313C;--ink:#EEF0F5;--ink2:#B4BACB;--blue:#3987E5}}
+:root{--bg:#ECEEF3;--surface:#fff;--surface2:#F2F3F7;--line:#DCDFE8;--ink:#12151C;--ink2:#454B5C;--ink3:#666C7E;--blue:#2A78D6;
+--h0:#2A78D6;--h1:#EB6834;--h2:#1BAF7A;--h3:#EDA100;--h4:#E87BA4;--h5:#008300;--h6:#6250D6;--h7:#E34948;--shadow:0 1px 2px rgba(18,21,28,.05),0 8px 24px rgba(18,21,28,.06);color-scheme:light}
+@media (prefers-color-scheme:dark){:root{--bg:#0D0F14;--surface:#181B22;--surface2:#21252E;--line:#2C313C;--ink:#EEF0F5;--ink2:#B4BACB;--ink3:#8A91A5;--blue:#5B9EF0;
+--h0:#3987E5;--h1:#D95926;--h2:#199E70;--h3:#C98500;--h4:#D55181;--h5:#2E9A2E;--h6:#9085E9;--h7:#E66767;--shadow:none;color-scheme:dark}}
 *{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
-main{max-width:680px;margin:0 auto;padding:40px 16px 64px}
-h1{font-size:30px;line-height:1.15;margin:0 0 6px}
-h2{font-size:19px;margin:28px 0 6px}
-p,li{color:var(--ink2)}
-.date{font-size:14px;color:var(--ink2)}
-.sep{border:0;border-top:1px solid var(--line);margin:48px 0}
-a{color:var(--blue)}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Onest,system-ui,-apple-system,"Segoe UI",Roboto,"Hiragino Sans","Noto Sans JP",sans-serif;-webkit-text-size-adjust:100%}
+a{color:var(--blue);text-underline-offset:2px}
+code{font:.88em ui-monospace,SFMono-Regular,Consolas,monospace;background:var(--surface2);border:1px solid var(--line);border-radius:6px;padding:1px 6px}
+.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
+.bar .in{max-width:760px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:12px}
+.home{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700;min-width:0}
+.home img{width:32px;height:32px;border-radius:9px;flex:none}
+.home span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.lang{margin-left:auto;position:relative;display:flex;align-items:center;flex:none}
+.lang .ic{position:absolute;left:12px;width:18px;height:18px;pointer-events:none;color:var(--ink2)}
+.lang .chev{position:absolute;right:10px;width:16px;height:16px;pointer-events:none;color:var(--ink3)}
+.lang select{appearance:none;-webkit-appearance:none;font:inherit;font-weight:600;font-size:15px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 34px 8px 38px;min-height:42px;cursor:pointer;max-width:56vw}
+.lang select:focus-visible{outline:3px solid color-mix(in srgb,var(--blue) 45%,transparent);outline-offset:2px}
+main{max-width:760px;margin:0 auto;padding:8px 16px 72px}
+.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.hero{text-align:center;padding:36px 4px 8px}
+.logo{display:block;margin:0 auto 14px;border-radius:22px;box-shadow:0 10px 30px rgba(9,14,28,.28)}
+.app{margin:0;font-weight:600;color:var(--ink3);letter-spacing:.02em}
+h1{font-family:Unbounded,Onest,system-ui,sans-serif;font-weight:700;font-size:clamp(28px,6.4vw,40px);line-height:1.12;margin:4px 0 12px;letter-spacing:-.01em;text-wrap:balance}
+.date{display:inline-block;margin:0 0 16px;font-size:13.5px;font-weight:600;color:var(--ink2);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+.lead{margin:0 auto;max-width:600px;font-size:17.5px;color:var(--ink2);text-wrap:pretty}
+.eyebrow{margin:0 0 10px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
+.glance{margin:32px 0 0}
+.glance ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
+.glance li{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow);font-weight:500;line-height:1.45}
+.tile{flex:none;width:40px;height:40px;padding:9px;border-radius:12px;color:#fff;background:var(--h0)}
+.t0 .tile,.tile.t0{background:var(--h0)}.t1 .tile,.tile.t1{background:var(--h1)}.t2 .tile,.tile.t2{background:var(--h2)}.t3 .tile,.tile.t3{background:var(--h3)}.t4 .tile,.tile.t4{background:var(--h4)}.t5 .tile,.tile.t5{background:var(--h5)}.t6 .tile,.tile.t6{background:var(--h6)}.t7 .tile,.tile.t7{background:var(--h7)}
+.toc{margin:28px 0 0}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips a{font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px}
+.chips a:hover{border-color:var(--blue);color:var(--blue)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:20px;margin:14px 0 0;box-shadow:var(--shadow)}
+.tablecard{margin-top:28px}
+.card h2{font-size:19px;line-height:1.3;margin:0}
+.tablecard h2{margin-bottom:14px}
+.sechead{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.sec p{margin:8px 0 0;color:var(--ink2)}
+.sec p:first-of-type{margin-top:0}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{text-align:left;vertical-align:top;padding:10px 10px;border-top:1px solid var(--line)}
+thead th{border-top:0;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);font-weight:700;padding-top:0}
+tbody th{font-weight:600;color:var(--ink);width:38%}
+td{color:var(--ink2)}
+td:last-child{white-space:nowrap;font-weight:600;color:var(--ink)}
+.perms{margin:0;display:grid;gap:8px}
+.perms div{display:grid;grid-template-columns:minmax(150px,34%) 1fr;gap:4px 14px;background:var(--surface2);border-radius:14px;padding:10px 14px}
+.perms dt{font-weight:700}
+.perms dd{margin:0;color:var(--ink2)}
+footer{max-width:760px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-size:14px;text-align:center}
+@media (max-width:620px){
+  .card{padding:16px;border-radius:20px}
+  thead{display:none}
+  table,tbody,tr,th,td{display:block;width:auto}
+  tr{border-top:1px solid var(--line);padding:12px 0}
+  tbody tr:first-child{border-top:0;padding-top:0}
+  th,td{border:0;padding:0}
+  tbody th{width:auto;margin-bottom:6px}
+  td{display:flex;gap:10px;justify-content:space-between;font-size:14.5px;padding:2px 0}
+  td::before{content:attr(data-label);color:var(--ink3);font-weight:600;flex:none;max-width:45%}
+  td:last-child{white-space:normal}
+  td:nth-child(2){flex-direction:column;gap:0}
+  .perms div{grid-template-columns:1fr}
+}
 </style>
 </head>
 <body>
+<div class="bar"><div class="in">
+  <a class="home" href="index.html"><img src="icon.svg" alt=""><span id="appname">Drop</span></a>
+  <label class="lang"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5s1.1-5.9 3.6-8.5z"/></svg><span class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)" id="langlabel">Language</span>
+    <select id="lang" aria-labelledby="langlabel"><option value="en" lang="en">English</option><option value="uk" lang="uk">Українська</option><option value="es" lang="es">Español</option><option value="pt" lang="pt">Português</option><option value="fr" lang="fr">Français</option><option value="de" lang="de">Deutsch</option><option value="it" lang="it">Italiano</option><option value="sv" lang="sv">Svenska</option><option value="id" lang="id">Bahasa Indonesia</option><option value="ja" lang="ja">日本語</option><option value="kk" lang="kk">Қазақша</option><option value="ru" lang="ru">Русский</option></select><svg class="ic chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg>
+  </label>
+</div></div>
 <main>
-<p><a href="index.html">← Крапля</a> · <a href="#en">English ↓</a></p>
-<h1>Політика конфіденційності</h1>
-<p class="date">Застосунок «Крапля» (Kraplya, пакет dev.kraplya). Чинна з 13 жовтня 2026 року, оновлена 21 жовтня 2026 року.</p>
+<article class="doc" lang="en" data-lang="en" data-title="Privacy policy · Drop">
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Drop</p>
+    <h1>Privacy policy</h1>
+    <p class="date">Updated 21 October 2026 · in force since 13 October 2026</p>
+    <p class="lead">Drop is a habit tracker with a timer. It is built so that your data stays yours: Drop has no servers of its own, no accounts, no ads and no analytics.</p>
+  </header>
 
-<h2>Коротко</h2>
-<p>Крапля не має власних серверів, акаунтів, реклами чи аналітики. Автор застосунку не отримує й не бачить твоїх даних.</p>
+  <section class="glance" aria-labelledby="en-glance">
+    <h2 id="en-glance" class="eyebrow">At a glance</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>Everything you enter is stored on your device.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>Drop has no servers. The developer never receives or sees your data.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>No ads, no analytics, no tracking, no selling of data.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>Google Drive sync is optional and uses only the app’s own hidden folder.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Phone calendar events are read only on the device, and only if you turn this on.</span></li></ul>
+  </section>
 
-<h2>Які дані є в застосунку</h2>
-<ul>
-<li>Те, що ти вводиш сам: назви звичок і категорій, цілі, записаний час, тижневий розклад, нагороди й покарання, ім’я в профілі.</li>
-<li>Налаштування: мова, тема, звук, нагадування.</li>
-</ul>
-<p>Усе це зберігається на твоєму пристрої.</p>
+  <nav class="toc" aria-label="On this page">
+    <p class="eyebrow">On this page</p>
+    <div class="chips"><a href="#en-data">What the app holds</a><a href="#en-drive">Sync through Google Drive (optional)</a><a href="#en-calendar">Phone calendar (optional)</a><a href="#en-notifications">Notifications and reminders</a><a href="#en-permissions">Permissions the app asks for</a><a href="#en-backups">Backups and import</a><a href="#en-delete">Deleting your data</a><a href="#en-children">Children</a><a href="#en-changes">Changes to this policy</a><a href="#en-contact">Contact</a></div>
+  </nav>
 
-<h2>Синхронізація через Google Диск (необов’язково)</h2>
-<p>Якщо ти сам увійдеш через Google, застосунок отримує доступ лише до своєї прихованої папки на твоєму Google Диску (дозвіл <code>drive.appdata</code>). Він не бачить жодних інших твоїх файлів. У цю папку записується копія твоїх даних, щоб вони були однакові на телефоні й планшеті. Застосунок також читає адресу твоєї пошти, лише щоб показати, до якого акаунта він підключений. Ці дані передаються лише між твоїм пристроєм і Google; автор застосунку доступу до них не має. Вимкнути синхронізацію можна в Профілі. Видалити дані застосунку з Диска можна в налаштуваннях Google Диска (Керування застосунками).</p>
-<p>Використання даних, отриманих через Google API, відповідає <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, зокрема вимогам Limited Use.</p>
+  <section class="card tablecard" aria-labelledby="en-table">
+    <h2 id="en-table">What data, where it lives, who sees it</h2>
+    <table>
+      <thead><tr><th scope="col">Data</th><th scope="col">Where it is kept</th><th scope="col">Who can see it</th></tr></thead>
+      <tbody><tr><th scope="row">Habits, categories, goals, recorded time, weekly schedule, rewards and penalties, profile name</th><td data-label="Where it is kept">On your device; a copy in your own Google Drive if you turn on sync</td><td data-label="Who can see it">Only you</td></tr><tr><th scope="row">Settings: language, theme, sound, reminders</th><td data-label="Where it is kept">On your device; a few of them travel with your data in sync</td><td data-label="Who can see it">Only you</td></tr><tr><th scope="row">Email address of your Google account</th><td data-label="Where it is kept">On your device, while sync is on</td><td data-label="Who can see it">Only you</td></tr><tr><th scope="row">Events from the phone calendar</th><td data-label="Where it is kept">Not stored: read on the fly to draw the schedule</td><td data-label="Who can see it">Only you, on the device</td></tr><tr><th scope="row">Backup files</th><td data-label="Where it is kept">Where you save them</td><td data-label="Who can see it">Whoever you give the file to</td></tr></tbody>
+    </table>
+  </section>
 
-<h2>Календар телефону (необов’язково)</h2>
-<p>Якщо ти сам увімкнеш показ подій календаря в розкладі й дозволиш доступ до календаря, застосунок читає події з календарів на твоєму телефоні (зокрема Google Календаря, якщо він там підключений): назву, час і колір події. Вони потрібні лише для того, щоб показати їх у тижневому розкладі. Події читаються тільки на пристрої, не зберігаються в застосунку, не потрапляють у резервні копії чи на Google Диск і нікуди не надсилаються. Застосунок нічого не змінює в календарі. Подія потрапляє в Краплю лише тоді, коли ти сам додаси її в розклад; тоді зберігаються тільки назва й час, які ти підтвердив. Доступ можна відкликати в налаштуваннях телефону або вимкнути показ подій у розкладі.</p>
+  <section class="card sec" id="en-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>What the app holds</h2></div>
+    <p>What you enter yourself: names of habits and categories, goals, recorded time, the weekly schedule, rewards and penalties, and the name in your profile.</p><p>Settings: language, theme, sound, vibration and reminders.</p><p>All of it is kept in the app’s private storage on your device. Other apps cannot read it.</p>
+    
+  </section>
+  <section class="card sec" id="en-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>Sync through Google Drive (optional)</h2></div>
+    <p>If you choose to sign in with Google, the app gets access only to its own hidden folder in your Google Drive (the <code>drive.appdata</code> permission). It cannot see, open or change any of your other files.</p><p>A copy of your data is written to that folder so that your phone and tablet show the same. The app also reads the email address of your account, only to show which account is connected.</p><p>This data travels only between your device and Google over an encrypted connection; the developer has no access to it. You can turn sync off in Profile at any time.</p><p>The app’s use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+    
+  </section>
+  <section class="card sec" id="en-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>Phone calendar (optional)</h2></div>
+    <p>If you choose to show calendar events in the schedule and allow calendar access, the app reads events from the calendars on your phone (including Google Calendar, if it is set up there): the title, time and colour of each event.</p><p>They are used only to show them in the weekly schedule. Events are read on the device only: they are not stored in the app, not included in backups or Google Drive, and not sent anywhere. The app never changes your calendar.</p><p>An event enters Drop only when you add it to the schedule yourself; then only the title and time you confirmed are kept. You can revoke access in phone settings or turn events off in the schedule.</p>
+    
+  </section>
+  <section class="card sec" id="en-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>Notifications and reminders</h2></div>
+    <p>Notifications show the running timer and the reminders you turned on. They are created on the device; nothing is sent anywhere.</p><p>After the phone restarts, the app schedules its reminders again. This is why it asks to start at boot.</p>
+    
+  </section>
+  <section class="card sec" id="en-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>Permissions the app asks for</h2></div>
+    
+    <dl class="perms"><div><dt>Notifications</dt><dd>the timer and your reminders.</dd></div><div><dt>Calendar (optional)</dt><dd>to show your events in the schedule.</dd></div><div><dt>Internet</dt><dd>only for Google sign-in and Drive sync.</dd></div><div><dt>Foreground service</dt><dd>so the timer keeps counting with the screen off.</dd></div><div><dt>Start at boot</dt><dd>to bring your reminders back after a restart.</dd></div><div><dt>Vibration</dt><dd>for the timer and reached goals.</dd></div></dl>
+  </section>
+  <section class="card sec" id="en-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>Backups and import</h2></div>
+    <p>A backup file is created only when you save one yourself, in the place you choose. Import reads only the file you pick.</p>
+    
+  </section>
+  <section class="card sec" id="en-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>Deleting your data</h2></div>
+    <p>Delete a habit, or uninstall the app, and its data on the device is gone.</p><p>To remove the copy from Google Drive, open Google Drive → Settings → Manage apps → Drop → Delete hidden app data. Turning sync off in Profile stops new copies.</p>
+    
+  </section>
+  <section class="card sec" id="en-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>Children</h2></div>
+    <p>The app does not collect data about anyone, including children.</p>
+    
+  </section>
+  <section class="card sec" id="en-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>Changes to this policy</h2></div>
+    <p>If this policy changes, the new version will appear on this page with a new date.</p>
+    
+  </section>
+  <section class="card sec" id="en-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>Contact</h2></div>
+    <p>Questions about privacy: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="doc" lang="uk" data-lang="uk" data-title="Політика конфіденційності · Крапля" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Крапля</p>
+    <h1>Політика конфіденційності</h1>
+    <p class="date">Оновлено 21 жовтня 2026 року · чинна з 13 жовтня 2026 року</p>
+    <p class="lead">Крапля — трекер звичок із таймером. Вона зроблена так, щоб твої дані лишалися твоїми: у Краплі немає власних серверів, акаунтів, реклами й аналітики.</p>
+  </header>
 
-<h2>Сповіщення</h2>
-<p>Сповіщення показують таймер, що йде, і нагадування, які ти сам увімкнув. Вони створюються на пристрої.</p>
+  <section class="glance" aria-labelledby="uk-glance">
+    <h2 id="uk-glance" class="eyebrow">Коротко</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>Усе, що ти вводиш, зберігається на твоєму пристрої.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>У Краплі немає серверів. Автор застосунку не отримує й не бачить твоїх даних.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>Без реклами, аналітики, стеження й продажу даних.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>Синхронізація через Google Диск необов’язкова й бачить лише власну приховану папку застосунку.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Події календаря телефону читаються тільки на пристрої і лише якщо ти це ввімкнеш.</span></li></ul>
+  </section>
 
-<h2>Резервні копії</h2>
-<p>Файл резервної копії створюється лише тоді, коли ти сам його збережеш, і лежить там, де ти вибереш.</p>
+  <nav class="toc" aria-label="На цій сторінці">
+    <p class="eyebrow">На цій сторінці</p>
+    <div class="chips"><a href="#uk-data">Які дані є в застосунку</a><a href="#uk-drive">Синхронізація через Google Диск (необов’язково)</a><a href="#uk-calendar">Календар телефону (необов’язково)</a><a href="#uk-notifications">Сповіщення й нагадування</a><a href="#uk-permissions">Які дозволи просить застосунок</a><a href="#uk-backups">Резервні копії та імпорт</a><a href="#uk-delete">Як видалити свої дані</a><a href="#uk-children">Діти</a><a href="#uk-changes">Зміни в цій політиці</a><a href="#uk-contact">Контакт</a></div>
+  </nav>
 
-<h2>Видалення даних</h2>
-<p>Видали звичку або весь застосунок — дані на пристрої зникнуть. Копію на Google Диску видаляє «Керування застосунками» в налаштуваннях Диска.</p>
+  <section class="card tablecard" aria-labelledby="uk-table">
+    <h2 id="uk-table">Які дані, де вони лежать і хто їх бачить</h2>
+    <table>
+      <thead><tr><th scope="col">Дані</th><th scope="col">Де зберігаються</th><th scope="col">Хто бачить</th></tr></thead>
+      <tbody><tr><th scope="row">Звички, категорії, цілі, записаний час, тижневий розклад, нагороди й покарання, ім’я в профілі</th><td data-label="Де зберігаються">На твоєму пристрої; копія — на твоєму Google Диску, якщо ввімкнеш синхронізацію</td><td data-label="Хто бачить">Лише ти</td></tr><tr><th scope="row">Налаштування: мова, тема, звук, нагадування</th><td data-label="Де зберігаються">На твоєму пристрої; деякі з них синхронізуються разом із даними</td><td data-label="Хто бачить">Лише ти</td></tr><tr><th scope="row">Адреса пошти твого акаунта Google</th><td data-label="Де зберігаються">На твоєму пристрої, поки ввімкнена синхронізація</td><td data-label="Хто бачить">Лише ти</td></tr><tr><th scope="row">Події з календаря телефону</th><td data-label="Де зберігаються">Не зберігаються: читаються щоразу, щоб намалювати розклад</td><td data-label="Хто бачить">Лише ти, на пристрої</td></tr><tr><th scope="row">Файли резервних копій</th><td data-label="Де зберігаються">Там, куди ти їх збережеш</td><td data-label="Хто бачить">Той, кому ти даси файл</td></tr></tbody>
+    </table>
+  </section>
 
-<h2>Діти</h2>
-<p>Застосунок не збирає даних про будь-кого, зокрема про дітей.</p>
+  <section class="card sec" id="uk-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>Які дані є в застосунку</h2></div>
+    <p>Те, що ти вводиш сам: назви звичок і категорій, цілі, записаний час, тижневий розклад, нагороди й покарання, ім’я в профілі.</p><p>Налаштування: мова, тема, звук, вібрація й нагадування.</p><p>Усе це лежить у закритому сховищі застосунку на твоєму пристрої. Інші застосунки не можуть його прочитати.</p>
+    
+  </section>
+  <section class="card sec" id="uk-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>Синхронізація через Google Диск (необов’язково)</h2></div>
+    <p>Якщо ти сам увійдеш через Google, застосунок отримає доступ лише до своєї прихованої папки на твоєму Google Диску (дозвіл <code>drive.appdata</code>). Він не може бачити, відкривати чи змінювати жодних інших твоїх файлів.</p><p>У цю папку записується копія твоїх даних, щоб на телефоні й планшеті було однаково. Застосунок також читає адресу пошти твого акаунта, лише щоб показати, який акаунт підключено.</p><p>Ці дані передаються лише між твоїм пристроєм і Google зашифрованим з’єднанням; автор застосунку доступу до них не має. Вимкнути синхронізацію можна будь-коли в Профілі.</p><p>Використання даних, отриманих через Google API, відповідає <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, зокрема вимогам Limited Use.</p>
+    
+  </section>
+  <section class="card sec" id="uk-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>Календар телефону (необов’язково)</h2></div>
+    <p>Якщо ти сам увімкнеш показ подій календаря в розкладі й дозволиш доступ до календаря, застосунок читає події з календарів на твоєму телефоні (зокрема Google Календаря, якщо він там підключений): назву, час і колір події.</p><p>Вони потрібні лише для того, щоб показати їх у тижневому розкладі. Події читаються тільки на пристрої: вони не зберігаються в застосунку, не потрапляють у резервні копії чи на Google Диск і нікуди не надсилаються. Застосунок нічого не змінює в календарі.</p><p>Подія потрапляє в Краплю лише тоді, коли ти сам додаси її в розклад; тоді зберігаються тільки назва й час, які ти підтвердив. Доступ можна відкликати в налаштуваннях телефону або вимкнути показ подій у розкладі.</p>
+    
+  </section>
+  <section class="card sec" id="uk-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>Сповіщення й нагадування</h2></div>
+    <p>Сповіщення показують таймер, що йде, і нагадування, які ти сам увімкнув. Вони створюються на пристрої, нічого нікуди не надсилається.</p><p>Після перезапуску телефону застосунок знову ставить свої нагадування. Тому він просить дозвіл запускатися під час увімкнення.</p>
+    
+  </section>
+  <section class="card sec" id="uk-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>Які дозволи просить застосунок</h2></div>
+    
+    <dl class="perms"><div><dt>Сповіщення</dt><dd>таймер і твої нагадування.</dd></div><div><dt>Календар (необов’язково)</dt><dd>щоб показати твої події в розкладі.</dd></div><div><dt>Інтернет</dt><dd>лише для входу через Google і синхронізації з Диском.</dd></div><div><dt>Робота у фоні</dt><dd>щоб таймер рахував і з вимкненим екраном.</dd></div><div><dt>Запуск під час увімкнення</dt><dd>щоб повернути нагадування після перезапуску.</dd></div><div><dt>Вібрація</dt><dd>для таймера й досягнутих цілей.</dd></div></dl>
+  </section>
+  <section class="card sec" id="uk-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>Резервні копії та імпорт</h2></div>
+    <p>Файл резервної копії створюється лише тоді, коли ти сам його збережеш, і лежить там, де ти вибереш. Імпорт читає тільки той файл, який ти вибрав.</p>
+    
+  </section>
+  <section class="card sec" id="uk-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>Як видалити свої дані</h2></div>
+    <p>Видали звичку або весь застосунок — і її дані на пристрої зникнуть.</p><p>Щоб прибрати копію з Google Диска, відкрий Google Диск → Налаштування → Керування застосунками → Крапля → Видалити приховані дані застосунку. Вимкнена в Профілі синхронізація перестає створювати нові копії.</p>
+    
+  </section>
+  <section class="card sec" id="uk-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>Діти</h2></div>
+    <p>Застосунок не збирає даних про будь-кого, зокрема про дітей.</p>
+    
+  </section>
+  <section class="card sec" id="uk-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>Зміни в цій політиці</h2></div>
+    <p>Якщо ця політика зміниться, нова версія з’явиться на цій сторінці з новою датою.</p>
+    
+  </section>
+  <section class="card sec" id="uk-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>Контакт</h2></div>
+    <p>Питання щодо конфіденційності: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="doc" lang="es" data-lang="es" data-title="Política de privacidad · Kraplya" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Kraplya</p>
+    <h1>Política de privacidad</h1>
+    <p class="date">Actualizada el 21 de octubre de 2026 · vigente desde el 13 de octubre de 2026</p>
+    <p class="lead">Kraplya es un registro de hábitos con temporizador. Está hecha para que tus datos sigan siendo tuyos: Kraplya no tiene servidores propios, ni cuentas, ni anuncios, ni analítica.</p>
+  </header>
 
-<h2>Зміни</h2>
-<p>Якщо ця політика зміниться, нова версія з’явиться на цій сторінці з новою датою.</p>
+  <section class="glance" aria-labelledby="es-glance">
+    <h2 id="es-glance" class="eyebrow">En resumen</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>Todo lo que introduces se guarda en tu dispositivo.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>Kraplya no tiene servidores. El desarrollador nunca recibe ni ve tus datos.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>Sin anuncios, sin analítica, sin rastreo y sin venta de datos.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>La sincronización con Google Drive es opcional y solo usa la carpeta oculta propia de la app.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Los eventos del calendario del teléfono se leen solo en el dispositivo, y solo si lo activas.</span></li></ul>
+  </section>
 
-<h2>Контакт</h2>
-<p>Питання: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+  <nav class="toc" aria-label="En esta página">
+    <p class="eyebrow">En esta página</p>
+    <div class="chips"><a href="#es-data">Qué datos guarda la app</a><a href="#es-drive">Sincronización con Google Drive (opcional)</a><a href="#es-calendar">Calendario del teléfono (opcional)</a><a href="#es-notifications">Notificaciones y recordatorios</a><a href="#es-permissions">Permisos que pide la app</a><a href="#es-backups">Copias de seguridad e importación</a><a href="#es-delete">Cómo borrar tus datos</a><a href="#es-children">Menores</a><a href="#es-changes">Cambios en esta política</a><a href="#es-contact">Contacto</a></div>
+  </nav>
 
-<hr class="sep">
+  <section class="card tablecard" aria-labelledby="es-table">
+    <h2 id="es-table">Qué datos, dónde se guardan y quién los ve</h2>
+    <table>
+      <thead><tr><th scope="col">Datos</th><th scope="col">Dónde se guardan</th><th scope="col">Quién los ve</th></tr></thead>
+      <tbody><tr><th scope="row">Hábitos, categorías, objetivos, tiempo registrado, horario semanal, recompensas y penalizaciones, nombre del perfil</th><td data-label="Dónde se guardan">En tu dispositivo; una copia en tu propio Google Drive si activas la sincronización</td><td data-label="Quién los ve">Solo tú</td></tr><tr><th scope="row">Ajustes: idioma, tema, sonido, recordatorios</th><td data-label="Dónde se guardan">En tu dispositivo; algunos se sincronizan junto con tus datos</td><td data-label="Quién los ve">Solo tú</td></tr><tr><th scope="row">Dirección de correo de tu cuenta de Google</th><td data-label="Dónde se guardan">En tu dispositivo, mientras la sincronización esté activada</td><td data-label="Quién los ve">Solo tú</td></tr><tr><th scope="row">Eventos del calendario del teléfono</th><td data-label="Dónde se guardan">No se guardan: se leen al momento para dibujar el horario</td><td data-label="Quién los ve">Solo tú, en el dispositivo</td></tr><tr><th scope="row">Archivos de copia de seguridad</th><td data-label="Dónde se guardan">Donde tú los guardes</td><td data-label="Quién los ve">Quien reciba el archivo de ti</td></tr></tbody>
+    </table>
+  </section>
 
-<h1 id="en">Privacy policy</h1>
-<p class="date">The app “Drop” (Kraplya, package dev.kraplya). Effective 13 October 2026, updated 21 October 2026.</p>
+  <section class="card sec" id="es-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>Qué datos guarda la app</h2></div>
+    <p>Lo que introduces tú: nombres de hábitos y categorías, objetivos, tiempo registrado, el horario semanal, recompensas y penalizaciones, y el nombre de tu perfil.</p><p>Ajustes: idioma, tema, sonido, vibración y recordatorios.</p><p>Todo ello se guarda en el almacenamiento privado de la app en tu dispositivo. Otras apps no pueden leerlo.</p>
+    
+  </section>
+  <section class="card sec" id="es-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>Sincronización con Google Drive (opcional)</h2></div>
+    <p>Si decides iniciar sesión con Google, la app obtiene acceso solo a su propia carpeta oculta en tu Google Drive (el permiso <code>drive.appdata</code>). No puede ver, abrir ni modificar ninguno de tus otros archivos.</p><p>En esa carpeta se escribe una copia de tus datos para que tu teléfono y tu tableta muestren lo mismo. La app también lee la dirección de correo de tu cuenta, solo para mostrar qué cuenta está conectada.</p><p>Estos datos viajan solo entre tu dispositivo y Google mediante una conexión cifrada; el desarrollador no tiene acceso a ellos. Puedes desactivar la sincronización en Perfil en cualquier momento.</p><p>El uso que hace la app de la información recibida de las API de Google cumple la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, incluidos los requisitos de Limited Use.</p>
+    
+  </section>
+  <section class="card sec" id="es-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>Calendario del teléfono (opcional)</h2></div>
+    <p>Si decides mostrar los eventos del calendario en el horario y permites el acceso al calendario, la app lee los eventos de los calendarios de tu teléfono (incluido Google Calendar, si está configurado en él): el título, la hora y el color de cada evento.</p><p>Se usan solo para mostrarlos en el horario semanal. Los eventos se leen solo en el dispositivo: no se guardan en la app, no se incluyen en las copias de seguridad ni en Google Drive y no se envían a ningún sitio. La app nunca modifica tu calendario.</p><p>Un evento entra en Kraplya solo cuando tú mismo lo añades al horario; entonces solo se guardan el título y la hora que confirmaste. Puedes retirar el acceso en los ajustes del teléfono o desactivar los eventos en el horario.</p>
+    
+  </section>
+  <section class="card sec" id="es-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>Notificaciones y recordatorios</h2></div>
+    <p>Las notificaciones muestran el temporizador en marcha y los recordatorios que activaste. Se crean en el dispositivo; no se envía nada a ningún sitio.</p><p>Cuando el teléfono se reinicia, la app vuelve a programar sus recordatorios. Por eso pide permiso para iniciarse al encender el dispositivo.</p>
+    
+  </section>
+  <section class="card sec" id="es-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>Permisos que pide la app</h2></div>
+    
+    <dl class="perms"><div><dt>Notificaciones</dt><dd>el temporizador y tus recordatorios.</dd></div><div><dt>Calendario (opcional)</dt><dd>para mostrar tus eventos en el horario.</dd></div><div><dt>Internet</dt><dd>solo para iniciar sesión con Google y sincronizar con Drive.</dd></div><div><dt>Servicio en primer plano</dt><dd>para que el temporizador siga contando con la pantalla apagada.</dd></div><div><dt>Inicio al encender</dt><dd>para recuperar tus recordatorios después de un reinicio.</dd></div><div><dt>Vibración</dt><dd>para el temporizador y los objetivos alcanzados.</dd></div></dl>
+  </section>
+  <section class="card sec" id="es-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>Copias de seguridad e importación</h2></div>
+    <p>Un archivo de copia de seguridad solo se crea cuando tú mismo lo guardas, en el lugar que elijas. La importación lee solo el archivo que tú eliges.</p>
+    
+  </section>
+  <section class="card sec" id="es-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>Cómo borrar tus datos</h2></div>
+    <p>Borra un hábito, o desinstala la app, y sus datos en el dispositivo desaparecen.</p><p>Para eliminar la copia de Google Drive, abre Google Drive → Configuración → Gestionar aplicaciones → Kraplya → Eliminar datos de aplicación ocultos. Desactivar la sincronización en Perfil impide que se creen copias nuevas.</p>
+    
+  </section>
+  <section class="card sec" id="es-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>Menores</h2></div>
+    <p>La app no recopila datos sobre nadie, tampoco sobre menores.</p>
+    
+  </section>
+  <section class="card sec" id="es-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>Cambios en esta política</h2></div>
+    <p>Si esta política cambia, la nueva versión aparecerá en esta página con una nueva fecha.</p>
+    
+  </section>
+  <section class="card sec" id="es-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>Contacto</h2></div>
+    <p>Preguntas sobre privacidad: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="doc" lang="pt" data-lang="pt" data-title="Política de privacidade · Kraplya" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Kraplya</p>
+    <h1>Política de privacidade</h1>
+    <p class="date">Atualizada a 21 de outubro de 2026 · em vigor desde 13 de outubro de 2026</p>
+    <p class="lead">A Kraplya é um registo de hábitos com temporizador. Foi feita para que os teus dados continuem a ser teus: a Kraplya não tem servidores próprios, nem contas, nem anúncios, nem análises.</p>
+  </header>
 
-<h2>In short</h2>
-<p>Drop has no servers of its own, no accounts, no ads and no analytics. The developer does not receive or see your data.</p>
+  <section class="glance" aria-labelledby="pt-glance">
+    <h2 id="pt-glance" class="eyebrow">Em resumo</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>Tudo o que introduzes fica guardado no teu dispositivo.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>A Kraplya não tem servidores. O programador nunca recebe nem vê os teus dados.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>Sem anúncios, sem análises, sem rastreio e sem venda de dados.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>A sincronização com o Google Drive é opcional e usa apenas a pasta oculta da própria app.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Os eventos do calendário do telemóvel são lidos apenas no dispositivo, e só se ativares esta opção.</span></li></ul>
+  </section>
 
-<h2>What data the app holds</h2>
-<ul>
-<li>What you enter: habit and category names, goals, recorded time, the weekly schedule, rewards and penalties, the name in your profile.</li>
-<li>Settings: language, theme, sound, reminders.</li>
-</ul>
-<p>All of it is stored on your device.</p>
+  <nav class="toc" aria-label="Nesta página">
+    <p class="eyebrow">Nesta página</p>
+    <div class="chips"><a href="#pt-data">Que dados a app guarda</a><a href="#pt-drive">Sincronização com o Google Drive (opcional)</a><a href="#pt-calendar">Calendário do telemóvel (opcional)</a><a href="#pt-notifications">Notificações e lembretes</a><a href="#pt-permissions">Permissões que a app pede</a><a href="#pt-backups">Cópias de segurança e importação</a><a href="#pt-delete">Como eliminar os teus dados</a><a href="#pt-children">Crianças</a><a href="#pt-changes">Alterações a esta política</a><a href="#pt-contact">Contacto</a></div>
+  </nav>
 
-<h2>Sync through Google Drive (optional)</h2>
-<p>If you choose to sign in with Google, the app gets access only to its own hidden folder in your Google Drive (the <code>drive.appdata</code> permission). It cannot see any of your other files. A copy of your data is written to that folder so that your phone and tablet show the same. The app also reads your email address, only to show which account it is connected to. This data travels only between your device and Google; the developer has no access to it. You can turn sync off in Profile, and remove the app’s data from Drive in Google Drive settings (Manage apps).</p>
-<p>The app’s use of information received from Google APIs adheres to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements.</p>
+  <section class="card tablecard" aria-labelledby="pt-table">
+    <h2 id="pt-table">Que dados, onde ficam e quem os vê</h2>
+    <table>
+      <thead><tr><th scope="col">Dados</th><th scope="col">Onde ficam guardados</th><th scope="col">Quem os pode ver</th></tr></thead>
+      <tbody><tr><th scope="row">Hábitos, categorias, objetivos, tempo registado, horário semanal, recompensas e penalizações, nome do perfil</th><td data-label="Onde ficam guardados">No teu dispositivo; uma cópia no teu próprio Google Drive, se ativares a sincronização</td><td data-label="Quem os pode ver">Só tu</td></tr><tr><th scope="row">Definições: idioma, tema, som, lembretes</th><td data-label="Onde ficam guardados">No teu dispositivo; algumas são sincronizadas juntamente com os teus dados</td><td data-label="Quem os pode ver">Só tu</td></tr><tr><th scope="row">Endereço de email da tua conta Google</th><td data-label="Onde ficam guardados">No teu dispositivo, enquanto a sincronização estiver ativada</td><td data-label="Quem os pode ver">Só tu</td></tr><tr><th scope="row">Eventos do calendário do telemóvel</th><td data-label="Onde ficam guardados">Não são guardados: são lidos no momento para desenhar o horário</td><td data-label="Quem os pode ver">Só tu, no dispositivo</td></tr><tr><th scope="row">Ficheiros de cópia de segurança</th><td data-label="Onde ficam guardados">Onde os guardares</td><td data-label="Quem os pode ver">Quem receber o ficheiro de ti</td></tr></tbody>
+    </table>
+  </section>
 
-<h2>Phone calendar (optional)</h2>
-<p>If you choose to show calendar events in the schedule and allow calendar access, the app reads events from the calendars on your phone (including Google Calendar if it is set up there): the title, time and colour of each event. They are used only to show them in the weekly schedule. Events are read on the device only; they are not stored in the app, not included in backups or Google Drive, and not sent anywhere. The app never changes your calendar. An event enters Drop only when you add it to the schedule yourself; then only the title and time you confirmed are kept. You can revoke access in phone settings or turn events off in the schedule.</p>
+  <section class="card sec" id="pt-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>Que dados a app guarda</h2></div>
+    <p>O que introduzes tu mesmo: nomes de hábitos e categorias, objetivos, tempo registado, o horário semanal, recompensas e penalizações, e o nome do teu perfil.</p><p>Definições: idioma, tema, som, vibração e lembretes.</p><p>Tudo isto fica guardado no armazenamento privado da app no teu dispositivo. Outras apps não o conseguem ler.</p>
+    
+  </section>
+  <section class="card sec" id="pt-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>Sincronização com o Google Drive (opcional)</h2></div>
+    <p>Se decidires iniciar sessão com o Google, a app obtém acesso apenas à sua própria pasta oculta no teu Google Drive (a permissão <code>drive.appdata</code>). Não consegue ver, abrir nem alterar nenhum dos teus outros ficheiros.</p><p>Nessa pasta é gravada uma cópia dos teus dados, para que o telemóvel e o tablet mostrem o mesmo. A app também lê o endereço de email da tua conta, apenas para mostrar que conta está ligada.</p><p>Estes dados circulam apenas entre o teu dispositivo e a Google através de uma ligação encriptada; o programador não tem acesso a eles. Podes desativar a sincronização no Perfil a qualquer momento.</p><p>A utilização, pela app, das informações recebidas das APIs Google cumpre a <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, incluindo os requisitos de Limited Use.</p>
+    
+  </section>
+  <section class="card sec" id="pt-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>Calendário do telemóvel (opcional)</h2></div>
+    <p>Se decidires mostrar os eventos do calendário no horário e permitires o acesso ao calendário, a app lê os eventos dos calendários do teu telemóvel (incluindo o Google Calendar, se estiver configurado nele): o título, a hora e a cor de cada evento.</p><p>São usados apenas para os mostrar no horário semanal. Os eventos são lidos apenas no dispositivo: não são guardados na app, não são incluídos nas cópias de segurança nem no Google Drive e não são enviados para lado nenhum. A app nunca altera o teu calendário.</p><p>Um evento só entra na Kraplya quando tu próprio o adicionas ao horário; nesse caso, só ficam guardados o título e a hora que confirmaste. Podes revogar o acesso nas definições do telemóvel ou desativar os eventos no horário.</p>
+    
+  </section>
+  <section class="card sec" id="pt-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>Notificações e lembretes</h2></div>
+    <p>As notificações mostram o temporizador em curso e os lembretes que ativaste. São criadas no dispositivo; nada é enviado para lado nenhum.</p><p>Depois de o telemóvel reiniciar, a app volta a agendar os seus lembretes. É por isso que pede permissão para iniciar no arranque.</p>
+    
+  </section>
+  <section class="card sec" id="pt-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>Permissões que a app pede</h2></div>
+    
+    <dl class="perms"><div><dt>Notificações</dt><dd>o temporizador e os teus lembretes.</dd></div><div><dt>Calendário (opcional)</dt><dd>para mostrar os teus eventos no horário.</dd></div><div><dt>Internet</dt><dd>apenas para iniciar sessão com o Google e sincronizar com o Drive.</dd></div><div><dt>Serviço em primeiro plano</dt><dd>para que o temporizador continue a contar com o ecrã desligado.</dd></div><div><dt>Iniciar no arranque</dt><dd>para repor os teus lembretes depois de um reinício.</dd></div><div><dt>Vibração</dt><dd>para o temporizador e os objetivos atingidos.</dd></div></dl>
+  </section>
+  <section class="card sec" id="pt-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>Cópias de segurança e importação</h2></div>
+    <p>Um ficheiro de cópia de segurança só é criado quando tu próprio o guardas, no local que escolheres. A importação lê apenas o ficheiro que escolheres.</p>
+    
+  </section>
+  <section class="card sec" id="pt-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>Como eliminar os teus dados</h2></div>
+    <p>Elimina um hábito, ou desinstala a app, e os respetivos dados no dispositivo desaparecem.</p><p>Para remover a cópia do Google Drive, abre o Google Drive → Definições → Gerir apps → Kraplya → Eliminar dados ocultos da app. Desativar a sincronização no Perfil impede que sejam criadas novas cópias.</p>
+    
+  </section>
+  <section class="card sec" id="pt-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>Crianças</h2></div>
+    <p>A app não recolhe dados sobre ninguém, incluindo crianças.</p>
+    
+  </section>
+  <section class="card sec" id="pt-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>Alterações a esta política</h2></div>
+    <p>Se esta política mudar, a nova versão aparecerá nesta página com uma nova data.</p>
+    
+  </section>
+  <section class="card sec" id="pt-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>Contacto</h2></div>
+    <p>Questões sobre privacidade: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="doc" lang="fr" data-lang="fr" data-title="Politique de confidentialité · Kraplya" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Kraplya</p>
+    <h1>Politique de confidentialité</h1>
+    <p class="date">Mise à jour le 21 octobre 2026 · en vigueur depuis le 13 octobre 2026</p>
+    <p class="lead">Kraplya est un suivi d’habitudes avec minuteur. Elle est conçue pour que tes données restent à toi : Kraplya n’a ni serveurs à elle, ni comptes, ni publicité, ni outils d’analyse.</p>
+  </header>
 
-<h2>Notifications</h2>
-<p>Notifications show a running timer and the reminders you turned on. They are created on the device.</p>
+  <section class="glance" aria-labelledby="fr-glance">
+    <h2 id="fr-glance" class="eyebrow">En bref</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>Tout ce que tu saisis est enregistré sur ton appareil.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>Kraplya n’a pas de serveurs. Le développeur ne reçoit et ne voit jamais tes données.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>Pas de publicité, pas d’analyse, pas de suivi, pas de vente de données.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>La synchronisation via Google Drive est facultative et n’utilise que le dossier masqué propre à l’application.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Les événements de l’agenda du téléphone sont lus uniquement sur l’appareil, et seulement si tu actives cette option.</span></li></ul>
+  </section>
 
-<h2>Backups</h2>
-<p>A backup file is created only when you save one yourself, in the place you choose.</p>
+  <nav class="toc" aria-label="Sur cette page">
+    <p class="eyebrow">Sur cette page</p>
+    <div class="chips"><a href="#fr-data">Ce que contient l’application</a><a href="#fr-drive">Synchronisation via Google Drive (facultative)</a><a href="#fr-calendar">Agenda du téléphone (facultatif)</a><a href="#fr-notifications">Notifications et rappels</a><a href="#fr-permissions">Autorisations demandées par l’application</a><a href="#fr-backups">Sauvegardes et importation</a><a href="#fr-delete">Supprimer tes données</a><a href="#fr-children">Enfants</a><a href="#fr-changes">Modifications de cette politique</a><a href="#fr-contact">Contact</a></div>
+  </nav>
 
-<h2>Deleting data</h2>
-<p>Delete a habit or uninstall the app and the data on the device is gone. The copy on Google Drive is removed under Manage apps in Drive settings.</p>
+  <section class="card tablecard" aria-labelledby="fr-table">
+    <h2 id="fr-table">Quelles données, où elles sont conservées, qui les voit</h2>
+    <table>
+      <thead><tr><th scope="col">Données</th><th scope="col">Où elles sont conservées</th><th scope="col">Qui peut les voir</th></tr></thead>
+      <tbody><tr><th scope="row">Habitudes, catégories, objectifs, temps enregistré, planning hebdomadaire, récompenses et pénalités, nom du profil</th><td data-label="Où elles sont conservées">Sur ton appareil ; une copie dans ton propre Google Drive si tu actives la synchronisation</td><td data-label="Qui peut les voir">Toi seul</td></tr><tr><th scope="row">Paramètres : langue, thème, son, rappels</th><td data-label="Où elles sont conservées">Sur ton appareil ; certains sont synchronisés avec tes données</td><td data-label="Qui peut les voir">Toi seul</td></tr><tr><th scope="row">Adresse e-mail de ton compte Google</th><td data-label="Où elles sont conservées">Sur ton appareil, tant que la synchronisation est activée</td><td data-label="Qui peut les voir">Toi seul</td></tr><tr><th scope="row">Événements de l’agenda du téléphone</th><td data-label="Où elles sont conservées">Non conservés : lus à la volée pour afficher le planning</td><td data-label="Qui peut les voir">Toi seul, sur l’appareil</td></tr><tr><th scope="row">Fichiers de sauvegarde</th><td data-label="Où elles sont conservées">Là où tu les enregistres</td><td data-label="Qui peut les voir">La personne à qui tu donnes le fichier</td></tr></tbody>
+    </table>
+  </section>
 
-<h2>Children</h2>
-<p>The app does not collect data about anyone, including children.</p>
+  <section class="card sec" id="fr-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>Ce que contient l’application</h2></div>
+    <p>Ce que tu saisis toi-même : noms des habitudes et des catégories, objectifs, temps enregistré, planning hebdomadaire, récompenses et pénalités, et le nom de ton profil.</p><p>Paramètres : langue, thème, son, vibration et rappels.</p><p>Tout cela est conservé dans le stockage privé de l’application sur ton appareil. Les autres applications ne peuvent pas le lire.</p>
+    
+  </section>
+  <section class="card sec" id="fr-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>Synchronisation via Google Drive (facultative)</h2></div>
+    <p>Si tu choisis de te connecter avec Google, l’application obtient uniquement l’accès à son propre dossier masqué dans ton Google Drive (l’autorisation <code>drive.appdata</code>). Elle ne peut ni voir, ni ouvrir, ni modifier aucun de tes autres fichiers.</p><p>Une copie de tes données est écrite dans ce dossier pour que ton téléphone et ta tablette affichent la même chose. L’application lit aussi l’adresse e-mail de ton compte, uniquement pour indiquer quel compte est connecté.</p><p>Ces données circulent uniquement entre ton appareil et Google via une connexion chiffrée ; le développeur n’y a pas accès. Tu peux désactiver la synchronisation dans Profil à tout moment.</p><p>L’utilisation par l’application des informations reçues des API Google respecte la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, y compris les exigences Limited Use.</p>
+    
+  </section>
+  <section class="card sec" id="fr-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>Agenda du téléphone (facultatif)</h2></div>
+    <p>Si tu choisis d’afficher les événements de l’agenda dans le planning et que tu autorises l’accès à l’agenda, l’application lit les événements des agendas de ton téléphone (y compris Google Agenda, s’il y est configuré) : le titre, l’heure et la couleur de chaque événement.</p><p>Ils servent uniquement à les afficher dans le planning hebdomadaire. Les événements sont lus uniquement sur l’appareil : ils ne sont pas conservés dans l’application, ne sont inclus ni dans les sauvegardes ni dans Google Drive, et ne sont envoyés nulle part. L’application ne modifie jamais ton agenda.</p><p>Un événement n’entre dans Kraplya que lorsque tu l’ajoutes toi-même au planning ; seuls le titre et l’heure que tu as confirmés sont alors conservés. Tu peux révoquer l’accès dans les paramètres du téléphone ou désactiver les événements dans le planning.</p>
+    
+  </section>
+  <section class="card sec" id="fr-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>Notifications et rappels</h2></div>
+    <p>Les notifications affichent le minuteur en cours et les rappels que tu as activés. Elles sont créées sur l’appareil ; rien n’est envoyé nulle part.</p><p>Après un redémarrage du téléphone, l’application reprogramme ses rappels. C’est pourquoi elle demande à se lancer au démarrage.</p>
+    
+  </section>
+  <section class="card sec" id="fr-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>Autorisations demandées par l’application</h2></div>
+    
+    <dl class="perms"><div><dt>Notifications</dt><dd>le minuteur et tes rappels.</dd></div><div><dt>Agenda (facultatif)</dt><dd>pour afficher tes événements dans le planning.</dd></div><div><dt>Internet</dt><dd>uniquement pour la connexion avec Google et la synchronisation avec Drive.</dd></div><div><dt>Service au premier plan</dt><dd>pour que le minuteur continue de compter écran éteint.</dd></div><div><dt>Lancement au démarrage</dt><dd>pour rétablir tes rappels après un redémarrage.</dd></div><div><dt>Vibration</dt><dd>pour le minuteur et les objectifs atteints.</dd></div></dl>
+  </section>
+  <section class="card sec" id="fr-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>Sauvegardes et importation</h2></div>
+    <p>Un fichier de sauvegarde n’est créé que lorsque tu en enregistres un toi-même, à l’endroit que tu choisis. L’importation lit uniquement le fichier que tu sélectionnes.</p>
+    
+  </section>
+  <section class="card sec" id="fr-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>Supprimer tes données</h2></div>
+    <p>Supprime une habitude, ou désinstalle l’application, et ses données sur l’appareil disparaissent.</p><p>Pour supprimer la copie dans Google Drive, ouvre Google Drive → Paramètres → Gérer les applications → Kraplya → Supprimer les données d’application masquées. Désactiver la synchronisation dans Profil empêche la création de nouvelles copies.</p>
+    
+  </section>
+  <section class="card sec" id="fr-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>Enfants</h2></div>
+    <p>L’application ne collecte de données sur personne, y compris sur les enfants.</p>
+    
+  </section>
+  <section class="card sec" id="fr-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>Modifications de cette politique</h2></div>
+    <p>Si cette politique change, la nouvelle version apparaîtra sur cette page avec une nouvelle date.</p>
+    
+  </section>
+  <section class="card sec" id="fr-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>Contact</h2></div>
+    <p>Questions sur la confidentialité : <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="doc" lang="de" data-lang="de" data-title="Datenschutzerklärung · Kraplya" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Kraplya</p>
+    <h1>Datenschutzerklärung</h1>
+    <p class="date">Aktualisiert am 21. Oktober 2026 · gültig seit 13. Oktober 2026</p>
+    <p class="lead">Kraplya ist ein Gewohnheitstracker mit Timer. Die App ist so gebaut, dass deine Daten dir gehören: Kraplya hat keine eigenen Server, keine Konten, keine Werbung und keine Analyse.</p>
+  </header>
 
-<h2>Changes</h2>
-<p>If this policy changes, the new version will appear on this page with a new date.</p>
+  <section class="glance" aria-labelledby="de-glance">
+    <h2 id="de-glance" class="eyebrow">Auf einen Blick</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>Alles, was du eingibst, wird auf deinem Gerät gespeichert.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>Kraplya hat keine Server. Der Entwickler erhält oder sieht deine Daten nie.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>Keine Werbung, keine Analyse, kein Tracking, kein Verkauf von Daten.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>Die Synchronisierung über Google Drive ist optional und nutzt nur den eigenen versteckten Ordner der App.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Termine aus dem Kalender des Handys werden nur auf dem Gerät gelesen, und nur, wenn du das einschaltest.</span></li></ul>
+  </section>
 
-<h2>Contact</h2>
-<p>Questions: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+  <nav class="toc" aria-label="Auf dieser Seite">
+    <p class="eyebrow">Auf dieser Seite</p>
+    <div class="chips"><a href="#de-data">Welche Daten die App enthält</a><a href="#de-drive">Synchronisierung über Google Drive (optional)</a><a href="#de-calendar">Kalender des Handys (optional)</a><a href="#de-notifications">Benachrichtigungen und Erinnerungen</a><a href="#de-permissions">Berechtigungen, die die App anfragt</a><a href="#de-backups">Sicherungen und Import</a><a href="#de-delete">Deine Daten löschen</a><a href="#de-children">Kinder</a><a href="#de-changes">Änderungen dieser Erklärung</a><a href="#de-contact">Kontakt</a></div>
+  </nav>
+
+  <section class="card tablecard" aria-labelledby="de-table">
+    <h2 id="de-table">Welche Daten, wo sie liegen, wer sie sieht</h2>
+    <table>
+      <thead><tr><th scope="col">Daten</th><th scope="col">Wo sie gespeichert sind</th><th scope="col">Wer sie sehen kann</th></tr></thead>
+      <tbody><tr><th scope="row">Gewohnheiten, Kategorien, Ziele, erfasste Zeit, Wochenplan, Belohnungen und Strafen, Profilname</th><td data-label="Wo sie gespeichert sind">Auf deinem Gerät; eine Kopie in deinem eigenen Google Drive, wenn du die Synchronisierung einschaltest</td><td data-label="Wer sie sehen kann">Nur du</td></tr><tr><th scope="row">Einstellungen: Sprache, Design, Ton, Erinnerungen</th><td data-label="Wo sie gespeichert sind">Auf deinem Gerät; einige davon werden mit deinen Daten synchronisiert</td><td data-label="Wer sie sehen kann">Nur du</td></tr><tr><th scope="row">E-Mail-Adresse deines Google-Kontos</th><td data-label="Wo sie gespeichert sind">Auf deinem Gerät, solange die Synchronisierung eingeschaltet ist</td><td data-label="Wer sie sehen kann">Nur du</td></tr><tr><th scope="row">Termine aus dem Kalender des Handys</th><td data-label="Wo sie gespeichert sind">Nicht gespeichert: werden bei Bedarf gelesen, um den Plan anzuzeigen</td><td data-label="Wer sie sehen kann">Nur du, auf dem Gerät</td></tr><tr><th scope="row">Sicherungsdateien</th><td data-label="Wo sie gespeichert sind">Dort, wo du sie speicherst</td><td data-label="Wer sie sehen kann">Wer die Datei von dir bekommt</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="card sec" id="de-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>Welche Daten die App enthält</h2></div>
+    <p>Was du selbst eingibst: Namen von Gewohnheiten und Kategorien, Ziele, erfasste Zeit, den Wochenplan, Belohnungen und Strafen sowie den Namen in deinem Profil.</p><p>Einstellungen: Sprache, Design, Ton, Vibration und Erinnerungen.</p><p>All das liegt im privaten Speicher der App auf deinem Gerät. Andere Apps können ihn nicht lesen.</p>
+    
+  </section>
+  <section class="card sec" id="de-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>Synchronisierung über Google Drive (optional)</h2></div>
+    <p>Wenn du dich für die Anmeldung mit Google entscheidest, erhält die App nur Zugriff auf ihren eigenen versteckten Ordner in deinem Google Drive (die Berechtigung <code>drive.appdata</code>). Sie kann keine deiner anderen Dateien sehen, öffnen oder ändern.</p><p>In diesen Ordner wird eine Kopie deiner Daten geschrieben, damit dein Handy und dein Tablet dasselbe anzeigen. Die App liest außerdem die E-Mail-Adresse deines Kontos, nur um anzuzeigen, welches Konto verbunden ist.</p><p>Diese Daten werden nur zwischen deinem Gerät und Google über eine verschlüsselte Verbindung übertragen; der Entwickler hat keinen Zugriff darauf. Du kannst die Synchronisierung jederzeit im Profil ausschalten.</p><p>Die Nutzung von Informationen, die die App von Google APIs erhält, entspricht der <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, einschließlich der Limited-Use-Anforderungen.</p>
+    
+  </section>
+  <section class="card sec" id="de-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>Kalender des Handys (optional)</h2></div>
+    <p>Wenn du dich entscheidest, Kalendertermine im Plan anzuzeigen, und den Kalenderzugriff erlaubst, liest die App Termine aus den Kalendern auf deinem Handy (einschließlich Google Kalender, falls er dort eingerichtet ist): Titel, Uhrzeit und Farbe jedes Termins.</p><p>Sie werden nur verwendet, um sie im Wochenplan anzuzeigen. Termine werden nur auf dem Gerät gelesen: Sie werden nicht in der App gespeichert, nicht in Sicherungen oder Google Drive aufgenommen und nirgendwohin gesendet. Die App ändert deinen Kalender nie.</p><p>Ein Termin gelangt nur dann in Kraplya, wenn du ihn selbst zum Plan hinzufügst; dann werden nur der Titel und die Uhrzeit gespeichert, die du bestätigt hast. Du kannst den Zugriff in den Einstellungen des Handys widerrufen oder die Termine im Plan ausschalten.</p>
+    
+  </section>
+  <section class="card sec" id="de-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>Benachrichtigungen und Erinnerungen</h2></div>
+    <p>Benachrichtigungen zeigen den laufenden Timer und die Erinnerungen, die du eingeschaltet hast. Sie werden auf dem Gerät erstellt; nichts wird irgendwohin gesendet.</p><p>Nach einem Neustart des Handys plant die App ihre Erinnerungen neu. Deshalb fragt sie nach der Berechtigung, beim Hochfahren zu starten.</p>
+    
+  </section>
+  <section class="card sec" id="de-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>Berechtigungen, die die App anfragt</h2></div>
+    
+    <dl class="perms"><div><dt>Benachrichtigungen</dt><dd>der Timer und deine Erinnerungen.</dd></div><div><dt>Kalender (optional)</dt><dd>um deine Termine im Plan anzuzeigen.</dd></div><div><dt>Internet</dt><dd>nur für die Anmeldung mit Google und die Synchronisierung mit Drive.</dd></div><div><dt>Vordergrunddienst</dt><dd>damit der Timer auch bei ausgeschaltetem Bildschirm weiterzählt.</dd></div><div><dt>Start beim Hochfahren</dt><dd>um deine Erinnerungen nach einem Neustart wiederherzustellen.</dd></div><div><dt>Vibration</dt><dd>für den Timer und erreichte Ziele.</dd></div></dl>
+  </section>
+  <section class="card sec" id="de-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>Sicherungen und Import</h2></div>
+    <p>Eine Sicherungsdatei wird nur erstellt, wenn du selbst eine speicherst, an dem Ort, den du wählst. Der Import liest nur die Datei, die du auswählst.</p>
+    
+  </section>
+  <section class="card sec" id="de-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>Deine Daten löschen</h2></div>
+    <p>Lösche eine Gewohnheit oder deinstalliere die App, und ihre Daten auf dem Gerät sind weg.</p><p>Um die Kopie aus Google Drive zu entfernen, öffne Google Drive → Einstellungen → Apps verwalten → Kraplya → Ausgeblendete App-Daten löschen. Wenn du die Synchronisierung im Profil ausschaltest, werden keine neuen Kopien mehr erstellt.</p>
+    
+  </section>
+  <section class="card sec" id="de-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>Kinder</h2></div>
+    <p>Die App erhebt keine Daten über irgendjemanden, auch nicht über Kinder.</p>
+    
+  </section>
+  <section class="card sec" id="de-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>Änderungen dieser Erklärung</h2></div>
+    <p>Wenn sich diese Erklärung ändert, erscheint die neue Fassung auf dieser Seite mit einem neuen Datum.</p>
+    
+  </section>
+  <section class="card sec" id="de-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>Kontakt</h2></div>
+    <p>Fragen zum Datenschutz: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="doc" lang="it" data-lang="it" data-title="Informativa sulla privacy · Kraplya" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Kraplya</p>
+    <h1>Informativa sulla privacy</h1>
+    <p class="date">Aggiornata il 21 ottobre 2026 · in vigore dal 13 ottobre 2026</p>
+    <p class="lead">Kraplya è un tracker di abitudini con timer. È fatta in modo che i tuoi dati restino tuoi: Kraplya non ha server propri, account, pubblicità né analisi.</p>
+  </header>
+
+  <section class="glance" aria-labelledby="it-glance">
+    <h2 id="it-glance" class="eyebrow">In breve</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>Tutto ciò che inserisci viene salvato sul tuo dispositivo.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>Kraplya non ha server. Lo sviluppatore non riceve né vede mai i tuoi dati.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>Niente pubblicità, niente analisi, niente tracciamento, nessuna vendita di dati.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>La sincronizzazione con Google Drive è facoltativa e usa solo la cartella nascosta dell’app.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Gli eventi del calendario del telefono vengono letti solo sul dispositivo, e solo se attivi questa opzione.</span></li></ul>
+  </section>
+
+  <nav class="toc" aria-label="In questa pagina">
+    <p class="eyebrow">In questa pagina</p>
+    <div class="chips"><a href="#it-data">Cosa contiene l’app</a><a href="#it-drive">Sincronizzazione tramite Google Drive (facoltativa)</a><a href="#it-calendar">Calendario del telefono (facoltativo)</a><a href="#it-notifications">Notifiche e promemoria</a><a href="#it-permissions">Autorizzazioni richieste dall’app</a><a href="#it-backups">Backup e importazione</a><a href="#it-delete">Eliminare i tuoi dati</a><a href="#it-children">Minori</a><a href="#it-changes">Modifiche a questa informativa</a><a href="#it-contact">Contatti</a></div>
+  </nav>
+
+  <section class="card tablecard" aria-labelledby="it-table">
+    <h2 id="it-table">Quali dati, dove si trovano, chi li vede</h2>
+    <table>
+      <thead><tr><th scope="col">Dati</th><th scope="col">Dove sono conservati</th><th scope="col">Chi può vederli</th></tr></thead>
+      <tbody><tr><th scope="row">Abitudini, categorie, obiettivi, tempo registrato, programma settimanale, premi e penalità, nome del profilo</th><td data-label="Dove sono conservati">Sul tuo dispositivo; una copia nel tuo Google Drive se attivi la sincronizzazione</td><td data-label="Chi può vederli">Solo tu</td></tr><tr><th scope="row">Impostazioni: lingua, tema, suono, promemoria</th><td data-label="Dove sono conservati">Sul tuo dispositivo; alcune viaggiano insieme ai tuoi dati nella sincronizzazione</td><td data-label="Chi può vederli">Solo tu</td></tr><tr><th scope="row">Indirizzo email del tuo account Google</th><td data-label="Dove sono conservati">Sul tuo dispositivo, finché la sincronizzazione è attiva</td><td data-label="Chi può vederli">Solo tu</td></tr><tr><th scope="row">Eventi del calendario del telefono</th><td data-label="Dove sono conservati">Non salvati: letti al momento per disegnare il programma</td><td data-label="Chi può vederli">Solo tu, sul dispositivo</td></tr><tr><th scope="row">File di backup</th><td data-label="Dove sono conservati">Dove li salvi tu</td><td data-label="Chi può vederli">Chiunque a cui dai il file</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="card sec" id="it-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>Cosa contiene l’app</h2></div>
+    <p>Quello che inserisci tu: nomi di abitudini e categorie, obiettivi, tempo registrato, programma settimanale, premi e penalità, e il nome nel tuo profilo.</p><p>Impostazioni: lingua, tema, suono, vibrazione e promemoria.</p><p>Tutto questo è conservato nella memoria privata dell’app sul tuo dispositivo. Le altre app non possono leggerlo.</p>
+    
+  </section>
+  <section class="card sec" id="it-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>Sincronizzazione tramite Google Drive (facoltativa)</h2></div>
+    <p>Se scegli di accedere con Google, l’app ottiene l’accesso solo alla propria cartella nascosta nel tuo Google Drive (l’autorizzazione <code>drive.appdata</code>). Non può vedere, aprire o modificare nessuno dei tuoi altri file.</p><p>In quella cartella viene scritta una copia dei tuoi dati, così telefono e tablet mostrano le stesse cose. L’app legge anche l’indirizzo email del tuo account, solo per mostrare quale account è collegato.</p><p>Questi dati viaggiano solo tra il tuo dispositivo e Google tramite una connessione crittografata; lo sviluppatore non vi ha accesso. Puoi disattivare la sincronizzazione in Profilo in qualsiasi momento.</p><p>L’uso da parte dell’app delle informazioni ricevute dalle API di Google rispetta la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, inclusi i requisiti di Limited Use.</p>
+    
+  </section>
+  <section class="card sec" id="it-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>Calendario del telefono (facoltativo)</h2></div>
+    <p>Se scegli di mostrare gli eventi del calendario nel programma e consenti l’accesso al calendario, l’app legge gli eventi dai calendari del tuo telefono (incluso Google Calendar, se è configurato lì): titolo, orario e colore di ogni evento.</p><p>Vengono usati solo per mostrarli nel programma settimanale. Gli eventi vengono letti solo sul dispositivo: non vengono salvati nell’app, non sono inclusi nei backup né in Google Drive e non vengono inviati da nessuna parte. L’app non modifica mai il tuo calendario.</p><p>Un evento entra in Kraplya solo quando lo aggiungi tu al programma; in quel caso vengono conservati solo il titolo e l’orario che hai confermato. Puoi revocare l’accesso nelle impostazioni del telefono o disattivare gli eventi nel programma.</p>
+    
+  </section>
+  <section class="card sec" id="it-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>Notifiche e promemoria</h2></div>
+    <p>Le notifiche mostrano il timer in corso e i promemoria che hai attivato. Vengono create sul dispositivo; nulla viene inviato da nessuna parte.</p><p>Dopo il riavvio del telefono, l’app programma di nuovo i suoi promemoria. Per questo chiede di avviarsi all’accensione.</p>
+    
+  </section>
+  <section class="card sec" id="it-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>Autorizzazioni richieste dall’app</h2></div>
+    
+    <dl class="perms"><div><dt>Notifiche</dt><dd>il timer e i tuoi promemoria.</dd></div><div><dt>Calendario (facoltativo)</dt><dd>per mostrare i tuoi eventi nel programma.</dd></div><div><dt>Internet</dt><dd>solo per l’accesso con Google e la sincronizzazione con Drive.</dd></div><div><dt>Servizio in primo piano</dt><dd>perché il timer continui a contare con lo schermo spento.</dd></div><div><dt>Avvio all’accensione</dt><dd>per ripristinare i tuoi promemoria dopo un riavvio.</dd></div><div><dt>Vibrazione</dt><dd>per il timer e gli obiettivi raggiunti.</dd></div></dl>
+  </section>
+  <section class="card sec" id="it-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>Backup e importazione</h2></div>
+    <p>Un file di backup viene creato solo quando lo salvi tu, nel posto che scegli. L’importazione legge solo il file che selezioni.</p>
+    
+  </section>
+  <section class="card sec" id="it-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>Eliminare i tuoi dati</h2></div>
+    <p>Elimina un’abitudine, o disinstalla l’app, e i relativi dati sul dispositivo spariscono.</p><p>Per rimuovere la copia da Google Drive, apri Google Drive → Impostazioni → Gestisci app → Kraplya → Elimina dati app nascosti. Disattivare la sincronizzazione in Profilo interrompe la creazione di nuove copie.</p>
+    
+  </section>
+  <section class="card sec" id="it-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>Minori</h2></div>
+    <p>L’app non raccoglie dati su nessuno, compresi i minori.</p>
+    
+  </section>
+  <section class="card sec" id="it-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>Modifiche a questa informativa</h2></div>
+    <p>Se questa informativa cambia, la nuova versione comparirà su questa pagina con una nuova data.</p>
+    
+  </section>
+  <section class="card sec" id="it-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>Contatti</h2></div>
+    <p>Domande sulla privacy: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="doc" lang="sv" data-lang="sv" data-title="Integritetspolicy · Kraplya" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Kraplya</p>
+    <h1>Integritetspolicy</h1>
+    <p class="date">Uppdaterad 21 oktober 2026 · gäller från 13 oktober 2026</p>
+    <p class="lead">Kraplya är en vanespårare med timer. Den är byggd så att dina data förblir dina: Kraplya har inga egna servrar, inga konton, ingen reklam och ingen analys.</p>
+  </header>
+
+  <section class="glance" aria-labelledby="sv-glance">
+    <h2 id="sv-glance" class="eyebrow">I korthet</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>Allt du skriver in sparas på din enhet.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>Kraplya har inga servrar. Utvecklaren tar aldrig emot eller ser dina data.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>Ingen reklam, ingen analys, ingen spårning, ingen försäljning av data.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>Synkronisering via Google Drive är valfri och använder bara appens egen dolda mapp.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Händelser i telefonens kalender läses bara på enheten, och bara om du slår på det.</span></li></ul>
+  </section>
+
+  <nav class="toc" aria-label="På den här sidan">
+    <p class="eyebrow">På den här sidan</p>
+    <div class="chips"><a href="#sv-data">Vad appen innehåller</a><a href="#sv-drive">Synkronisering via Google Drive (valfritt)</a><a href="#sv-calendar">Telefonens kalender (valfritt)</a><a href="#sv-notifications">Aviseringar och påminnelser</a><a href="#sv-permissions">Behörigheter som appen ber om</a><a href="#sv-backups">Säkerhetskopior och import</a><a href="#sv-delete">Radera dina data</a><a href="#sv-children">Barn</a><a href="#sv-changes">Ändringar i den här policyn</a><a href="#sv-contact">Kontakt</a></div>
+  </nav>
+
+  <section class="card tablecard" aria-labelledby="sv-table">
+    <h2 id="sv-table">Vilka data, var de finns, vem som ser dem</h2>
+    <table>
+      <thead><tr><th scope="col">Data</th><th scope="col">Var de sparas</th><th scope="col">Vem kan se dem</th></tr></thead>
+      <tbody><tr><th scope="row">Vanor, kategorier, mål, registrerad tid, veckoschema, belöningar och straff, profilnamn</th><td data-label="Var de sparas">På din enhet; en kopia i din egen Google Drive om du slår på synkronisering</td><td data-label="Vem kan se dem">Bara du</td></tr><tr><th scope="row">Inställningar: språk, tema, ljud, påminnelser</th><td data-label="Var de sparas">På din enhet; några av dem följer med dina data vid synkronisering</td><td data-label="Vem kan se dem">Bara du</td></tr><tr><th scope="row">E-postadressen till ditt Google-konto</th><td data-label="Var de sparas">På din enhet, medan synkronisering är på</td><td data-label="Vem kan se dem">Bara du</td></tr><tr><th scope="row">Händelser från telefonens kalender</th><td data-label="Var de sparas">Sparas inte: läses direkt för att rita upp schemat</td><td data-label="Vem kan se dem">Bara du, på enheten</td></tr><tr><th scope="row">Säkerhetskopior</th><td data-label="Var de sparas">Där du sparar dem</td><td data-label="Vem kan se dem">Den du ger filen till</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="card sec" id="sv-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>Vad appen innehåller</h2></div>
+    <p>Det du själv skriver in: namn på vanor och kategorier, mål, registrerad tid, veckoschemat, belöningar och straff samt namnet i din profil.</p><p>Inställningar: språk, tema, ljud, vibration och påminnelser.</p><p>Allt detta sparas i appens privata lagring på din enhet. Andra appar kan inte läsa det.</p>
+    
+  </section>
+  <section class="card sec" id="sv-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>Synkronisering via Google Drive (valfritt)</h2></div>
+    <p>Om du väljer att logga in med Google får appen bara åtkomst till sin egen dolda mapp i din Google Drive (behörigheten <code>drive.appdata</code>). Den kan inte se, öppna eller ändra några av dina andra filer.</p><p>En kopia av dina data skrivs till den mappen så att din telefon och surfplatta visar samma sak. Appen läser också e-postadressen till ditt konto, bara för att visa vilket konto som är anslutet.</p><p>Dessa data går bara mellan din enhet och Google via en krypterad anslutning; utvecklaren har ingen åtkomst till dem. Du kan stänga av synkroniseringen i Profil när som helst.</p><p>Appens användning av information som tas emot från Googles API:er följer <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, inklusive kraven för Limited Use.</p>
+    
+  </section>
+  <section class="card sec" id="sv-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>Telefonens kalender (valfritt)</h2></div>
+    <p>Om du väljer att visa kalenderhändelser i schemat och ger åtkomst till kalendern läser appen händelser från kalendrarna på din telefon (inklusive Google Kalender, om den är inställd där): titel, tid och färg för varje händelse.</p><p>De används bara för att visa dem i veckoschemat. Händelser läses bara på enheten: de sparas inte i appen, ingår inte i säkerhetskopior eller i Google Drive och skickas inte någonstans. Appen ändrar aldrig din kalender.</p><p>En händelse kommer in i Kraplya bara när du själv lägger till den i schemat; då sparas bara den titel och tid som du bekräftade. Du kan återkalla åtkomsten i telefonens inställningar eller stänga av händelser i schemat.</p>
+    
+  </section>
+  <section class="card sec" id="sv-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>Aviseringar och påminnelser</h2></div>
+    <p>Aviseringar visar den pågående timern och de påminnelser du har slagit på. De skapas på enheten; ingenting skickas någonstans.</p><p>När telefonen har startats om schemalägger appen sina påminnelser igen. Därför ber den om att få starta vid uppstart.</p>
+    
+  </section>
+  <section class="card sec" id="sv-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>Behörigheter som appen ber om</h2></div>
+    
+    <dl class="perms"><div><dt>Aviseringar</dt><dd>timern och dina påminnelser.</dd></div><div><dt>Kalender (valfritt)</dt><dd>för att visa dina händelser i schemat.</dd></div><div><dt>Internet</dt><dd>bara för inloggning med Google och synkronisering med Drive.</dd></div><div><dt>Förgrundstjänst</dt><dd>så att timern fortsätter räkna när skärmen är avstängd.</dd></div><div><dt>Start vid uppstart</dt><dd>för att få tillbaka dina påminnelser efter en omstart.</dd></div><div><dt>Vibration</dt><dd>för timern och uppnådda mål.</dd></div></dl>
+  </section>
+  <section class="card sec" id="sv-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>Säkerhetskopior och import</h2></div>
+    <p>En säkerhetskopia skapas bara när du själv sparar en, på den plats du väljer. Import läser bara den fil du väljer.</p>
+    
+  </section>
+  <section class="card sec" id="sv-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>Radera dina data</h2></div>
+    <p>Radera en vana, eller avinstallera appen, så försvinner dess data på enheten.</p><p>För att ta bort kopian från Google Drive öppnar du Google Drive → Inställningar → Hantera appar → Kraplya → Radera dolda appdata. Om du stänger av synkroniseringen i Profil skapas inga nya kopior.</p>
+    
+  </section>
+  <section class="card sec" id="sv-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>Barn</h2></div>
+    <p>Appen samlar inte in data om någon, inte heller om barn.</p>
+    
+  </section>
+  <section class="card sec" id="sv-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>Ändringar i den här policyn</h2></div>
+    <p>Om den här policyn ändras visas den nya versionen på den här sidan med ett nytt datum.</p>
+    
+  </section>
+  <section class="card sec" id="sv-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>Kontakt</h2></div>
+    <p>Frågor om integritet: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="doc" lang="id" data-lang="id" data-title="Kebijakan privasi · Kraplya" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Kraplya</p>
+    <h1>Kebijakan privasi</h1>
+    <p class="date">Diperbarui 21 Oktober 2026 · berlaku sejak 13 Oktober 2026</p>
+    <p class="lead">Kraplya adalah pelacak kebiasaan dengan timer. Aplikasi ini dibuat agar datamu tetap milikmu: Kraplya tidak punya server sendiri, tanpa akun, tanpa iklan, dan tanpa analitik.</p>
+  </header>
+
+  <section class="glance" aria-labelledby="id-glance">
+    <h2 id="id-glance" class="eyebrow">Sekilas</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>Semua yang kamu masukkan disimpan di perangkatmu.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>Kraplya tidak punya server. Developer tidak pernah menerima atau melihat datamu.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>Tanpa iklan, tanpa analitik, tanpa pelacakan, tanpa penjualan data.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>Sinkronisasi Google Drive bersifat opsional dan hanya memakai folder tersembunyi milik aplikasi itu sendiri.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Acara kalender ponsel hanya dibaca di perangkat, dan hanya jika kamu mengaktifkannya.</span></li></ul>
+  </section>
+
+  <nav class="toc" aria-label="Di halaman ini">
+    <p class="eyebrow">Di halaman ini</p>
+    <div class="chips"><a href="#id-data">Apa yang disimpan aplikasi</a><a href="#id-drive">Sinkronisasi melalui Google Drive (opsional)</a><a href="#id-calendar">Kalender ponsel (opsional)</a><a href="#id-notifications">Notifikasi dan pengingat</a><a href="#id-permissions">Izin yang diminta aplikasi</a><a href="#id-backups">Cadangan dan impor</a><a href="#id-delete">Menghapus datamu</a><a href="#id-children">Anak-anak</a><a href="#id-changes">Perubahan kebijakan ini</a><a href="#id-contact">Kontak</a></div>
+  </nav>
+
+  <section class="card tablecard" aria-labelledby="id-table">
+    <h2 id="id-table">Data apa, di mana disimpan, siapa yang melihatnya</h2>
+    <table>
+      <thead><tr><th scope="col">Data</th><th scope="col">Tempat penyimpanan</th><th scope="col">Siapa yang bisa melihat</th></tr></thead>
+      <tbody><tr><th scope="row">Kebiasaan, kategori, target, waktu yang dicatat, jadwal mingguan, hadiah dan hukuman, nama profil</th><td data-label="Tempat penyimpanan">Di perangkatmu; salinannya di Google Drive milikmu jika kamu mengaktifkan sinkronisasi</td><td data-label="Siapa yang bisa melihat">Hanya kamu</td></tr><tr><th scope="row">Setelan: bahasa, tema, suara, pengingat</th><td data-label="Tempat penyimpanan">Di perangkatmu; beberapa di antaranya ikut tersinkron bersama datamu</td><td data-label="Siapa yang bisa melihat">Hanya kamu</td></tr><tr><th scope="row">Alamat email akun Google-mu</th><td data-label="Tempat penyimpanan">Di perangkatmu, selama sinkronisasi aktif</td><td data-label="Siapa yang bisa melihat">Hanya kamu</td></tr><tr><th scope="row">Acara dari kalender ponsel</th><td data-label="Tempat penyimpanan">Tidak disimpan: dibaca saat itu juga untuk menampilkan jadwal</td><td data-label="Siapa yang bisa melihat">Hanya kamu, di perangkat</td></tr><tr><th scope="row">File cadangan</th><td data-label="Tempat penyimpanan">Di tempat kamu menyimpannya</td><td data-label="Siapa yang bisa melihat">Siapa pun yang kamu beri file tersebut</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="card sec" id="id-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>Apa yang disimpan aplikasi</h2></div>
+    <p>Yang kamu masukkan sendiri: nama kebiasaan dan kategori, target, waktu yang dicatat, jadwal mingguan, hadiah dan hukuman, serta nama di profilmu.</p><p>Setelan: bahasa, tema, suara, getaran, dan pengingat.</p><p>Semuanya disimpan di penyimpanan pribadi aplikasi di perangkatmu. Aplikasi lain tidak bisa membacanya.</p>
+    
+  </section>
+  <section class="card sec" id="id-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>Sinkronisasi melalui Google Drive (opsional)</h2></div>
+    <p>Jika kamu memilih untuk login dengan Google, aplikasi hanya mendapat akses ke folder tersembunyinya sendiri di Google Drive milikmu (izin <code>drive.appdata</code>). Aplikasi tidak bisa melihat, membuka, atau mengubah file lainmu.</p><p>Salinan datamu ditulis ke folder itu agar ponsel dan tabletmu menampilkan hal yang sama. Aplikasi juga membaca alamat email akunmu, hanya untuk menunjukkan akun mana yang terhubung.</p><p>Data ini hanya berpindah antara perangkatmu dan Google melalui koneksi terenkripsi; developer tidak punya akses ke data tersebut. Kamu bisa menonaktifkan sinkronisasi di Profil kapan saja.</p><p>Penggunaan informasi yang diterima aplikasi dari Google API mematuhi <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, termasuk persyaratan Limited Use.</p>
+    
+  </section>
+  <section class="card sec" id="id-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>Kalender ponsel (opsional)</h2></div>
+    <p>Jika kamu memilih untuk menampilkan acara kalender di jadwal dan mengizinkan akses kalender, aplikasi membaca acara dari kalender di ponselmu (termasuk Google Kalender, jika sudah diatur di sana): judul, waktu, dan warna setiap acara.</p><p>Acara tersebut hanya dipakai untuk ditampilkan di jadwal mingguan. Acara hanya dibaca di perangkat: tidak disimpan di aplikasi, tidak dimasukkan ke cadangan atau Google Drive, dan tidak dikirim ke mana pun. Aplikasi tidak pernah mengubah kalendermu.</p><p>Sebuah acara masuk ke Kraplya hanya jika kamu sendiri menambahkannya ke jadwal; setelah itu hanya judul dan waktu yang kamu konfirmasi yang disimpan. Kamu bisa mencabut akses di setelan ponsel atau menonaktifkan acara di jadwal.</p>
+    
+  </section>
+  <section class="card sec" id="id-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>Notifikasi dan pengingat</h2></div>
+    <p>Notifikasi menampilkan timer yang sedang berjalan dan pengingat yang kamu aktifkan. Notifikasi dibuat di perangkat; tidak ada yang dikirim ke mana pun.</p><p>Setelah ponsel dimulai ulang, aplikasi menjadwalkan ulang pengingatnya. Karena itu aplikasi meminta izin untuk berjalan saat perangkat dinyalakan.</p>
+    
+  </section>
+  <section class="card sec" id="id-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>Izin yang diminta aplikasi</h2></div>
+    
+    <dl class="perms"><div><dt>Notifikasi</dt><dd>timer dan pengingatmu.</dd></div><div><dt>Kalender (opsional)</dt><dd>untuk menampilkan acaramu di jadwal.</dd></div><div><dt>Internet</dt><dd>hanya untuk login Google dan sinkronisasi Drive.</dd></div><div><dt>Layanan latar depan</dt><dd>agar timer tetap menghitung saat layar mati.</dd></div><div><dt>Berjalan saat perangkat dinyalakan</dt><dd>untuk mengembalikan pengingatmu setelah dimulai ulang.</dd></div><div><dt>Getaran</dt><dd>untuk timer dan target yang tercapai.</dd></div></dl>
+  </section>
+  <section class="card sec" id="id-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>Cadangan dan impor</h2></div>
+    <p>File cadangan hanya dibuat saat kamu sendiri menyimpannya, di tempat yang kamu pilih. Impor hanya membaca file yang kamu pilih.</p>
+    
+  </section>
+  <section class="card sec" id="id-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>Menghapus datamu</h2></div>
+    <p>Hapus sebuah kebiasaan, atau copot pemasangan aplikasi, maka datanya di perangkat akan hilang.</p><p>Untuk menghapus salinan dari Google Drive, buka Google Drive → Setelan → Kelola aplikasi → Kraplya → Hapus data aplikasi tersembunyi. Menonaktifkan sinkronisasi di Profil akan menghentikan pembuatan salinan baru.</p>
+    
+  </section>
+  <section class="card sec" id="id-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>Anak-anak</h2></div>
+    <p>Aplikasi ini tidak mengumpulkan data tentang siapa pun, termasuk anak-anak.</p>
+    
+  </section>
+  <section class="card sec" id="id-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>Perubahan kebijakan ini</h2></div>
+    <p>Jika kebijakan ini berubah, versi barunya akan muncul di halaman ini dengan tanggal baru.</p>
+    
+  </section>
+  <section class="card sec" id="id-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>Kontak</h2></div>
+    <p>Pertanyaan tentang privasi: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="doc" lang="ja" data-lang="ja" data-title="プライバシーポリシー · クラプリャ" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">クラプリャ</p>
+    <h1>プライバシーポリシー</h1>
+    <p class="date">2026年10月21日更新 · 2026年10月13日より施行</p>
+    <p class="lead">クラプリャは、タイマー付きの習慣トラッカーです。あなたのデータがあなたのものであり続けるように作られています。クラプリャには独自のサーバー、アカウント、広告、分析機能がありません。</p>
+  </header>
+
+  <section class="glance" aria-labelledby="ja-glance">
+    <h2 id="ja-glance" class="eyebrow">概要</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>入力した内容はすべてお使いのデバイスに保存されます。</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>クラプリャにはサーバーがありません。開発者があなたのデータを受け取ったり見たりすることはありません。</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>広告、分析、トラッキング、データの販売は一切ありません。</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>Google ドライブとの同期は任意で、アプリ専用の非表示フォルダだけを使います。</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>スマートフォンのカレンダーの予定は、あなたがオンにした場合にのみ、デバイス上でのみ読み取られます。</span></li></ul>
+  </section>
+
+  <nav class="toc" aria-label="このページの内容">
+    <p class="eyebrow">このページの内容</p>
+    <div class="chips"><a href="#ja-data">アプリが保持するデータ</a><a href="#ja-drive">Google ドライブによる同期（任意）</a><a href="#ja-calendar">スマートフォンのカレンダー（任意）</a><a href="#ja-notifications">通知とリマインダー</a><a href="#ja-permissions">アプリが求める権限</a><a href="#ja-backups">バックアップとインポート</a><a href="#ja-delete">データの削除</a><a href="#ja-children">お子さま</a><a href="#ja-changes">このポリシーの変更</a><a href="#ja-contact">お問い合わせ</a></div>
+  </nav>
+
+  <section class="card tablecard" aria-labelledby="ja-table">
+    <h2 id="ja-table">どのデータが、どこにあり、誰が見られるか</h2>
+    <table>
+      <thead><tr><th scope="col">データ</th><th scope="col">保存場所</th><th scope="col">見られる人</th></tr></thead>
+      <tbody><tr><th scope="row">習慣、カテゴリ、目標、記録した時間、週間スケジュール、ごほうびとペナルティ、プロフィール名</th><td data-label="保存場所">お使いのデバイス。同期をオンにした場合は、あなた自身の Google ドライブにもコピー</td><td data-label="見られる人">あなただけ</td></tr><tr><th scope="row">設定：言語、テーマ、サウンド、リマインダー</th><td data-label="保存場所">お使いのデバイス。一部は同期でデータと一緒に移動します</td><td data-label="見られる人">あなただけ</td></tr><tr><th scope="row">Google アカウントのメールアドレス</th><td data-label="保存場所">お使いのデバイス（同期がオンの間）</td><td data-label="見られる人">あなただけ</td></tr><tr><th scope="row">スマートフォンのカレンダーの予定</th><td data-label="保存場所">保存されません。スケジュールを表示するためにその都度読み取られます</td><td data-label="見られる人">あなただけ（デバイス上）</td></tr><tr><th scope="row">バックアップファイル</th><td data-label="保存場所">あなたが保存した場所</td><td data-label="見られる人">あなたがファイルを渡した相手</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="card sec" id="ja-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>アプリが保持するデータ</h2></div>
+    <p>あなた自身が入力するもの：習慣とカテゴリの名前、目標、記録した時間、週間スケジュール、ごほうびとペナルティ、プロフィールの名前。</p><p>設定：言語、テーマ、サウンド、バイブレーション、リマインダー。</p><p>これらはすべて、デバイス上のアプリ専用のストレージに保存されます。ほかのアプリが読み取ることはできません。</p>
+    
+  </section>
+  <section class="card sec" id="ja-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>Google ドライブによる同期（任意）</h2></div>
+    <p>Google でログインすることを選んだ場合、アプリがアクセスできるのは、あなたの Google ドライブにあるアプリ専用の非表示フォルダだけです（<code>drive.appdata</code> の権限）。ほかのファイルを見たり、開いたり、変更したりすることはできません。</p><p>スマートフォンとタブレットで同じ内容が表示されるように、そのフォルダにデータのコピーが書き込まれます。また、どのアカウントが接続されているかを表示するためだけに、アカウントのメールアドレスを読み取ります。</p><p>このデータは、暗号化された接続を通じて、お使いのデバイスと Google の間でのみやり取りされます。開発者はこのデータにアクセスできません。同期は「プロフィール」でいつでもオフにできます。</p><p>Google API から受け取った情報のアプリによる使用は、Limited Use の要件を含め、<a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> に準拠しています。</p>
+    
+  </section>
+  <section class="card sec" id="ja-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>スマートフォンのカレンダー（任意）</h2></div>
+    <p>スケジュールにカレンダーの予定を表示することを選び、カレンダーへのアクセスを許可した場合、アプリはスマートフォン上のカレンダー（設定されていれば Google カレンダーも含む）から予定を読み取ります。読み取るのは、各予定のタイトル、時間、色です。</p><p>予定は週間スケジュールに表示するためだけに使われます。予定はデバイス上でのみ読み取られ、アプリに保存されることも、バックアップや Google ドライブに含まれることも、どこかに送信されることもありません。アプリがあなたのカレンダーを変更することはありません。</p><p>予定がクラプリャに取り込まれるのは、あなた自身がスケジュールに追加したときだけです。その場合も、あなたが確認したタイトルと時間だけが保存されます。アクセスはスマートフォンの設定で取り消せます。また、スケジュールで予定の表示をオフにすることもできます。</p>
+    
+  </section>
+  <section class="card sec" id="ja-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>通知とリマインダー</h2></div>
+    <p>通知には、動作中のタイマーと、あなたがオンにしたリマインダーが表示されます。通知はデバイス上で作成され、どこにも送信されません。</p><p>スマートフォンの再起動後、アプリはリマインダーを再設定します。そのため、起動時の自動開始の許可を求めます。</p>
+    
+  </section>
+  <section class="card sec" id="ja-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>アプリが求める権限</h2></div>
+    
+    <dl class="perms"><div><dt>通知</dt><dd>タイマーとリマインダーのため。</dd></div><div><dt>カレンダー（任意）</dt><dd>スケジュールに予定を表示するため。</dd></div><div><dt>インターネット</dt><dd>Google ログインとドライブとの同期のためだけ。</dd></div><div><dt>フォアグラウンドサービス</dt><dd>画面がオフでもタイマーが動き続けるようにするため。</dd></div><div><dt>起動時の自動開始</dt><dd>再起動後にリマインダーを元に戻すため。</dd></div><div><dt>バイブレーション</dt><dd>タイマーと目標達成のため。</dd></div></dl>
+  </section>
+  <section class="card sec" id="ja-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>バックアップとインポート</h2></div>
+    <p>バックアップファイルは、あなた自身が保存したときにだけ、あなたが選んだ場所に作成されます。インポートでは、あなたが選んだファイルだけが読み取られます。</p>
+    
+  </section>
+  <section class="card sec" id="ja-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>データの削除</h2></div>
+    <p>習慣を削除するか、アプリをアンインストールすると、デバイス上のそのデータは消えます。</p><p>Google ドライブからコピーを削除するには、Google ドライブ → 設定 → アプリの管理 → クラプリャ → 隠しアプリデータを削除 を開きます。「プロフィール」で同期をオフにすると、新しいコピーは作られなくなります。</p>
+    
+  </section>
+  <section class="card sec" id="ja-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>お子さま</h2></div>
+    <p>このアプリは、お子さまを含め、誰のデータも収集しません。</p>
+    
+  </section>
+  <section class="card sec" id="ja-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>このポリシーの変更</h2></div>
+    <p>このポリシーが変更された場合は、新しい日付とともに新しいバージョンがこのページに掲載されます。</p>
+    
+  </section>
+  <section class="card sec" id="ja-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>お問い合わせ</h2></div>
+    <p>プライバシーに関するご質問：<a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="doc" lang="kk" data-lang="kk" data-title="Құпиялық саясаты · Крапля" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Крапля</p>
+    <h1>Құпиялық саясаты</h1>
+    <p class="date">2026 жылғы 21 қазанда жаңартылды · 2026 жылғы 13 қазаннан бастап күшінде</p>
+    <p class="lead">Крапля — таймері бар әдет трекері. Ол деректерің өзіңдікі болып қалатындай етіп жасалған: Крапляның өз серверлері, аккаунттары, жарнамасы және аналитикасы жоқ.</p>
+  </header>
+
+  <section class="glance" aria-labelledby="kk-glance">
+    <h2 id="kk-glance" class="eyebrow">Қысқаша</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>Сен енгізгеннің бәрі құрылғыңда сақталады.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>Крапляның серверлері жоқ. Әзірлеуші сенің деректеріңді ешқашан алмайды және көрмейді.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>Жарнама, аналитика, бақылау және деректерді сату жоқ.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>Google Диск арқылы синхрондау міндетті емес және тек қолданбаның өз жасырын қалтасын пайдаланады.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Телефон күнтізбесіндегі оқиғалар тек құрылғыда және тек сен қоссаң ғана оқылады.</span></li></ul>
+  </section>
+
+  <nav class="toc" aria-label="Осы бетте">
+    <p class="eyebrow">Осы бетте</p>
+    <div class="chips"><a href="#kk-data">Қолданбада қандай деректер бар</a><a href="#kk-drive">Google Диск арқылы синхрондау (міндетті емес)</a><a href="#kk-calendar">Телефон күнтізбесі (міндетті емес)</a><a href="#kk-notifications">Хабарландырулар мен еске салғыштар</a><a href="#kk-permissions">Қолданба сұрайтын рұқсаттар</a><a href="#kk-backups">Сақтық көшірмелер және импорт</a><a href="#kk-delete">Деректеріңді жою</a><a href="#kk-children">Балалар</a><a href="#kk-changes">Осы саясаттағы өзгерістер</a><a href="#kk-contact">Байланыс</a></div>
+  </nav>
+
+  <section class="card tablecard" aria-labelledby="kk-table">
+    <h2 id="kk-table">Қандай деректер, қайда сақталады, оларды кім көреді</h2>
+    <table>
+      <thead><tr><th scope="col">Деректер</th><th scope="col">Қайда сақталады</th><th scope="col">Кім көре алады</th></tr></thead>
+      <tbody><tr><th scope="row">Әдеттер, санаттар, мақсаттар, жазылған уақыт, апталық кесте, марапаттар мен айыппұлдар, профиль аты</th><td data-label="Қайда сақталады">Құрылғыңда; синхрондауды қоссаң, көшірмесі өз Google Дискіңде</td><td data-label="Кім көре алады">Тек сен</td></tr><tr><th scope="row">Параметрлер: тіл, тақырып, дыбыс, еске салғыштар</th><td data-label="Қайда сақталады">Құрылғыңда; кейбіреулері синхрондау кезінде деректеріңмен бірге беріледі</td><td data-label="Кім көре алады">Тек сен</td></tr><tr><th scope="row">Google аккаунтыңның электрондық пошта мекенжайы</th><td data-label="Қайда сақталады">Құрылғыңда, синхрондау қосулы тұрғанда</td><td data-label="Кім көре алады">Тек сен</td></tr><tr><th scope="row">Телефон күнтізбесіндегі оқиғалар</th><td data-label="Қайда сақталады">Сақталмайды: кестені салу үшін сол сәтте оқылады</td><td data-label="Кім көре алады">Тек сен, құрылғыда</td></tr><tr><th scope="row">Сақтық көшірме файлдары</th><td data-label="Қайда сақталады">Сен оларды сақтаған жерде</td><td data-label="Кім көре алады">Файлды кімге берсең, сол</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="card sec" id="kk-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>Қолданбада қандай деректер бар</h2></div>
+    <p>Өзің енгізетін нәрселер: әдеттер мен санаттардың атаулары, мақсаттар, жазылған уақыт, апталық кесте, марапаттар мен айыппұлдар және профиліңдегі ат.</p><p>Параметрлер: тіл, тақырып, дыбыс, діріл және еске салғыштар.</p><p>Мұның бәрі құрылғыңдағы қолданбаның жеке қоймасында сақталады. Басқа қолданбалар оны оқи алмайды.</p>
+    
+  </section>
+  <section class="card sec" id="kk-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>Google Диск арқылы синхрондау (міндетті емес)</h2></div>
+    <p>Егер Google арқылы кіруді таңдасаң, қолданба Google Дискіңдегі тек өзінің жасырын қалтасына ғана қол жеткізеді (<code>drive.appdata</code> рұқсаты). Ол сенің басқа файлдарыңның ешқайсысын көре, аша немесе өзгерте алмайды.</p><p>Телефоның мен планшетіңде бірдей көрінуі үшін деректеріңнің көшірмесі сол қалтаға жазылады. Сондай-ақ қолданба аккаунтыңның электрондық пошта мекенжайын тек қай аккаунт қосылғанын көрсету үшін оқиды.</p><p>Бұл деректер тек құрылғың мен Google арасында шифрланған байланыс арқылы беріледі; әзірлеушінің оларға қолжетімділігі жоқ. Синхрондауды Профильде кез келген уақытта өшіре аласың.</p><p>Қолданбаның Google API-лерінен алынған ақпаратты пайдалануы <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> талаптарына, соның ішінде Limited Use талаптарына сәйкес келеді.</p>
+    
+  </section>
+  <section class="card sec" id="kk-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>Телефон күнтізбесі (міндетті емес)</h2></div>
+    <p>Егер кестеде күнтізбе оқиғаларын көрсетуді таңдап, күнтізбеге қол жеткізуге рұқсат берсең, қолданба телефоныңдағы күнтізбелерден (егер онда реттелген болса, Google Күнтізбені қоса алғанда) оқиғаларды оқиды: әр оқиғаның атауы, уақыты және түсі.</p><p>Олар тек апталық кестеде көрсету үшін қолданылады. Оқиғалар тек құрылғыда оқылады: олар қолданбада сақталмайды, сақтық көшірмелерге немесе Google Дискке кірмейді және ешқайда жіберілмейді. Қолданба күнтізбеңді ешқашан өзгертпейді.</p><p>Оқиға Крапляға тек сен оны кестеге өзің қосқанда ғана түседі; сонда тек сен растаған атау мен уақыт сақталады. Қол жеткізуді телефон параметрлерінде қайтарып алуға немесе кестеде оқиғаларды өшіруге болады.</p>
+    
+  </section>
+  <section class="card sec" id="kk-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>Хабарландырулар мен еске салғыштар</h2></div>
+    <p>Хабарландырулар жұмыс істеп тұрған таймерді және сен қосқан еске салғыштарды көрсетеді. Олар құрылғыда жасалады; ешнәрсе ешқайда жіберілмейді.</p><p>Телефон қайта іске қосылғаннан кейін қолданба еске салғыштарын қайта жоспарлайды. Сондықтан ол құрылғы қосылғанда іске қосылуға рұқсат сұрайды.</p>
+    
+  </section>
+  <section class="card sec" id="kk-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>Қолданба сұрайтын рұқсаттар</h2></div>
+    
+    <dl class="perms"><div><dt>Хабарландырулар</dt><dd>таймер және сенің еске салғыштарың.</dd></div><div><dt>Күнтізбе (міндетті емес)</dt><dd>оқиғаларыңды кестеде көрсету үшін.</dd></div><div><dt>Интернет</dt><dd>тек Google арқылы кіру және Дискпен синхрондау үшін.</dd></div><div><dt>Алдыңғы жоспардағы қызмет</dt><dd>экран өшіп тұрғанда да таймер санай беруі үшін.</dd></div><div><dt>Құрылғы қосылғанда іске қосылу</dt><dd>қайта іске қосылғаннан кейін еске салғыштарыңды қайтару үшін.</dd></div><div><dt>Діріл</dt><dd>таймер және орындалған мақсаттар үшін.</dd></div></dl>
+  </section>
+  <section class="card sec" id="kk-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>Сақтық көшірмелер және импорт</h2></div>
+    <p>Сақтық көшірме файлы тек сен оны өзің сақтағанда, өзің таңдаған жерде жасалады. Импорт тек сен таңдаған файлды оқиды.</p>
+    
+  </section>
+  <section class="card sec" id="kk-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>Деректеріңді жою</h2></div>
+    <p>Әдетті жойсаң немесе қолданбаны алып тастасаң, оның құрылғыдағы деректері жоғалады.</p><p>Көшірмені Google Дисктен жою үшін Google Диск → Параметрлер → Қолданбаларды басқару → Крапля → Жасырын қолданба деректерін жою бөлімін аш. Профильде синхрондауды өшірсең, жаңа көшірмелер жасалмайды.</p>
+    
+  </section>
+  <section class="card sec" id="kk-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>Балалар</h2></div>
+    <p>Қолданба ешкім туралы, соның ішінде балалар туралы да, деректер жинамайды.</p>
+    
+  </section>
+  <section class="card sec" id="kk-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>Осы саясаттағы өзгерістер</h2></div>
+    <p>Егер бұл саясат өзгерсе, жаңа нұсқасы осы бетте жаңа күнімен пайда болады.</p>
+    
+  </section>
+  <section class="card sec" id="kk-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>Байланыс</h2></div>
+    <p>Құпиялық туралы сұрақтар: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="doc" lang="ru" data-lang="ru" data-title="Политика конфиденциальности · Крапля" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Крапля</p>
+    <h1>Политика конфиденциальности</h1>
+    <p class="date">Обновлено 21 октября 2026 года · действует с 13 октября 2026 года</p>
+    <p class="lead">Крапля — трекер привычек с таймером. Приложение сделано так, чтобы твои данные оставались твоими: у Крапли нет собственных серверов, аккаунтов, рекламы и аналитики.</p>
+  </header>
+
+  <section class="glance" aria-labelledby="ru-glance">
+    <h2 id="ru-glance" class="eyebrow">Коротко</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>Всё, что ты вводишь, хранится на твоём устройстве.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>У Крапли нет серверов. Разработчик никогда не получает и не видит твоих данных.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>Без рекламы, аналитики, отслеживания и продажи данных.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>Синхронизация через Google Диск необязательна и использует только собственную скрытую папку приложения.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>События календаря телефона читаются только на устройстве и только если ты это включишь.</span></li></ul>
+  </section>
+
+  <nav class="toc" aria-label="На этой странице">
+    <p class="eyebrow">На этой странице</p>
+    <div class="chips"><a href="#ru-data">Какие данные есть в приложении</a><a href="#ru-drive">Синхронизация через Google Диск (необязательно)</a><a href="#ru-calendar">Календарь телефона (необязательно)</a><a href="#ru-notifications">Уведомления и напоминания</a><a href="#ru-permissions">Какие разрешения запрашивает приложение</a><a href="#ru-backups">Резервные копии и импорт</a><a href="#ru-delete">Как удалить свои данные</a><a href="#ru-children">Дети</a><a href="#ru-changes">Изменения в этой политике</a><a href="#ru-contact">Контакты</a></div>
+  </nav>
+
+  <section class="card tablecard" aria-labelledby="ru-table">
+    <h2 id="ru-table">Какие данные, где они хранятся и кто их видит</h2>
+    <table>
+      <thead><tr><th scope="col">Данные</th><th scope="col">Где хранятся</th><th scope="col">Кто видит</th></tr></thead>
+      <tbody><tr><th scope="row">Привычки, категории, цели, записанное время, недельное расписание, награды и штрафы, имя в профиле</th><td data-label="Где хранятся">На твоём устройстве; копия — на твоём Google Диске, если ты включишь синхронизацию</td><td data-label="Кто видит">Только ты</td></tr><tr><th scope="row">Настройки: язык, тема, звук, напоминания</th><td data-label="Где хранятся">На твоём устройстве; некоторые из них синхронизируются вместе с данными</td><td data-label="Кто видит">Только ты</td></tr><tr><th scope="row">Адрес электронной почты твоего аккаунта Google</th><td data-label="Где хранятся">На твоём устройстве, пока включена синхронизация</td><td data-label="Кто видит">Только ты</td></tr><tr><th scope="row">События из календаря телефона</th><td data-label="Где хранятся">Не хранятся: читаются на лету, чтобы нарисовать расписание</td><td data-label="Кто видит">Только ты, на устройстве</td></tr><tr><th scope="row">Файлы резервных копий</th><td data-label="Где хранятся">Там, куда ты их сохранишь</td><td data-label="Кто видит">Тот, кому ты передашь файл</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="card sec" id="ru-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>Какие данные есть в приложении</h2></div>
+    <p>То, что ты вводишь сам: названия привычек и категорий, цели, записанное время, недельное расписание, награды и штрафы, имя в профиле.</p><p>Настройки: язык, тема, звук, вибрация и напоминания.</p><p>Всё это хранится в закрытом хранилище приложения на твоём устройстве. Другие приложения не могут его прочитать.</p>
+    
+  </section>
+  <section class="card sec" id="ru-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>Синхронизация через Google Диск (необязательно)</h2></div>
+    <p>Если ты сам решишь войти через Google, приложение получит доступ только к своей скрытой папке на твоём Google Диске (разрешение <code>drive.appdata</code>). Оно не может видеть, открывать или изменять никакие другие твои файлы.</p><p>В эту папку записывается копия твоих данных, чтобы на телефоне и планшете было одно и то же. Приложение также читает адрес электронной почты твоего аккаунта — только чтобы показать, какой аккаунт подключён.</p><p>Эти данные передаются только между твоим устройством и Google по зашифрованному соединению; у разработчика нет к ним доступа. Выключить синхронизацию можно в любой момент в Профиле.</p><p>Использование приложением информации, полученной через Google API, соответствует <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, включая требования Limited Use.</p>
+    
+  </section>
+  <section class="card sec" id="ru-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>Календарь телефона (необязательно)</h2></div>
+    <p>Если ты сам включишь показ событий календаря в расписании и разрешишь доступ к календарю, приложение читает события из календарей на твоём телефоне (в том числе Google Календаря, если он там настроен): название, время и цвет каждого события.</p><p>Они используются только для того, чтобы показать их в недельном расписании. События читаются только на устройстве: они не хранятся в приложении, не попадают в резервные копии или на Google Диск и никуда не отправляются. Приложение никогда не изменяет твой календарь.</p><p>Событие попадает в Краплю только тогда, когда ты сам добавишь его в расписание; тогда сохраняются только название и время, которые ты подтвердил. Доступ можно отозвать в настройках телефона или выключить показ событий в расписании.</p>
+    
+  </section>
+  <section class="card sec" id="ru-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>Уведомления и напоминания</h2></div>
+    <p>Уведомления показывают идущий таймер и напоминания, которые ты включил. Они создаются на устройстве, ничего никуда не отправляется.</p><p>После перезагрузки телефона приложение заново ставит свои напоминания. Поэтому оно просит разрешение на запуск при включении.</p>
+    
+  </section>
+  <section class="card sec" id="ru-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>Какие разрешения запрашивает приложение</h2></div>
+    
+    <dl class="perms"><div><dt>Уведомления</dt><dd>таймер и твои напоминания.</dd></div><div><dt>Календарь (необязательно)</dt><dd>чтобы показать твои события в расписании.</dd></div><div><dt>Интернет</dt><dd>только для входа через Google и синхронизации с Диском.</dd></div><div><dt>Работа в фоне</dt><dd>чтобы таймер продолжал считать при выключенном экране.</dd></div><div><dt>Запуск при включении</dt><dd>чтобы вернуть твои напоминания после перезагрузки.</dd></div><div><dt>Вибрация</dt><dd>для таймера и достигнутых целей.</dd></div></dl>
+  </section>
+  <section class="card sec" id="ru-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>Резервные копии и импорт</h2></div>
+    <p>Файл резервной копии создаётся только тогда, когда ты сам его сохранишь, в том месте, которое ты выберешь. Импорт читает только тот файл, который ты выбрал.</p>
+    
+  </section>
+  <section class="card sec" id="ru-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>Как удалить свои данные</h2></div>
+    <p>Удали привычку или всё приложение — и её данные на устройстве исчезнут.</p><p>Чтобы удалить копию с Google Диска, открой Google Диск → Настройки → Управление приложениями → Крапля → Удалить скрытые данные приложения. Выключение синхронизации в Профиле прекращает создание новых копий.</p>
+    
+  </section>
+  <section class="card sec" id="ru-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>Дети</h2></div>
+    <p>Приложение не собирает данные ни о ком, в том числе о детях.</p>
+    
+  </section>
+  <section class="card sec" id="ru-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>Изменения в этой политике</h2></div>
+    <p>Если эта политика изменится, новая версия появится на этой странице с новой датой.</p>
+    
+  </section>
+  <section class="card sec" id="ru-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>Контакты</h2></div>
+    <p>Вопросы о конфиденциальности: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
 </main>
+<footer>© 2026 · <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></footer>
+<script>
+(function () {
+  var docs = document.querySelectorAll(".doc"), sel = document.getElementById("lang");
+  var have = {}; for (var i = 0; i < docs.length; i++) have[docs[i].dataset.lang] = docs[i];
+  var alias = { "in": "id", "pt-br": "pt", "nb": "sv" };
+  function norm(c) { c = (c || "").toLowerCase(); if (alias[c]) c = alias[c]; if (have[c]) return c; c = c.split(/[-_]/)[0]; c = alias[c] || c; return have[c] ? c : null; }
+  function pick() {
+    var q = new URLSearchParams(location.search).get("lang"); if (norm(q)) return norm(q);
+    var h = location.hash.slice(1); if (norm(h)) return norm(h);
+    var hp = h.split("-")[0]; if (h && norm(hp)) return norm(hp);
+    try { var s = localStorage.getItem("kraplya-lang"); if (norm(s)) return norm(s); } catch (e) {}
+    var nav = navigator.languages || [navigator.language];
+    for (var j = 0; j < nav.length; j++) if (norm(nav[j])) return norm(nav[j]);
+    return "en";
+  }
+  function show(c, save) {
+    for (var k in have) have[k].hidden = k !== c;
+    var d = have[c]; document.documentElement.lang = c; document.title = d.dataset.title;
+    sel.value = c;
+    document.getElementById("appname").textContent = d.querySelector(".app").textContent;
+    document.getElementById("langlabel").textContent = sel.options[sel.selectedIndex].text;
+    if (save) {
+      try { localStorage.setItem("kraplya-lang", c); } catch (e) {}
+      var u = new URL(location.href); u.searchParams.set("lang", c); u.hash = ""; history.replaceState(null, "", u);
+    }
+  }
+  show(pick(), false);
+  var h = location.hash.slice(1), t = h && document.getElementById(h); if (t && !t.closest("[hidden]")) t.scrollIntoView();
+  sel.addEventListener("change", function () { show(sel.value, true); window.scrollTo(0, 0); });
+})();
+</script>
 </body>
 </html>
