@@ -70,7 +70,12 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
 .cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
 .btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:15.5px;border-radius:999px;padding:12px 20px;min-height:48px;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line)}
 .btn:hover{border-color:var(--blue)}
-.btn.primary{color:#fff;background:linear-gradient(135deg,var(--navy1),#14204A);border-color:transparent;cursor:default}
+.btn.primary{color:#fff;background:linear-gradient(135deg,var(--navy1),#14204A);border-color:transparent}
+.btn.dl{font-size:17px;padding:14px 26px;min-height:56px;background:linear-gradient(135deg,#3A8DFF,#2A78D6 45%,var(--navy1));box-shadow:0 10px 26px rgba(42,120,214,.35)}
+.btn.dl:hover{filter:brightness(1.07);border-color:transparent}
+.btn.dl .ic{width:22px;height:22px;stroke-width:2.2}
+.ver{font-size:12.5px;font-weight:600;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.2)}
+.ver[hidden]{display:none}
 .ic.fill{fill:currentColor;stroke:none}
 .small{margin:12px 0 0;font-size:14px;color:var(--ink3)}
 .show{margin:44px 0 0;border-radius:28px;padding:28px;color:#fff;background:radial-gradient(120% 90% at 50% 110%,rgba(58,141,255,.45),transparent 60%),linear-gradient(160deg,var(--navy1),var(--navy2));overflow:hidden}
@@ -120,10 +125,10 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
     <p class="tagline">A drop wears away the stone</p>
     <p class="lead">Set a goal for every habit, start the timer when you practise, and watch the week fill up drop by drop. Simple, calm and private.</p>
     <div class="cta">
-      <span class="btn primary" aria-disabled="true"><svg class="ic fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg><span>Coming soon to Google Play</span></span>
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Download for Android</span><span class="ver" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Privacy policy</span></a>
     </div>
-    <p class="small">For Android 8 and newer</p>
+    <p class="small">After installing, the app updates itself.<br>For Android 8 and newer · Coming soon to Google Play</p>
   </header>
 
   <section class="show" aria-label="Right on your home screen">
@@ -160,10 +165,10 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
     <p class="tagline">Крапля камінь точить</p>
     <p class="lead">Постав ціль для кожної звички, вмикай таймер, коли займаєшся, і дивись, як тиждень наповнюється крапля за краплею. Просто, спокійно й приватно.</p>
     <div class="cta">
-      <span class="btn primary" aria-disabled="true"><svg class="ic fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg><span>Незабаром у Google Play</span></span>
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Завантажити для Android</span><span class="ver" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Політика конфіденційності</span></a>
     </div>
-    <p class="small">Для Android 8 і новіших</p>
+    <p class="small">Після встановлення застосунок оновлюється сам.<br>Для Android 8 і новіших · Незабаром у Google Play</p>
   </header>
 
   <section class="show" aria-label="Просто на головному екрані">
@@ -200,10 +205,10 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
     <p class="tagline">Gota a gota se horada la piedra</p>
     <p class="lead">Ponte una meta para cada hábito, inicia el temporizador cuando practiques y mira cómo la semana se llena gota a gota. Sencillo, tranquilo y privado.</p>
     <div class="cta">
-      <span class="btn primary" aria-disabled="true"><svg class="ic fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg><span>Muy pronto en Google Play</span></span>
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Descargar para Android</span><span class="ver" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Política de privacidad</span></a>
     </div>
-    <p class="small">Para Android 8 y versiones posteriores</p>
+    <p class="small">Una vez instalada, la app se actualiza sola.<br>Para Android 8 y versiones posteriores · Muy pronto en Google Play</p>
   </header>
 
   <section class="show" aria-label="Directamente en tu pantalla de inicio">
@@ -240,10 +245,10 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
     <p class="tagline">Água mole em pedra dura, tanto bate até que fura</p>
     <p class="lead">Define um objetivo para cada hábito, inicia o temporizador quando praticas e vê a semana a encher-se gota a gota. Simples, tranquilo e privado.</p>
     <div class="cta">
-      <span class="btn primary" aria-disabled="true"><svg class="ic fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg><span>Em breve no Google Play</span></span>
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Transferir para Android</span><span class="ver" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Política de privacidade</span></a>
     </div>
-    <p class="small">Para Android 8 ou mais recente</p>
+    <p class="small">Depois de instalada, a app atualiza-se sozinha.<br>Para Android 8 ou mais recente · Em breve no Google Play</p>
   </header>
 
   <section class="show" aria-label="Diretamente no teu ecrã principal">
@@ -280,10 +285,10 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
     <p class="tagline">Goutte à goutte, l’eau creuse la pierre</p>
     <p class="lead">Fixe un objectif pour chaque habitude, lance le minuteur quand tu pratiques et regarde la semaine se remplir goutte à goutte. Simple, calme et privé.</p>
     <div class="cta">
-      <span class="btn primary" aria-disabled="true"><svg class="ic fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg><span>Bientôt sur Google Play</span></span>
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Télécharger pour Android</span><span class="ver" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Politique de confidentialité</span></a>
     </div>
-    <p class="small">Pour Android 8 et versions ultérieures</p>
+    <p class="small">Une fois installée, l’appli se met à jour toute seule.<br>Pour Android 8 et versions ultérieures · Bientôt sur Google Play</p>
   </header>
 
   <section class="show" aria-label="Directement sur ton écran d’accueil">
@@ -320,10 +325,10 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
     <p class="tagline">Steter Tropfen höhlt den Stein</p>
     <p class="lead">Setz dir für jede Gewohnheit ein Ziel, starte den Timer, wenn du übst, und sieh zu, wie sich die Woche Tropfen für Tropfen füllt. Einfach, ruhig und privat.</p>
     <div class="cta">
-      <span class="btn primary" aria-disabled="true"><svg class="ic fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg><span>Bald bei Google Play</span></span>
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Für Android herunterladen</span><span class="ver" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Datenschutzerklärung</span></a>
     </div>
-    <p class="small">Für Android 8 und neuer</p>
+    <p class="small">Nach der Installation aktualisiert sich die App von selbst.<br>Für Android 8 und neuer · Bald bei Google Play</p>
   </header>
 
   <section class="show" aria-label="Direkt auf deinem Startbildschirm">
@@ -360,10 +365,10 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
     <p class="tagline">La goccia scava la pietra</p>
     <p class="lead">Fissa un obiettivo per ogni abitudine, avvia il timer quando ti eserciti e guarda la settimana riempirsi goccia dopo goccia. Semplice, tranquilla e privata.</p>
     <div class="cta">
-      <span class="btn primary" aria-disabled="true"><svg class="ic fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg><span>Presto su Google Play</span></span>
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Scarica per Android</span><span class="ver" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Informativa sulla privacy</span></a>
     </div>
-    <p class="small">Per Android 8 e versioni successive</p>
+    <p class="small">Dopo l’installazione l’app si aggiorna da sola.<br>Per Android 8 e versioni successive · Presto su Google Play</p>
   </header>
 
   <section class="show" aria-label="Direttamente nella schermata Home">
@@ -400,10 +405,10 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
     <p class="tagline">Droppen urholkar stenen</p>
     <p class="lead">Sätt ett mål för varje vana, starta timern när du övar och se veckan fyllas droppe för droppe. Enkelt, lugnt och privat.</p>
     <div class="cta">
-      <span class="btn primary" aria-disabled="true"><svg class="ic fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg><span>Snart på Google Play</span></span>
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Ladda ner för Android</span><span class="ver" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Integritetspolicy</span></a>
     </div>
-    <p class="small">För Android 8 och senare</p>
+    <p class="small">Efter installationen uppdaterar appen sig själv.<br>För Android 8 och senare · Snart på Google Play</p>
   </header>
 
   <section class="show" aria-label="Direkt på hemskärmen">
@@ -440,10 +445,10 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
     <p class="tagline">Setetes demi setetes, batu pun berlubang</p>
     <p class="lead">Tetapkan target untuk setiap kebiasaan, nyalakan timer saat kamu berlatih, dan lihat minggumu terisi setetes demi setetes. Sederhana, tenang, dan privat.</p>
     <div class="cta">
-      <span class="btn primary" aria-disabled="true"><svg class="ic fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg><span>Segera hadir di Google Play</span></span>
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Unduh untuk Android</span><span class="ver" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Kebijakan privasi</span></a>
     </div>
-    <p class="small">Untuk Android 8 dan yang lebih baru</p>
+    <p class="small">Setelah dipasang, aplikasi memperbarui dirinya sendiri.<br>Untuk Android 8 dan yang lebih baru · Segera hadir di Google Play</p>
   </header>
 
   <section class="show" aria-label="Langsung di layar utamamu">
@@ -480,10 +485,10 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
     <p class="tagline">雨垂れ石を穿つ</p>
     <p class="lead">習慣ごとに目標を決めて、取り組むときはタイマーをスタート。一週間が一滴ずつ満ちていくのを見守りましょう。シンプルで穏やか、そしてプライベートです。</p>
     <div class="cta">
-      <span class="btn primary" aria-disabled="true"><svg class="ic fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg><span>Google Play で近日公開</span></span>
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Android版をダウンロード</span><span class="ver" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>プライバシーポリシー</span></a>
     </div>
-    <p class="small">Android 8 以降に対応</p>
+    <p class="small">インストール後は、アプリが自動でアップデートされます。<br>Android 8 以降に対応 · Google Play で近日公開</p>
   </header>
 
   <section class="show" aria-label="ホーム画面にそのまま">
@@ -520,10 +525,10 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
     <p class="tagline">Тамшы тас тесер</p>
     <p class="lead">Әр әдетке мақсат қой, айналысқанда таймерді қос және аптаның тамшылап толғанын көр. Қарапайым, сабырлы әрі жеке.</p>
     <div class="cta">
-      <span class="btn primary" aria-disabled="true"><svg class="ic fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg><span>Жақында Google Play-де</span></span>
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Android-ке жүктеп алу</span><span class="ver" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Құпиялық саясаты</span></a>
     </div>
-    <p class="small">Android 8 және одан жаңа нұсқалар үшін</p>
+    <p class="small">Орнатқаннан кейін қолданба өзі жаңарып отырады.<br>Android 8 және одан жаңа нұсқалар үшін · Жақында Google Play-де</p>
   </header>
 
   <section class="show" aria-label="Тікелей басты экранда">
@@ -560,10 +565,10 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
     <p class="tagline">Капля камень точит</p>
     <p class="lead">Ставь цель для каждой привычки, включай таймер, когда занимаешься, и смотри, как неделя наполняется капля за каплей. Просто, спокойно и приватно.</p>
     <div class="cta">
-      <span class="btn primary" aria-disabled="true"><svg class="ic fill" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l10.5-6.5z"/></svg><span>Скоро в Google Play</span></span>
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Скачать для Android</span><span class="ver" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Политика конфиденциальности</span></a>
     </div>
-    <p class="small">Для Android 8 и новее</p>
+    <p class="small">После установки приложение обновляется само.<br>Для Android 8 и новее · Скоро в Google Play</p>
   </header>
 
   <section class="show" aria-label="Прямо на главном экране">
@@ -593,6 +598,19 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
 
   <p class="contact">Вопросы и идеи: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
+<script>
+(function () {
+  if (!window.fetch) return;
+  fetch("update.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (u) {
+    if (!u || typeof u.url !== "string" || u.url.indexOf("https://github.com/PegasoHlib/kraplya/releases/download/") !== 0) return;
+    var a = document.querySelectorAll("a.dl");
+    for (var i = 0; i < a.length; i++) {
+      a[i].href = u.url;
+      var v = a[i].querySelector(".ver"); if (v && u.name) { v.textContent = "v" + u.name; v.hidden = false; }
+    }
+  }).catch(function () {});
+})();
+</script>
 </main>
 <footer>© 2026 · <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></footer>
 <script>
