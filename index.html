@@ -3,11 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{var t=localStorage.getItem("pegasohlib-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 <title>Kraplya: habit tracker with a timer</title>
 <meta name="description" content="Set a goal for every habit, start the timer when you practise, and watch the week fill up drop by drop. Simple, calm and private.">
-<meta name="theme-color" content="#22396F">
+<meta name="theme-color" content="#ECEEF3">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Kraplya: habit tracker with a timer">
 <meta property="og:description" content="Set a goal for every habit, start the timer when you practise, and watch the week fill up drop by drop. Simple, calm and private.">
+<meta property="og:url" content="https://pegasohlib.github.io/kraplya/">
 <meta property="og:image" content="https://pegasohlib.github.io/kraplya/icon-512.png">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-512.png">
@@ -24,133 +27,131 @@
 <link rel="alternate" hreflang="ja" href="https://pegasohlib.github.io/kraplya/?lang=ja">
 <link rel="alternate" hreflang="kk" href="https://pegasohlib.github.io/kraplya/?lang=kk">
 <link rel="alternate" hreflang="ru" href="https://pegasohlib.github.io/kraplya/?lang=ru">
+<link rel="alternate" hreflang="x-default" href="https://pegasohlib.github.io/kraplya/">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pegasohlib.github.io/assets/kit.css">
 <style>
-:root{--bg:#ECEEF3;--surface:#fff;--surface2:#F2F3F7;--line:#DCDFE8;--ink:#12151C;--ink2:#454B5C;--ink3:#666C7E;--blue:#2A78D6;--navy1:#22396F;--navy2:#090E1C;
---h0:#2A78D6;--h1:#EB6834;--h2:#1BAF7A;--h3:#EDA100;--h4:#E87BA4;--h5:#008300;--h6:#6250D6;--h7:#E34948;--shadow:0 1px 2px rgba(18,21,28,.05),0 8px 24px rgba(18,21,28,.06);color-scheme:light}
-@media (prefers-color-scheme:dark){:root{--bg:#0D0F14;--surface:#181B22;--surface2:#21252E;--line:#2C313C;--ink:#EEF0F5;--ink2:#B4BACB;--ink3:#8A91A5;--blue:#5B9EF0;
---h0:#3987E5;--h1:#D95926;--h2:#199E70;--h3:#C98500;--h4:#D55181;--h5:#2E9A2E;--h6:#9085E9;--h7:#E66767;--shadow:none;color-scheme:dark}}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Onest,system-ui,-apple-system,"Segoe UI",Roboto,"Hiragino Sans","Noto Sans JP",sans-serif;-webkit-text-size-adjust:100%}
-a{color:var(--blue);text-underline-offset:2px}
-code{font:.88em ui-monospace,SFMono-Regular,Consolas,monospace;background:var(--surface2);border:1px solid var(--line);border-radius:6px;padding:1px 6px}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
-.bar .in{max-width:960px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:12px}
-.home{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700;min-width:0}
-.home img{width:32px;height:32px;border-radius:9px;flex:none}
-.home span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.lang{margin-left:auto;position:relative;display:flex;align-items:center;flex:none}
-.lang .ic{position:absolute;left:12px;width:18px;height:18px;pointer-events:none;color:var(--ink2)}
-.lang .chev{position:absolute;right:10px;left:auto;width:16px;height:16px;color:var(--ink3)}
-.lang select{appearance:none;-webkit-appearance:none;font:inherit;font-weight:600;font-size:15px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 34px 8px 38px;min-height:42px;cursor:pointer;max-width:56vw}
-.lang select:focus-visible,.btn:focus-visible,.chips a:focus-visible{outline:3px solid color-mix(in srgb,var(--blue) 45%,transparent);outline-offset:2px}
-main{margin:0 auto;padding:8px 16px 72px}
-.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.tile{flex:none;width:40px;height:40px;padding:9px;border-radius:12px;color:#fff;background:var(--h0)}
+:root{--g1:#2F7BFF;--g2:#13A77E;--on-accent:#fff;--accent:#2063D6;--accent2:#13A77E;--h0:#2A78D6;--h1:#EB6834;--h2:#1BAF7A;--h3:#EDA100;--h4:#E87BA4;--h5:#008300;--h6:#6250D6;--h7:#E34948;--navy1:#22396F;--navy2:#090E1C;--panel-line:transparent;--panel-ic:#7FB6FF}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--h0:#3987E5;--h1:#D95926;--h2:#199E70;--h3:#C98500;--h4:#D55181;--h5:#2E9A2E;--h6:#9085E9;--h7:#E66767;--panel-line:var(--line);--accent:#6AA5FF}}
+:root[data-theme=dark]{--h0:#3987E5;--h1:#D95926;--h2:#199E70;--h3:#C98500;--h4:#D55181;--h5:#2E9A2E;--h6:#9085E9;--h7:#E66767;--panel-line:var(--line);--accent:#6AA5FF}
+.tile{width:40px;height:40px;padding:9px;background:var(--h0)}
 .t0 .tile,.tile.t0{background:var(--h0)}.t1 .tile,.tile.t1{background:var(--h1)}.t2 .tile,.tile.t2{background:var(--h2)}.t3 .tile,.tile.t3{background:var(--h3)}.t4 .tile,.tile.t4{background:var(--h4)}.t5 .tile,.tile.t5{background:var(--h5)}.t6 .tile,.tile.t6{background:var(--h6)}.t7 .tile,.tile.t7{background:var(--h7)}
-.eyebrow{margin:0 0 10px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--shadow)}
-h1,.display{font-family:Unbounded,Onest,system-ui,sans-serif;font-weight:700;letter-spacing:-.01em;text-wrap:balance}
-h1,h2,h3{overflow-wrap:break-word;hyphens:auto}
-html,body{overflow-x:clip}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips a,.chips span{font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px;white-space:nowrap}
-.chips a:hover{border-color:var(--blue);color:var(--blue)}
-footer{max-width:960px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-size:14px;text-align:center}
-footer a{color:var(--ink2)}
+h2.eyebrow{font-family:inherit;line-height:1.4}
+.btn .ic{width:22px;height:22px}
+.btn.primary{background:linear-gradient(135deg,var(--g1),var(--g2));box-shadow:0 12px 30px -12px color-mix(in srgb,var(--g1) 80%,transparent)}
+.btn.primary .badge{background:color-mix(in srgb,var(--on-accent) 18%,transparent)}
+.home img{object-fit:cover}
 
 main{max-width:960px}
-.hero{text-align:center;padding:44px 4px 12px}
-.logo{display:block;margin:0 auto 18px;border-radius:28px;box-shadow:0 16px 40px rgba(9,14,28,.32)}
-h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
-.tagline{margin:8px 0 0;font-size:clamp(17px,3.6vw,20px);font-weight:600;color:var(--blue)}
-.lead{margin:16px auto 0;max-width:620px;font-size:18px;color:var(--ink2);text-wrap:pretty}
-.cta{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:24px}
-.btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:15.5px;border-radius:999px;padding:12px 20px;min-height:48px;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line)}
-.btn:hover{border-color:var(--blue)}
-.btn.primary{color:#fff;background:linear-gradient(135deg,var(--navy1),#14204A);border-color:transparent}
-.btn.dl{font-size:17px;padding:14px 26px;min-height:56px;background:linear-gradient(135deg,#3A8DFF,#2A78D6 45%,var(--navy1));box-shadow:0 10px 26px rgba(42,120,214,.35)}
-.btn.dl:hover{filter:brightness(1.07);border-color:transparent}
-.btn.dl .ic{width:22px;height:22px;stroke-width:2.2}
-.ver{font-size:12.5px;font-weight:600;padding:2px 8px;border-radius:999px;background:rgba(255,255,255,.2)}
+.btn.dl .ic{stroke-width:2.2}
 .ver[hidden]{display:none}
-.ic.fill{fill:currentColor;stroke:none}
-.small{margin:12px 0 0;font-size:14px;color:var(--ink3)}
-.show{margin:44px 0 0;border-radius:28px;padding:28px;color:#fff;background:radial-gradient(120% 90% at 50% 110%,rgba(58,141,255,.45),transparent 60%),linear-gradient(160deg,var(--navy1),var(--navy2));overflow:hidden}
-.showtext{text-align:center;margin-bottom:22px}
+/* On phones the version goes under the button text instead of squeezing it onto two lines. */
+@media (max-width:440px){.btn.dl{flex-wrap:wrap;column-gap:10px;row-gap:0;padding-top:8px;padding-bottom:8px}.btn.dl .ver{flex-basis:100%;width:max-content;max-width:max-content;margin:0 auto}}
+.note{margin-top:12px}
+.pill{display:inline-block;margin:18px 0 0;font-size:13px;font-weight:700;color:var(--accent);background:color-mix(in srgb,var(--accent) 12%,var(--surface));border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);border-radius:999px;padding:4px 12px}
+.pill+h1{margin-top:10px}
+/* The dark panels stay dark in both themes (the widget pictures and screenshots are made for a dark background). */
+.show{margin:44px 0 0;border-radius:28px;padding:28px;color:#fff;border:1px solid var(--panel-line);background:radial-gradient(120% 90% at 50% 110%,color-mix(in srgb,var(--g1) 45%,transparent),transparent 60%),linear-gradient(160deg,var(--navy1),var(--navy2));overflow:hidden}
+.showtext{text-align:center;margin:0 auto 22px;max-width:640px}
 .showtext h2{font-size:clamp(22px,4.6vw,30px);margin:0;line-height:1.2}
 .showtext p{margin:8px 0 0;color:rgba(255,255,255,.75)}
+.show a{color:var(--panel-ic)}
 .widgets{display:grid;grid-template-columns:1.05fr 1fr;grid-template-areas:"today week" "today plan";gap:16px;max-width:780px;margin:0 auto;align-items:start}
+.w{min-width:0}
 .w img{display:block;width:100%;height:auto;filter:drop-shadow(0 14px 28px rgba(0,0,0,.35))}
 .w.today{grid-area:today}.w.week{grid-area:week}.w.plan{grid-area:plan}
-.features{margin:48px 0 0}
-.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
-@media (min-width:900px){.grid{grid-template-columns:repeat(4,1fr)}}
+.shots{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;max-width:900px;margin:0 auto}
+.shots figure{margin:0;min-width:0}
+.shots img{display:block;width:100%;height:auto;border-radius:16px;border:1px solid rgba(255,255,255,.14);box-shadow:0 14px 28px rgba(0,0,0,.35)}
+.shots figcaption{margin-top:8px;text-align:center;font-size:14px;font-weight:600;color:rgba(255,255,255,.78)}
+.steps{list-style:none;margin:0 auto;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,190px),1fr));gap:12px;max-width:900px}
+.steps li{min-width:0;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:18px}
+.steps .num{display:grid;place-items:center;width:34px;height:34px;border-radius:999px;background:linear-gradient(135deg,var(--g1),var(--g2));color:var(--on-accent);font:700 15px/1 Unbounded,Onest,sans-serif}
+.steps h3{margin:12px 0 4px;font-size:17px;line-height:1.3;color:#fff}
+.steps p{margin:0;color:rgba(255,255,255,.75);font-size:15px}
+.features{margin-top:48px}
+.sub{margin:-4px 0 14px;color:var(--ink2)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+@media (min-width:760px){.grid.n3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (min-width:900px){.grid.n4{grid-template-columns:repeat(4,minmax(0,1fr))}}
 .feat h3{margin:12px 0 4px;font-size:17.5px;line-height:1.3}
 .feat p{margin:0;color:var(--ink2);font-size:15.5px}
-.extra{margin:36px 0 0}
-.private{display:flex;gap:18px;align-items:flex-start;margin:40px 0 0;padding:26px;border-radius:26px;background:linear-gradient(135deg,var(--navy1),var(--navy2));color:#fff}
-.private .big{width:48px;height:48px;flex:none;color:#7FB6FF;stroke-width:1.6}
+.extra{margin-top:36px}
+.faq{margin-top:36px}
+.faqs{display:grid;gap:10px}
+.faqs details{padding:0}
+.faqs summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 20px;font-weight:600;cursor:pointer;list-style:none}
+.faqs summary::-webkit-details-marker{display:none}
+.faqs .chev{color:var(--ink3);transition:transform .2s}
+.faqs details[open] .chev{transform:rotate(180deg)}
+.faqs details p{padding:0 20px 18px}
+.private{display:flex;gap:18px;align-items:flex-start;margin:40px 0 0;padding:26px;border-radius:26px;border:1px solid var(--panel-line);background:linear-gradient(135deg,var(--navy1),var(--navy2));color:#fff}
+.private .big{width:48px;height:48px;flex:none;color:var(--panel-ic);stroke-width:1.6}
 .private h2{margin:0;font-size:clamp(21px,4.4vw,26px);line-height:1.2}
 .private p{margin:8px 0 16px;color:rgba(255,255,255,.78)}
-.btn.light{background:#fff;color:#12151C;border-color:transparent}
+.private p:last-child{margin-bottom:0}
+.private .btn{width:auto}
+.btn.light,.btn.light:hover{background:#fff;color:#12151C;border-color:transparent}
 .contact{text-align:center;margin:36px 0 0;color:var(--ink2)}
 @media (max-width:620px){
   .hero{padding-top:28px}
   .show{padding:22px 16px;border-radius:24px;margin-top:36px}
   .widgets{grid-template-columns:1fr;grid-template-areas:"today" "week" "plan";max-width:380px}
+  .shots{grid-template-columns:1fr;max-width:420px}
+  .steps li{display:grid;grid-template-columns:34px 1fr;gap:0 14px;padding:16px}
+  .steps h3{margin:4px 0 4px}
   .private{flex-direction:column;padding:22px}
-  .btn{width:100%;justify-content:center}
-  .cta{flex-direction:column}
-  .grid{grid-template-columns:1fr;gap:10px}
+  .private .btn{width:100%}
+  .grid,.grid.n3,.grid.n4{grid-template-columns:1fr;gap:10px}
   .feat{display:grid;grid-template-columns:40px 1fr;gap:2px 14px;padding:16px}
   .feat .tile{grid-row:span 2}
   .feat h3{margin:0;align-self:end}
+  .faqs summary{padding:14px 16px}
+  .faqs details p{padding:0 16px 16px}
 }</style>
 </head>
 <body>
 <div class="bar"><div class="in">
-  <a class="home" href="index.html"><img src="icon.svg" alt=""><span id="appname">Kraplya</span></a>
+  <a class="home" href="index.html" data-keep-lang><img src="icon.svg" alt="" width="32" height="32"><span id="appname">Kraplya</span></a>
+  <nav class="links"><a class="on" aria-current="page" data-nav="0" href="index.html" data-keep-lang>Home</a><a data-nav="1" href="privacy.html" data-keep-lang>Privacy</a></nav>
   <label class="lang"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5s1.1-5.9 3.6-8.5z"/></svg><span class="sr" id="langlabel">Language</span>
     <select id="lang" aria-labelledby="langlabel"><option value="en" lang="en">English</option><option value="uk" lang="uk">Українська</option><option value="es" lang="es">Español</option><option value="pt" lang="pt">Português</option><option value="fr" lang="fr">Français</option><option value="de" lang="de">Deutsch</option><option value="it" lang="it">Italiano</option><option value="sv" lang="sv">Svenska</option><option value="id" lang="id">Bahasa Indonesia</option><option value="ja" lang="ja">日本語</option><option value="kk" lang="kk">Қазақша</option><option value="ru" lang="ru">Русский</option></select><svg class="ic chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg>
   </label>
+  <button class="theme" id="theme" type="button"></button>
 </div></div>
 <main>
-<article class="doc" lang="en" data-lang="en" data-title="Kraplya: habit tracker with a timer" data-app="Kraplya" data-langlabel="Language">
+<article class="langdoc" lang="en" data-lang="en" data-title="Kraplya: habit tracker with a timer" data-app="Kraplya" data-langlabel="Language" data-nav="Home|Privacy" data-hub="PegasoHlib — all apps">
   <header class="hero">
-    <img class="logo" src="icon.svg" alt="" width="104" height="104">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
     <h1>Kraplya</h1>
     <p class="tagline">A drop wears away the stone</p>
     <p class="lead">Set a goal for every habit, start the timer when you practise, and watch the week fill up drop by drop. Simple, calm and private.</p>
-    <div class="cta">
-      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Download for Android</span><span class="ver" hidden></span></a>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Download for Android</span><span class="ver badge" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Privacy policy</span></a>
     </div>
-    <p class="small">After installing, the app updates itself.<br>For Android 8 and newer · Coming soon to Google Play</p>
+    <p class="note">After installing, the app updates itself.<br>For Android 8 and newer · Coming soon to Google Play</p>
   </header>
 
   <section class="show" aria-label="Right on your home screen">
     <div class="showtext"><h2 class="display">Right on your home screen</h2><p>Three widgets, in your language, light or dark.</p></div>
-    <div class="widgets">
-      <div class="w today"><img src="img/en/pv_today.png" alt="" width="650" height="540" loading="lazy"></div>
-      <div class="w week"><img src="img/en/pv_week.png" alt="" width="625" height="300" loading="lazy"></div>
-      <div class="w plan"><img src="img/en/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div>
-    </div>
+    <div class="widgets"><div class="w today"><img src="img/en/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/en/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/en/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
   </section>
 
-  <section class="features" aria-labelledby="f-en">
+  <section class="section features" aria-labelledby="f-en">
     <h2 class="eyebrow" id="f-en">What it can do</h2>
-    <div class="grid"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Goals your way</h3><p>A goal per day, week or month for every habit. Missed a day? Make it up later in the week: weekly goals come first.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>A timer that keeps going</h3><p>It counts with the screen off and the app closed, pauses and resumes, and can be stopped right from the notification. Time can also be added by hand.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Weekly schedule</h3><p>A real 7-day calendar: plan sure and maybe blocks, see what you actually did on top, and bring in events from your phone calendar.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>The week’s vessel</h3><p>Every habit pours its colour into the vessel. On Monday you get a summary, and a reward you chose for yourself, or a penalty.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statistics</h3><p>Day streaks, charts, an activity calendar and records for a week, a month, a year and all time.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Today’s habits with a start button, the week at a glance and what’s next in your schedule, right on the home screen.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Reminders</h3><p>An evening nudge if a goal is not reached yet, a Monday summary, your own reminders and reminders for scheduled blocks.</p></div><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Phone and tablet</h3><p>Optional sync through your own Google Drive keeps both devices the same, without any account.</p></div></div>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Goals your way</h3><p>A goal per day, week or month for every habit. Missed a day? Make it up later in the week: weekly goals come first.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>A timer that keeps going</h3><p>It counts with the screen off and the app closed, pauses and resumes, and can be stopped right from the notification. Time can also be added by hand.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Weekly schedule</h3><p>A real 7-day calendar: plan sure and maybe blocks, see what you actually did on top, and bring in events from your phone calendar.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>The week’s vessel</h3><p>Every habit pours its colour into the vessel. On Monday you get a summary, and a reward you chose for yourself, or a penalty.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statistics</h3><p>Day streaks, charts, an activity calendar and records for a week, a month, a year and all time.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Today’s habits with a start button, the week at a glance and what’s next in your schedule, right on the home screen.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Reminders</h3><p>An evening nudge if a goal is not reached yet, a Monday summary, your own reminders and reminders for scheduled blocks.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Phone and tablet</h3><p>Optional sync through your own Google Drive keeps both devices the same, without any account.</p></div></div>
   </section>
 
-  <section class="extra" aria-labelledby="x-en">
+
+  <section class="section extra" aria-labelledby="x-en">
     <h2 class="eyebrow" id="x-en">And also</h2>
     <div class="chips"><span>12 languages</span><span>Light and dark theme</span><span>Sounds and vibration</span><span>Backups to a file</span><span>Tablet layout in two columns</span></div>
   </section>
+
 
   <section class="private">
     <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
@@ -160,37 +161,36 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
 
   <p class="contact">Questions and ideas: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
-<article class="doc" lang="uk" data-lang="uk" data-title="Крапля: трекер звичок із таймером" data-app="Крапля" data-langlabel="Мова" hidden>
+<article class="langdoc" lang="uk" data-lang="uk" data-title="Крапля: трекер звичок із таймером" data-app="Крапля" data-langlabel="Мова" data-nav="Головна|Конфіденційність" data-hub="PegasoHlib — всі застосунки" hidden>
   <header class="hero">
-    <img class="logo" src="icon.svg" alt="" width="104" height="104">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
     <h1>Крапля</h1>
     <p class="tagline">Крапля камінь точить</p>
     <p class="lead">Постав ціль для кожної звички, вмикай таймер, коли займаєшся, і дивись, як тиждень наповнюється крапля за краплею. Просто, спокійно й приватно.</p>
-    <div class="cta">
-      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Завантажити для Android</span><span class="ver" hidden></span></a>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Завантажити для Android</span><span class="ver badge" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Політика конфіденційності</span></a>
     </div>
-    <p class="small">Після встановлення застосунок оновлюється сам.<br>Для Android 8 і новіших · Незабаром у Google Play</p>
+    <p class="note">Після встановлення застосунок оновлюється сам.<br>Для Android 8 і новіших · Незабаром у Google Play</p>
   </header>
 
   <section class="show" aria-label="Просто на головному екрані">
     <div class="showtext"><h2 class="display">Просто на головному екрані</h2><p>Три віджети твоєю мовою, у світлій чи темній темі.</p></div>
-    <div class="widgets">
-      <div class="w today"><img src="img/uk/pv_today.png" alt="" width="650" height="540" loading="lazy"></div>
-      <div class="w week"><img src="img/uk/pv_week.png" alt="" width="625" height="300" loading="lazy"></div>
-      <div class="w plan"><img src="img/uk/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div>
-    </div>
+    <div class="widgets"><div class="w today"><img src="img/uk/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/uk/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/uk/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
   </section>
 
-  <section class="features" aria-labelledby="f-uk">
+  <section class="section features" aria-labelledby="f-uk">
     <h2 class="eyebrow" id="f-uk">Що вона вміє</h2>
-    <div class="grid"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Цілі як тобі зручно</h3><p>Ціль на день, тиждень чи місяць для кожної звички. Пропустив день — доробиш пізніше протягом тижня: тижневі цілі головніші.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Таймер, що не зупиняється</h3><p>Рахує з вимкненим екраном і закритим застосунком, ставиться на паузу й продовжується, зупиняється просто зі сповіщення. Час можна додати й вручну.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Розклад тижня</h3><p>Справжній календар на 7 днів: плануй упевнені й можливі проміжки, бачиш поверх них, що справді зробив, і додаєш події з календаря телефону.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Посудина тижня</h3><p>Кожна звичка доливає в посудину свій колір. У понеділок — підсумок і нагорода, яку ти сам собі обрав, або покарання.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Статистика</h3><p>Серії днів, графіки, календар активності й рекорди за тиждень, місяць, рік і весь час.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Віджети</h3><p>Звички на сьогодні з кнопкою старту, тиждень одним поглядом і що далі за розкладом — просто на головному екрані.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Нагадування</h3><p>Увечері, якщо ціль ще не виконано, підсумок у понеділок, твої власні нагадування й нагадування про проміжки з розкладу.</p></div><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Телефон і планшет</h3><p>Необов’язкова синхронізація через твій власний Google Диск робить обидва пристрої однаковими, без жодного акаунта.</p></div></div>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Цілі як тобі зручно</h3><p>Ціль на день, тиждень чи місяць для кожної звички. Пропустив день — доробиш пізніше протягом тижня: тижневі цілі головніші.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Таймер, що не зупиняється</h3><p>Рахує з вимкненим екраном і закритим застосунком, ставиться на паузу й продовжується, зупиняється просто зі сповіщення. Час можна додати й вручну.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Розклад тижня</h3><p>Справжній календар на 7 днів: плануй упевнені й можливі проміжки, бачиш поверх них, що справді зробив, і додаєш події з календаря телефону.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Посудина тижня</h3><p>Кожна звичка доливає в посудину свій колір. У понеділок — підсумок і нагорода, яку ти сам собі обрав, або покарання.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Статистика</h3><p>Серії днів, графіки, календар активності й рекорди за тиждень, місяць, рік і весь час.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Віджети</h3><p>Звички на сьогодні з кнопкою старту, тиждень одним поглядом і що далі за розкладом — просто на головному екрані.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Нагадування</h3><p>Увечері, якщо ціль ще не виконано, підсумок у понеділок, твої власні нагадування й нагадування про проміжки з розкладу.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Телефон і планшет</h3><p>Необов’язкова синхронізація через твій власний Google Диск робить обидва пристрої однаковими, без жодного акаунта.</p></div></div>
   </section>
 
-  <section class="extra" aria-labelledby="x-uk">
+
+  <section class="section extra" aria-labelledby="x-uk">
     <h2 class="eyebrow" id="x-uk">А ще</h2>
     <div class="chips"><span>12 мов</span><span>Світла й темна тема</span><span>Звуки й вібрація</span><span>Резервна копія у файл</span><span>Планшет у дві колонки</span></div>
   </section>
+
 
   <section class="private">
     <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
@@ -200,37 +200,36 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
 
   <p class="contact">Питання та ідеї: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
-<article class="doc" lang="es" data-lang="es" data-title="Kraplya: seguimiento de hábitos con temporizador" data-app="Kraplya" data-langlabel="Idioma" hidden>
+<article class="langdoc" lang="es" data-lang="es" data-title="Kraplya: seguimiento de hábitos con temporizador" data-app="Kraplya" data-langlabel="Idioma" data-nav="Inicio|Privacidad" data-hub="PegasoHlib — todas las apps" hidden>
   <header class="hero">
-    <img class="logo" src="icon.svg" alt="" width="104" height="104">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
     <h1>Kraplya</h1>
     <p class="tagline">Gota a gota se horada la piedra</p>
     <p class="lead">Ponte una meta para cada hábito, inicia el temporizador cuando practiques y mira cómo la semana se llena gota a gota. Sencillo, tranquilo y privado.</p>
-    <div class="cta">
-      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Descargar para Android</span><span class="ver" hidden></span></a>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Descargar para Android</span><span class="ver badge" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Política de privacidad</span></a>
     </div>
-    <p class="small">Una vez instalada, la app se actualiza sola.<br>Para Android 8 y versiones posteriores · Muy pronto en Google Play</p>
+    <p class="note">Una vez instalada, la app se actualiza sola.<br>Para Android 8 y versiones posteriores · Muy pronto en Google Play</p>
   </header>
 
   <section class="show" aria-label="Directamente en tu pantalla de inicio">
     <div class="showtext"><h2 class="display">Directamente en tu pantalla de inicio</h2><p>Tres widgets, en tu idioma, en tema claro u oscuro.</p></div>
-    <div class="widgets">
-      <div class="w today"><img src="img/es/pv_today.png" alt="" width="650" height="540" loading="lazy"></div>
-      <div class="w week"><img src="img/es/pv_week.png" alt="" width="625" height="300" loading="lazy"></div>
-      <div class="w plan"><img src="img/es/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div>
-    </div>
+    <div class="widgets"><div class="w today"><img src="img/es/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/es/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/es/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
   </section>
 
-  <section class="features" aria-labelledby="f-es">
+  <section class="section features" aria-labelledby="f-es">
     <h2 class="eyebrow" id="f-es">Qué puede hacer</h2>
-    <div class="grid"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Metas a tu manera</h3><p>Una meta diaria, semanal o mensual para cada hábito. ¿Te saltaste un día? Recupéralo más tarde en la semana: las metas semanales van primero.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Un temporizador que no se detiene</h3><p>Cuenta con la pantalla apagada y la app cerrada, se pausa y se reanuda, y puedes detenerlo directamente desde la notificación. También puedes añadir tiempo a mano.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Horario semanal</h3><p>Un calendario real de 7 días: planifica bloques seguros y posibles, ve encima lo que hiciste de verdad y trae eventos del calendario de tu teléfono.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>La vasija de la semana</h3><p>Cada hábito vierte su color en la vasija. El lunes recibes un resumen y una recompensa que elegiste tú mismo, o una penalización.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Estadísticas</h3><p>Rachas de días, gráficos, un calendario de actividad y récords de la semana, el mes, el año y de siempre.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Los hábitos de hoy con un botón de inicio, la semana de un vistazo y lo siguiente en tu horario, directamente en la pantalla de inicio.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Recordatorios</h3><p>Un aviso por la noche si aún no has alcanzado una meta, un resumen el lunes, tus propios recordatorios y recordatorios de los bloques programados.</p></div><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Teléfono y tableta</h3><p>La sincronización opcional a través de tu propio Google Drive mantiene ambos dispositivos iguales, sin ninguna cuenta.</p></div></div>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Metas a tu manera</h3><p>Una meta diaria, semanal o mensual para cada hábito. ¿Te saltaste un día? Recupéralo más tarde en la semana: las metas semanales van primero.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Un temporizador que no se detiene</h3><p>Cuenta con la pantalla apagada y la app cerrada, se pausa y se reanuda, y puedes detenerlo directamente desde la notificación. También puedes añadir tiempo a mano.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Horario semanal</h3><p>Un calendario real de 7 días: planifica bloques seguros y posibles, ve encima lo que hiciste de verdad y trae eventos del calendario de tu teléfono.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>La vasija de la semana</h3><p>Cada hábito vierte su color en la vasija. El lunes recibes un resumen y una recompensa que elegiste tú mismo, o una penalización.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Estadísticas</h3><p>Rachas de días, gráficos, un calendario de actividad y récords de la semana, el mes, el año y de siempre.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Los hábitos de hoy con un botón de inicio, la semana de un vistazo y lo siguiente en tu horario, directamente en la pantalla de inicio.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Recordatorios</h3><p>Un aviso por la noche si aún no has alcanzado una meta, un resumen el lunes, tus propios recordatorios y recordatorios de los bloques programados.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Teléfono y tableta</h3><p>La sincronización opcional a través de tu propio Google Drive mantiene ambos dispositivos iguales, sin ninguna cuenta.</p></div></div>
   </section>
 
-  <section class="extra" aria-labelledby="x-es">
+
+  <section class="section extra" aria-labelledby="x-es">
     <h2 class="eyebrow" id="x-es">Y además</h2>
     <div class="chips"><span>12 idiomas</span><span>Tema claro y oscuro</span><span>Sonidos y vibración</span><span>Copias de seguridad en un archivo</span><span>Diseño de tableta en dos columnas</span></div>
   </section>
+
 
   <section class="private">
     <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
@@ -240,37 +239,36 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
 
   <p class="contact">Preguntas e ideas: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
-<article class="doc" lang="pt" data-lang="pt" data-title="Kraplya: registo de hábitos com temporizador" data-app="Kraplya" data-langlabel="Idioma" hidden>
+<article class="langdoc" lang="pt" data-lang="pt" data-title="Kraplya: registo de hábitos com temporizador" data-app="Kraplya" data-langlabel="Idioma" data-nav="Início|Privacidade" data-hub="PegasoHlib — todos os apps" hidden>
   <header class="hero">
-    <img class="logo" src="icon.svg" alt="" width="104" height="104">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
     <h1>Kraplya</h1>
     <p class="tagline">Água mole em pedra dura, tanto bate até que fura</p>
     <p class="lead">Define um objetivo para cada hábito, inicia o temporizador quando praticas e vê a semana a encher-se gota a gota. Simples, tranquilo e privado.</p>
-    <div class="cta">
-      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Transferir para Android</span><span class="ver" hidden></span></a>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Transferir para Android</span><span class="ver badge" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Política de privacidade</span></a>
     </div>
-    <p class="small">Depois de instalada, a app atualiza-se sozinha.<br>Para Android 8 ou mais recente · Em breve no Google Play</p>
+    <p class="note">Depois de instalada, a app atualiza-se sozinha.<br>Para Android 8 ou mais recente · Em breve no Google Play</p>
   </header>
 
   <section class="show" aria-label="Diretamente no teu ecrã principal">
     <div class="showtext"><h2 class="display">Diretamente no teu ecrã principal</h2><p>Três widgets, no teu idioma, em tema claro ou escuro.</p></div>
-    <div class="widgets">
-      <div class="w today"><img src="img/pt/pv_today.png" alt="" width="650" height="540" loading="lazy"></div>
-      <div class="w week"><img src="img/pt/pv_week.png" alt="" width="625" height="300" loading="lazy"></div>
-      <div class="w plan"><img src="img/pt/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div>
-    </div>
+    <div class="widgets"><div class="w today"><img src="img/pt/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/pt/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/pt/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
   </section>
 
-  <section class="features" aria-labelledby="f-pt">
+  <section class="section features" aria-labelledby="f-pt">
     <h2 class="eyebrow" id="f-pt">O que faz</h2>
-    <div class="grid"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Objetivos à tua maneira</h3><p>Um objetivo por dia, semana ou mês para cada hábito. Falhaste um dia? Compensa mais tarde na semana: os objetivos semanais vêm primeiro.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Um temporizador que não para</h3><p>Conta com o ecrã desligado e a app fechada, pausa e retoma, e pode ser parado diretamente a partir da notificação. Também podes adicionar tempo à mão.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Horário semanal</h3><p>Um verdadeiro calendário de 7 dias: planeia blocos certos e possíveis, vê por cima o que fizeste de facto e importa eventos do calendário do telemóvel.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>O vaso da semana</h3><p>Cada hábito verte a sua cor no vaso. À segunda-feira recebes um resumo e uma recompensa que escolheste para ti, ou uma penalização.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Estatísticas</h3><p>Sequências de dias, gráficos, um calendário de atividade e recordes da semana, do mês, do ano e de sempre.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Os hábitos de hoje com um botão para começar, a semana num relance e o que vem a seguir no teu horário, diretamente no ecrã principal.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Lembretes</h3><p>Um aviso à noite se um objetivo ainda não foi atingido, um resumo à segunda-feira, os teus próprios lembretes e lembretes para os blocos agendados.</p></div><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Telemóvel e tablet</h3><p>A sincronização opcional através do teu próprio Google Drive mantém os dois dispositivos iguais, sem qualquer conta.</p></div></div>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Objetivos à tua maneira</h3><p>Um objetivo por dia, semana ou mês para cada hábito. Falhaste um dia? Compensa mais tarde na semana: os objetivos semanais vêm primeiro.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Um temporizador que não para</h3><p>Conta com o ecrã desligado e a app fechada, pausa e retoma, e pode ser parado diretamente a partir da notificação. Também podes adicionar tempo à mão.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Horário semanal</h3><p>Um verdadeiro calendário de 7 dias: planeia blocos certos e possíveis, vê por cima o que fizeste de facto e importa eventos do calendário do telemóvel.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>O vaso da semana</h3><p>Cada hábito verte a sua cor no vaso. À segunda-feira recebes um resumo e uma recompensa que escolheste para ti, ou uma penalização.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Estatísticas</h3><p>Sequências de dias, gráficos, um calendário de atividade e recordes da semana, do mês, do ano e de sempre.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Os hábitos de hoje com um botão para começar, a semana num relance e o que vem a seguir no teu horário, diretamente no ecrã principal.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Lembretes</h3><p>Um aviso à noite se um objetivo ainda não foi atingido, um resumo à segunda-feira, os teus próprios lembretes e lembretes para os blocos agendados.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Telemóvel e tablet</h3><p>A sincronização opcional através do teu próprio Google Drive mantém os dois dispositivos iguais, sem qualquer conta.</p></div></div>
   </section>
 
-  <section class="extra" aria-labelledby="x-pt">
+
+  <section class="section extra" aria-labelledby="x-pt">
     <h2 class="eyebrow" id="x-pt">E ainda</h2>
     <div class="chips"><span>12 idiomas</span><span>Tema claro e escuro</span><span>Sons e vibração</span><span>Cópias de segurança num ficheiro</span><span>Tablet com duas colunas</span></div>
   </section>
+
 
   <section class="private">
     <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
@@ -280,37 +278,36 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
 
   <p class="contact">Perguntas e ideias: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
-<article class="doc" lang="fr" data-lang="fr" data-title="Kraplya : suivi d’habitudes avec minuteur" data-app="Kraplya" data-langlabel="Langue" hidden>
+<article class="langdoc" lang="fr" data-lang="fr" data-title="Kraplya : suivi d’habitudes avec minuteur" data-app="Kraplya" data-langlabel="Langue" data-nav="Accueil|Confidentialité" data-hub="PegasoHlib — toutes les applis" hidden>
   <header class="hero">
-    <img class="logo" src="icon.svg" alt="" width="104" height="104">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
     <h1>Kraplya</h1>
     <p class="tagline">Goutte à goutte, l’eau creuse la pierre</p>
     <p class="lead">Fixe un objectif pour chaque habitude, lance le minuteur quand tu pratiques et regarde la semaine se remplir goutte à goutte. Simple, calme et privé.</p>
-    <div class="cta">
-      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Télécharger pour Android</span><span class="ver" hidden></span></a>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Télécharger pour Android</span><span class="ver badge" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Politique de confidentialité</span></a>
     </div>
-    <p class="small">Une fois installée, l’appli se met à jour toute seule.<br>Pour Android 8 et versions ultérieures · Bientôt sur Google Play</p>
+    <p class="note">Une fois installée, l’appli se met à jour toute seule.<br>Pour Android 8 et versions ultérieures · Bientôt sur Google Play</p>
   </header>
 
   <section class="show" aria-label="Directement sur ton écran d’accueil">
     <div class="showtext"><h2 class="display">Directement sur ton écran d’accueil</h2><p>Trois widgets, dans ta langue, en clair ou en sombre.</p></div>
-    <div class="widgets">
-      <div class="w today"><img src="img/fr/pv_today.png" alt="" width="650" height="540" loading="lazy"></div>
-      <div class="w week"><img src="img/fr/pv_week.png" alt="" width="625" height="300" loading="lazy"></div>
-      <div class="w plan"><img src="img/fr/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div>
-    </div>
+    <div class="widgets"><div class="w today"><img src="img/fr/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/fr/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/fr/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
   </section>
 
-  <section class="features" aria-labelledby="f-fr">
+  <section class="section features" aria-labelledby="f-fr">
     <h2 class="eyebrow" id="f-fr">Ce qu’elle sait faire</h2>
-    <div class="grid"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Des objectifs à ta façon</h3><p>Un objectif par jour, par semaine ou par mois pour chaque habitude. Un jour manqué ? Rattrape-le plus tard dans la semaine : les objectifs hebdomadaires passent en premier.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Un minuteur qui ne s’arrête pas</h3><p>Il compte écran éteint et appli fermée, se met en pause et reprend, et s’arrête directement depuis la notification. Tu peux aussi ajouter du temps à la main.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Planning de la semaine</h3><p>Un vrai calendrier sur 7 jours : planifie des créneaux sûrs et possibles, vois par-dessus ce que tu as vraiment fait et importe les événements de l’agenda de ton téléphone.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Le vase de la semaine</h3><p>Chaque habitude verse sa couleur dans le vase. Le lundi, tu reçois un bilan et une récompense que tu as choisie toi-même, ou une pénalité.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statistiques</h3><p>Séries de jours, graphiques, calendrier d’activité et records sur la semaine, le mois, l’année et depuis toujours.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Les habitudes du jour avec un bouton pour démarrer, la semaine en un coup d’œil et la suite de ton planning, directement sur l’écran d’accueil.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Rappels</h3><p>Un petit rappel le soir si un objectif n’est pas encore atteint, un bilan le lundi, tes propres rappels et des rappels pour les créneaux planifiés.</p></div><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Téléphone et tablette</h3><p>La synchronisation facultative via ton propre Google Drive garde les deux appareils identiques, sans aucun compte.</p></div></div>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Des objectifs à ta façon</h3><p>Un objectif par jour, par semaine ou par mois pour chaque habitude. Un jour manqué ? Rattrape-le plus tard dans la semaine : les objectifs hebdomadaires passent en premier.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Un minuteur qui ne s’arrête pas</h3><p>Il compte écran éteint et appli fermée, se met en pause et reprend, et s’arrête directement depuis la notification. Tu peux aussi ajouter du temps à la main.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Planning de la semaine</h3><p>Un vrai calendrier sur 7 jours : planifie des créneaux sûrs et possibles, vois par-dessus ce que tu as vraiment fait et importe les événements de l’agenda de ton téléphone.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Le vase de la semaine</h3><p>Chaque habitude verse sa couleur dans le vase. Le lundi, tu reçois un bilan et une récompense que tu as choisie toi-même, ou une pénalité.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statistiques</h3><p>Séries de jours, graphiques, calendrier d’activité et records sur la semaine, le mois, l’année et depuis toujours.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Les habitudes du jour avec un bouton pour démarrer, la semaine en un coup d’œil et la suite de ton planning, directement sur l’écran d’accueil.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Rappels</h3><p>Un petit rappel le soir si un objectif n’est pas encore atteint, un bilan le lundi, tes propres rappels et des rappels pour les créneaux planifiés.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Téléphone et tablette</h3><p>La synchronisation facultative via ton propre Google Drive garde les deux appareils identiques, sans aucun compte.</p></div></div>
   </section>
 
-  <section class="extra" aria-labelledby="x-fr">
+
+  <section class="section extra" aria-labelledby="x-fr">
     <h2 class="eyebrow" id="x-fr">Et aussi</h2>
     <div class="chips"><span>12 langues</span><span>Thème clair et sombre</span><span>Sons et vibrations</span><span>Sauvegardes dans un fichier</span><span>Affichage tablette en deux colonnes</span></div>
   </section>
+
 
   <section class="private">
     <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
@@ -320,37 +317,36 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
 
   <p class="contact">Questions et idées: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
-<article class="doc" lang="de" data-lang="de" data-title="Kraplya: Gewohnheitstracker mit Timer" data-app="Kraplya" data-langlabel="Sprache" hidden>
+<article class="langdoc" lang="de" data-lang="de" data-title="Kraplya: Gewohnheitstracker mit Timer" data-app="Kraplya" data-langlabel="Sprache" data-nav="Start|Datenschutz" data-hub="PegasoHlib — alle Apps" hidden>
   <header class="hero">
-    <img class="logo" src="icon.svg" alt="" width="104" height="104">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
     <h1>Kraplya</h1>
     <p class="tagline">Steter Tropfen höhlt den Stein</p>
     <p class="lead">Setz dir für jede Gewohnheit ein Ziel, starte den Timer, wenn du übst, und sieh zu, wie sich die Woche Tropfen für Tropfen füllt. Einfach, ruhig und privat.</p>
-    <div class="cta">
-      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Für Android herunterladen</span><span class="ver" hidden></span></a>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Für Android herunterladen</span><span class="ver badge" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Datenschutzerklärung</span></a>
     </div>
-    <p class="small">Nach der Installation aktualisiert sich die App von selbst.<br>Für Android 8 und neuer · Bald bei Google Play</p>
+    <p class="note">Nach der Installation aktualisiert sich die App von selbst.<br>Für Android 8 und neuer · Bald bei Google Play</p>
   </header>
 
   <section class="show" aria-label="Direkt auf deinem Startbildschirm">
     <div class="showtext"><h2 class="display">Direkt auf deinem Startbildschirm</h2><p>Drei Widgets, in deiner Sprache, hell oder dunkel.</p></div>
-    <div class="widgets">
-      <div class="w today"><img src="img/de/pv_today.png" alt="" width="650" height="540" loading="lazy"></div>
-      <div class="w week"><img src="img/de/pv_week.png" alt="" width="625" height="300" loading="lazy"></div>
-      <div class="w plan"><img src="img/de/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div>
-    </div>
+    <div class="widgets"><div class="w today"><img src="img/de/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/de/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/de/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
   </section>
 
-  <section class="features" aria-labelledby="f-de">
+  <section class="section features" aria-labelledby="f-de">
     <h2 class="eyebrow" id="f-de">Was die App kann</h2>
-    <div class="grid"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Ziele, wie du sie willst</h3><p>Ein Tages-, Wochen- oder Monatsziel für jede Gewohnheit. Einen Tag verpasst? Hol ihn später in der Woche nach: Wochenziele haben Vorrang.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Ein Timer, der weiterläuft</h3><p>Er zählt bei ausgeschaltetem Bildschirm und geschlossener App, lässt sich pausieren und fortsetzen und direkt aus der Benachrichtigung stoppen. Zeit kann auch von Hand eingetragen werden.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Wochenplan</h3><p>Ein echter 7-Tage-Kalender: Plane feste und mögliche Blöcke, sieh darüber, was du wirklich gemacht hast, und übernimm Termine aus dem Kalender deines Handys.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Das Wochengefäß</h3><p>Jede Gewohnheit gießt ihre Farbe in das Gefäß. Am Montag bekommst du eine Zusammenfassung und eine Belohnung, die du dir selbst ausgesucht hast, oder eine Strafe.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statistik</h3><p>Tagesserien, Diagramme, ein Aktivitätskalender und Rekorde für Woche, Monat, Jahr und die gesamte Zeit.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Die heutigen Gewohnheiten mit Start-Taste, die Woche auf einen Blick und was als Nächstes im Plan steht, direkt auf dem Startbildschirm.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Erinnerungen</h3><p>Ein Stups am Abend, wenn ein Ziel noch nicht erreicht ist, eine Zusammenfassung am Montag, eigene Erinnerungen und Erinnerungen an geplante Blöcke.</p></div><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Handy und Tablet</h3><p>Die optionale Synchronisierung über dein eigenes Google Drive hält beide Geräte auf demselben Stand, ganz ohne Konto.</p></div></div>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Ziele, wie du sie willst</h3><p>Ein Tages-, Wochen- oder Monatsziel für jede Gewohnheit. Einen Tag verpasst? Hol ihn später in der Woche nach: Wochenziele haben Vorrang.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Ein Timer, der weiterläuft</h3><p>Er zählt bei ausgeschaltetem Bildschirm und geschlossener App, lässt sich pausieren und fortsetzen und direkt aus der Benachrichtigung stoppen. Zeit kann auch von Hand eingetragen werden.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Wochenplan</h3><p>Ein echter 7-Tage-Kalender: Plane feste und mögliche Blöcke, sieh darüber, was du wirklich gemacht hast, und übernimm Termine aus dem Kalender deines Handys.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Das Wochengefäß</h3><p>Jede Gewohnheit gießt ihre Farbe in das Gefäß. Am Montag bekommst du eine Zusammenfassung und eine Belohnung, die du dir selbst ausgesucht hast, oder eine Strafe.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statistik</h3><p>Tagesserien, Diagramme, ein Aktivitätskalender und Rekorde für Woche, Monat, Jahr und die gesamte Zeit.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Die heutigen Gewohnheiten mit Start-Taste, die Woche auf einen Blick und was als Nächstes im Plan steht, direkt auf dem Startbildschirm.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Erinnerungen</h3><p>Ein Stups am Abend, wenn ein Ziel noch nicht erreicht ist, eine Zusammenfassung am Montag, eigene Erinnerungen und Erinnerungen an geplante Blöcke.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Handy und Tablet</h3><p>Die optionale Synchronisierung über dein eigenes Google Drive hält beide Geräte auf demselben Stand, ganz ohne Konto.</p></div></div>
   </section>
 
-  <section class="extra" aria-labelledby="x-de">
+
+  <section class="section extra" aria-labelledby="x-de">
     <h2 class="eyebrow" id="x-de">Außerdem</h2>
     <div class="chips"><span>12 Sprachen</span><span>Helles und dunkles Design</span><span>Töne und Vibration</span><span>Sicherungen in eine Datei</span><span>Tablet-Ansicht in zwei Spalten</span></div>
   </section>
+
 
   <section class="private">
     <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
@@ -360,37 +356,36 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
 
   <p class="contact">Fragen und Ideen: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
-<article class="doc" lang="it" data-lang="it" data-title="Kraplya: tracker di abitudini con timer" data-app="Kraplya" data-langlabel="Lingua" hidden>
+<article class="langdoc" lang="it" data-lang="it" data-title="Kraplya: tracker di abitudini con timer" data-app="Kraplya" data-langlabel="Lingua" data-nav="Home|Privacy" data-hub="PegasoHlib — tutte le app" hidden>
   <header class="hero">
-    <img class="logo" src="icon.svg" alt="" width="104" height="104">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
     <h1>Kraplya</h1>
     <p class="tagline">La goccia scava la pietra</p>
     <p class="lead">Fissa un obiettivo per ogni abitudine, avvia il timer quando ti eserciti e guarda la settimana riempirsi goccia dopo goccia. Semplice, tranquilla e privata.</p>
-    <div class="cta">
-      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Scarica per Android</span><span class="ver" hidden></span></a>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Scarica per Android</span><span class="ver badge" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Informativa sulla privacy</span></a>
     </div>
-    <p class="small">Dopo l’installazione l’app si aggiorna da sola.<br>Per Android 8 e versioni successive · Presto su Google Play</p>
+    <p class="note">Dopo l’installazione l’app si aggiorna da sola.<br>Per Android 8 e versioni successive · Presto su Google Play</p>
   </header>
 
   <section class="show" aria-label="Direttamente nella schermata Home">
     <div class="showtext"><h2 class="display">Direttamente nella schermata Home</h2><p>Tre widget, nella tua lingua, chiari o scuri.</p></div>
-    <div class="widgets">
-      <div class="w today"><img src="img/it/pv_today.png" alt="" width="650" height="540" loading="lazy"></div>
-      <div class="w week"><img src="img/it/pv_week.png" alt="" width="625" height="300" loading="lazy"></div>
-      <div class="w plan"><img src="img/it/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div>
-    </div>
+    <div class="widgets"><div class="w today"><img src="img/it/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/it/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/it/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
   </section>
 
-  <section class="features" aria-labelledby="f-it">
+  <section class="section features" aria-labelledby="f-it">
     <h2 class="eyebrow" id="f-it">Cosa sa fare</h2>
-    <div class="grid"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Obiettivi a modo tuo</h3><p>Un obiettivo al giorno, alla settimana o al mese per ogni abitudine. Hai saltato un giorno? Recuperalo più avanti nella settimana: gli obiettivi settimanali vengono prima.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Un timer che non si ferma</h3><p>Conta a schermo spento e con l’app chiusa, va in pausa e riprende, e si può fermare direttamente dalla notifica. Il tempo si può anche aggiungere a mano.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Programma settimanale</h3><p>Un vero calendario di 7 giorni: pianifica blocchi certi e possibili, vedi sopra cosa hai fatto davvero e importa gli eventi dal calendario del telefono.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Il vaso della settimana</h3><p>Ogni abitudine versa il suo colore nel vaso. Il lunedì ricevi un riepilogo e una ricompensa che hai scelto tu, oppure una penalità.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statistiche</h3><p>Serie di giorni, grafici, un calendario delle attività e record per settimana, mese, anno e di sempre.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widget</h3><p>Le abitudini di oggi con un pulsante di avvio, la settimana a colpo d’occhio e cosa viene dopo nel programma, direttamente nella schermata Home.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Promemoria</h3><p>Una spinta la sera se un obiettivo non è ancora raggiunto, un riepilogo il lunedì, i tuoi promemoria personali e quelli per i blocchi in programma.</p></div><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Telefono e tablet</h3><p>La sincronizzazione facoltativa tramite il tuo Google Drive mantiene i due dispositivi uguali, senza alcun account.</p></div></div>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Obiettivi a modo tuo</h3><p>Un obiettivo al giorno, alla settimana o al mese per ogni abitudine. Hai saltato un giorno? Recuperalo più avanti nella settimana: gli obiettivi settimanali vengono prima.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Un timer che non si ferma</h3><p>Conta a schermo spento e con l’app chiusa, va in pausa e riprende, e si può fermare direttamente dalla notifica. Il tempo si può anche aggiungere a mano.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Programma settimanale</h3><p>Un vero calendario di 7 giorni: pianifica blocchi certi e possibili, vedi sopra cosa hai fatto davvero e importa gli eventi dal calendario del telefono.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Il vaso della settimana</h3><p>Ogni abitudine versa il suo colore nel vaso. Il lunedì ricevi un riepilogo e una ricompensa che hai scelto tu, oppure una penalità.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statistiche</h3><p>Serie di giorni, grafici, un calendario delle attività e record per settimana, mese, anno e di sempre.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widget</h3><p>Le abitudini di oggi con un pulsante di avvio, la settimana a colpo d’occhio e cosa viene dopo nel programma, direttamente nella schermata Home.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Promemoria</h3><p>Una spinta la sera se un obiettivo non è ancora raggiunto, un riepilogo il lunedì, i tuoi promemoria personali e quelli per i blocchi in programma.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Telefono e tablet</h3><p>La sincronizzazione facoltativa tramite il tuo Google Drive mantiene i due dispositivi uguali, senza alcun account.</p></div></div>
   </section>
 
-  <section class="extra" aria-labelledby="x-it">
+
+  <section class="section extra" aria-labelledby="x-it">
     <h2 class="eyebrow" id="x-it">E inoltre</h2>
     <div class="chips"><span>12 lingue</span><span>Tema chiaro e scuro</span><span>Suoni e vibrazione</span><span>Backup su file</span><span>Layout per tablet a due colonne</span></div>
   </section>
+
 
   <section class="private">
     <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
@@ -400,37 +395,36 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
 
   <p class="contact">Domande e idee: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
-<article class="doc" lang="sv" data-lang="sv" data-title="Kraplya: vanespårare med timer" data-app="Kraplya" data-langlabel="Språk" hidden>
+<article class="langdoc" lang="sv" data-lang="sv" data-title="Kraplya: vanespårare med timer" data-app="Kraplya" data-langlabel="Språk" data-nav="Hem|Integritet" data-hub="PegasoHlib — alla appar" hidden>
   <header class="hero">
-    <img class="logo" src="icon.svg" alt="" width="104" height="104">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
     <h1>Kraplya</h1>
     <p class="tagline">Droppen urholkar stenen</p>
     <p class="lead">Sätt ett mål för varje vana, starta timern när du övar och se veckan fyllas droppe för droppe. Enkelt, lugnt och privat.</p>
-    <div class="cta">
-      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Ladda ner för Android</span><span class="ver" hidden></span></a>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Ladda ner för Android</span><span class="ver badge" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Integritetspolicy</span></a>
     </div>
-    <p class="small">Efter installationen uppdaterar appen sig själv.<br>För Android 8 och senare · Snart på Google Play</p>
+    <p class="note">Efter installationen uppdaterar appen sig själv.<br>För Android 8 och senare · Snart på Google Play</p>
   </header>
 
   <section class="show" aria-label="Direkt på hemskärmen">
     <div class="showtext"><h2 class="display">Direkt på hemskärmen</h2><p>Tre widgetar, på ditt språk, ljusa eller mörka.</p></div>
-    <div class="widgets">
-      <div class="w today"><img src="img/sv/pv_today.png" alt="" width="650" height="540" loading="lazy"></div>
-      <div class="w week"><img src="img/sv/pv_week.png" alt="" width="625" height="300" loading="lazy"></div>
-      <div class="w plan"><img src="img/sv/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div>
-    </div>
+    <div class="widgets"><div class="w today"><img src="img/sv/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/sv/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/sv/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
   </section>
 
-  <section class="features" aria-labelledby="f-sv">
+  <section class="section features" aria-labelledby="f-sv">
     <h2 class="eyebrow" id="f-sv">Vad appen kan</h2>
-    <div class="grid"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Mål på ditt sätt</h3><p>Ett mål per dag, vecka eller månad för varje vana. Missat en dag? Ta igen den senare i veckan: veckomålen går först.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>En timer som fortsätter</h3><p>Den räknar med skärmen avstängd och appen stängd, kan pausas och återupptas och kan stoppas direkt från aviseringen. Tid kan också läggas till för hand.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Veckoschema</h3><p>En riktig 7-dagarskalender: planera säkra block och kanske-block, se ovanpå vad du faktiskt gjorde och hämta händelser från telefonens kalender.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Veckans kärl</h3><p>Varje vana häller sin färg i kärlet. På måndagen får du en sammanfattning och en belöning du själv har valt, eller ett straff.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statistik</h3><p>Dagssviter, diagram, en aktivitetskalender och rekord för en vecka, en månad, ett år och hela tiden.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgetar</h3><p>Dagens vanor med en startknapp, veckan i en överblick och vad som står näst på schemat, direkt på hemskärmen.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Påminnelser</h3><p>En knuff på kvällen om ett mål inte är nått än, en sammanfattning på måndagen, dina egna påminnelser och påminnelser om schemalagda block.</p></div><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Telefon och surfplatta</h3><p>Valfri synkning via din egen Google Drive håller båda enheterna likadana, utan något konto.</p></div></div>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Mål på ditt sätt</h3><p>Ett mål per dag, vecka eller månad för varje vana. Missat en dag? Ta igen den senare i veckan: veckomålen går först.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>En timer som fortsätter</h3><p>Den räknar med skärmen avstängd och appen stängd, kan pausas och återupptas och kan stoppas direkt från aviseringen. Tid kan också läggas till för hand.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Veckoschema</h3><p>En riktig 7-dagarskalender: planera säkra block och kanske-block, se ovanpå vad du faktiskt gjorde och hämta händelser från telefonens kalender.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Veckans kärl</h3><p>Varje vana häller sin färg i kärlet. På måndagen får du en sammanfattning och en belöning du själv har valt, eller ett straff.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statistik</h3><p>Dagssviter, diagram, en aktivitetskalender och rekord för en vecka, en månad, ett år och hela tiden.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgetar</h3><p>Dagens vanor med en startknapp, veckan i en överblick och vad som står näst på schemat, direkt på hemskärmen.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Påminnelser</h3><p>En knuff på kvällen om ett mål inte är nått än, en sammanfattning på måndagen, dina egna påminnelser och påminnelser om schemalagda block.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Telefon och surfplatta</h3><p>Valfri synkning via din egen Google Drive håller båda enheterna likadana, utan något konto.</p></div></div>
   </section>
 
-  <section class="extra" aria-labelledby="x-sv">
+
+  <section class="section extra" aria-labelledby="x-sv">
     <h2 class="eyebrow" id="x-sv">Dessutom</h2>
     <div class="chips"><span>12 språk</span><span>Ljust och mörkt tema</span><span>Ljud och vibration</span><span>Säkerhetskopior till fil</span><span>Surfplattelayout i två kolumner</span></div>
   </section>
+
 
   <section class="private">
     <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
@@ -440,37 +434,36 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
 
   <p class="contact">Frågor och idéer: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
-<article class="doc" lang="id" data-lang="id" data-title="Kraplya: pelacak kebiasaan dengan timer" data-app="Kraplya" data-langlabel="Bahasa" hidden>
+<article class="langdoc" lang="id" data-lang="id" data-title="Kraplya: pelacak kebiasaan dengan timer" data-app="Kraplya" data-langlabel="Bahasa" data-nav="Beranda|Privasi" data-hub="PegasoHlib — semua aplikasi" hidden>
   <header class="hero">
-    <img class="logo" src="icon.svg" alt="" width="104" height="104">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
     <h1>Kraplya</h1>
     <p class="tagline">Setetes demi setetes, batu pun berlubang</p>
     <p class="lead">Tetapkan target untuk setiap kebiasaan, nyalakan timer saat kamu berlatih, dan lihat minggumu terisi setetes demi setetes. Sederhana, tenang, dan privat.</p>
-    <div class="cta">
-      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Unduh untuk Android</span><span class="ver" hidden></span></a>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Unduh untuk Android</span><span class="ver badge" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Kebijakan privasi</span></a>
     </div>
-    <p class="small">Setelah dipasang, aplikasi memperbarui dirinya sendiri.<br>Untuk Android 8 dan yang lebih baru · Segera hadir di Google Play</p>
+    <p class="note">Setelah dipasang, aplikasi memperbarui dirinya sendiri.<br>Untuk Android 8 dan yang lebih baru · Segera hadir di Google Play</p>
   </header>
 
   <section class="show" aria-label="Langsung di layar utamamu">
     <div class="showtext"><h2 class="display">Langsung di layar utamamu</h2><p>Tiga widget, dalam bahasamu, terang atau gelap.</p></div>
-    <div class="widgets">
-      <div class="w today"><img src="img/id/pv_today.png" alt="" width="650" height="540" loading="lazy"></div>
-      <div class="w week"><img src="img/id/pv_week.png" alt="" width="625" height="300" loading="lazy"></div>
-      <div class="w plan"><img src="img/id/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div>
-    </div>
+    <div class="widgets"><div class="w today"><img src="img/id/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/id/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/id/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
   </section>
 
-  <section class="features" aria-labelledby="f-id">
+  <section class="section features" aria-labelledby="f-id">
     <h2 class="eyebrow" id="f-id">Apa yang bisa dilakukannya</h2>
-    <div class="grid"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Target sesuai caramu</h3><p>Target harian, mingguan, atau bulanan untuk setiap kebiasaan. Terlewat sehari? Kejar lagi nanti di minggu yang sama: target mingguan lebih diutamakan.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Timer yang terus berjalan</h3><p>Tetap menghitung saat layar mati dan aplikasi ditutup, bisa dijeda dan dilanjutkan, dan bisa dihentikan langsung dari notifikasi. Waktu juga bisa ditambahkan secara manual.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Jadwal mingguan</h3><p>Kalender 7 hari yang sesungguhnya: rencanakan blok pasti dan blok mungkin, lihat di atasnya apa yang benar-benar kamu lakukan, dan ambil acara dari kalender ponselmu.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Wadah minggu ini</h3><p>Setiap kebiasaan menuangkan warnanya ke dalam wadah. Pada hari Senin kamu mendapat ringkasan dan hadiah yang kamu pilih sendiri, atau hukuman.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statistik</h3><p>Rentetan hari, grafik, kalender aktivitas, dan rekor untuk seminggu, sebulan, setahun, dan sepanjang waktu.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widget</h3><p>Kebiasaan hari ini dengan tombol mulai, minggu ini dalam sekali lihat, dan apa yang berikutnya di jadwalmu, langsung di layar utama.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Pengingat</h3><p>Dorongan di malam hari jika target belum tercapai, ringkasan hari Senin, pengingatmu sendiri, dan pengingat untuk blok terjadwal.</p></div><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Ponsel dan tablet</h3><p>Sinkronisasi opsional lewat Google Drive milikmu sendiri membuat kedua perangkat tetap sama, tanpa akun apa pun.</p></div></div>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Target sesuai caramu</h3><p>Target harian, mingguan, atau bulanan untuk setiap kebiasaan. Terlewat sehari? Kejar lagi nanti di minggu yang sama: target mingguan lebih diutamakan.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Timer yang terus berjalan</h3><p>Tetap menghitung saat layar mati dan aplikasi ditutup, bisa dijeda dan dilanjutkan, dan bisa dihentikan langsung dari notifikasi. Waktu juga bisa ditambahkan secara manual.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Jadwal mingguan</h3><p>Kalender 7 hari yang sesungguhnya: rencanakan blok pasti dan blok mungkin, lihat di atasnya apa yang benar-benar kamu lakukan, dan ambil acara dari kalender ponselmu.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Wadah minggu ini</h3><p>Setiap kebiasaan menuangkan warnanya ke dalam wadah. Pada hari Senin kamu mendapat ringkasan dan hadiah yang kamu pilih sendiri, atau hukuman.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statistik</h3><p>Rentetan hari, grafik, kalender aktivitas, dan rekor untuk seminggu, sebulan, setahun, dan sepanjang waktu.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widget</h3><p>Kebiasaan hari ini dengan tombol mulai, minggu ini dalam sekali lihat, dan apa yang berikutnya di jadwalmu, langsung di layar utama.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Pengingat</h3><p>Dorongan di malam hari jika target belum tercapai, ringkasan hari Senin, pengingatmu sendiri, dan pengingat untuk blok terjadwal.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Ponsel dan tablet</h3><p>Sinkronisasi opsional lewat Google Drive milikmu sendiri membuat kedua perangkat tetap sama, tanpa akun apa pun.</p></div></div>
   </section>
 
-  <section class="extra" aria-labelledby="x-id">
+
+  <section class="section extra" aria-labelledby="x-id">
     <h2 class="eyebrow" id="x-id">Selain itu</h2>
     <div class="chips"><span>12 bahasa</span><span>Tema terang dan gelap</span><span>Suara dan getaran</span><span>Cadangan ke file</span><span>Tata letak tablet dua kolom</span></div>
   </section>
+
 
   <section class="private">
     <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
@@ -480,37 +473,36 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
 
   <p class="contact">Pertanyaan dan ide: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
-<article class="doc" lang="ja" data-lang="ja" data-title="クラプリャ：タイマー付き習慣トラッカー" data-app="クラプリャ" data-langlabel="言語" hidden>
+<article class="langdoc" lang="ja" data-lang="ja" data-title="クラプリャ：タイマー付き習慣トラッカー" data-app="クラプリャ" data-langlabel="言語" data-nav="ホーム|プライバシー" data-hub="PegasoHlib — すべてのアプリ" hidden>
   <header class="hero">
-    <img class="logo" src="icon.svg" alt="" width="104" height="104">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
     <h1>クラプリャ</h1>
     <p class="tagline">雨垂れ石を穿つ</p>
     <p class="lead">習慣ごとに目標を決めて、取り組むときはタイマーをスタート。一週間が一滴ずつ満ちていくのを見守りましょう。シンプルで穏やか、そしてプライベートです。</p>
-    <div class="cta">
-      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Android版をダウンロード</span><span class="ver" hidden></span></a>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Android版をダウンロード</span><span class="ver badge" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>プライバシーポリシー</span></a>
     </div>
-    <p class="small">インストール後は、アプリが自動でアップデートされます。<br>Android 8 以降に対応 · Google Play で近日公開</p>
+    <p class="note">インストール後は、アプリが自動でアップデートされます。<br>Android 8 以降に対応 · Google Play で近日公開</p>
   </header>
 
   <section class="show" aria-label="ホーム画面にそのまま">
     <div class="showtext"><h2 class="display">ホーム画面にそのまま</h2><p>3つのウィジェットを、あなたの言語で、ライトでもダークでも。</p></div>
-    <div class="widgets">
-      <div class="w today"><img src="img/ja/pv_today.png" alt="" width="650" height="540" loading="lazy"></div>
-      <div class="w week"><img src="img/ja/pv_week.png" alt="" width="625" height="300" loading="lazy"></div>
-      <div class="w plan"><img src="img/ja/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div>
-    </div>
+    <div class="widgets"><div class="w today"><img src="img/ja/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/ja/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/ja/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
   </section>
 
-  <section class="features" aria-labelledby="f-ja">
+  <section class="section features" aria-labelledby="f-ja">
     <h2 class="eyebrow" id="f-ja">できること</h2>
-    <div class="grid"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>自分らしい目標</h3><p>習慣ごとに、1日・1週間・1か月単位の目標を設定できます。1日休んでも、その週のうちに取り戻せます。週の目標が優先されます。</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>止まらないタイマー</h3><p>画面がオフでも、アプリを閉じても計測を続けます。一時停止と再開ができ、通知から直接止めることもできます。時間は手動でも追加できます。</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>週間スケジュール</h3><p>本格的な7日間カレンダー。確定の予定と「たぶん」の予定をブロックで組み、その上に実際にやったことを重ねて確認できます。スマホのカレンダーから予定を取り込むこともできます。</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>週のうつわ</h3><p>習慣ごとの色がうつわに注がれていきます。月曜日には振り返りと、自分で決めたごほうび、またはペナルティが待っています。</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>統計</h3><p>連続日数、グラフ、アクティビティカレンダー、そして週・月・年・全期間の記録。</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>ウィジェット</h3><p>スタートボタン付きの今日の習慣、ひと目でわかる一週間、スケジュールの次の予定を、ホーム画面に直接表示します。</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>リマインダー</h3><p>目標がまだ達成できていなければ夜にひと声。月曜日の振り返り、自分で設定したリマインダー、予定ブロックのリマインダーもあります。</p></div><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>スマホとタブレット</h3><p>ご自身の Google ドライブを使ったオプションの同期で、2台のデバイスを同じ状態に保てます。アカウントは一切不要です。</p></div></div>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>自分らしい目標</h3><p>習慣ごとに、1日・1週間・1か月単位の目標を設定できます。1日休んでも、その週のうちに取り戻せます。週の目標が優先されます。</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>止まらないタイマー</h3><p>画面がオフでも、アプリを閉じても計測を続けます。一時停止と再開ができ、通知から直接止めることもできます。時間は手動でも追加できます。</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>週間スケジュール</h3><p>本格的な7日間カレンダー。確定の予定と「たぶん」の予定をブロックで組み、その上に実際にやったことを重ねて確認できます。スマホのカレンダーから予定を取り込むこともできます。</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>週のうつわ</h3><p>習慣ごとの色がうつわに注がれていきます。月曜日には振り返りと、自分で決めたごほうび、またはペナルティが待っています。</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>統計</h3><p>連続日数、グラフ、アクティビティカレンダー、そして週・月・年・全期間の記録。</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>ウィジェット</h3><p>スタートボタン付きの今日の習慣、ひと目でわかる一週間、スケジュールの次の予定を、ホーム画面に直接表示します。</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>リマインダー</h3><p>目標がまだ達成できていなければ夜にひと声。月曜日の振り返り、自分で設定したリマインダー、予定ブロックのリマインダーもあります。</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>スマホとタブレット</h3><p>ご自身の Google ドライブを使ったオプションの同期で、2台のデバイスを同じ状態に保てます。アカウントは一切不要です。</p></div></div>
   </section>
 
-  <section class="extra" aria-labelledby="x-ja">
+
+  <section class="section extra" aria-labelledby="x-ja">
     <h2 class="eyebrow" id="x-ja">さらに</h2>
     <div class="chips"><span>12言語に対応</span><span>ライト・ダークテーマ</span><span>サウンドとバイブレーション</span><span>ファイルへのバックアップ</span><span>タブレット向け2列レイアウト</span></div>
   </section>
+
 
   <section class="private">
     <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
@@ -520,37 +512,36 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
 
   <p class="contact">ご質問・アイデア: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
-<article class="doc" lang="kk" data-lang="kk" data-title="Крапля: таймері бар әдет трекері" data-app="Крапля" data-langlabel="Тіл" hidden>
+<article class="langdoc" lang="kk" data-lang="kk" data-title="Крапля: таймері бар әдет трекері" data-app="Крапля" data-langlabel="Тіл" data-nav="Басты бет|Құпиялық" data-hub="PegasoHlib — барлық қолданбалар" hidden>
   <header class="hero">
-    <img class="logo" src="icon.svg" alt="" width="104" height="104">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
     <h1>Крапля</h1>
     <p class="tagline">Тамшы тас тесер</p>
     <p class="lead">Әр әдетке мақсат қой, айналысқанда таймерді қос және аптаның тамшылап толғанын көр. Қарапайым, сабырлы әрі жеке.</p>
-    <div class="cta">
-      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Android-ке жүктеп алу</span><span class="ver" hidden></span></a>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Android-ке жүктеп алу</span><span class="ver badge" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Құпиялық саясаты</span></a>
     </div>
-    <p class="small">Орнатқаннан кейін қолданба өзі жаңарып отырады.<br>Android 8 және одан жаңа нұсқалар үшін · Жақында Google Play-де</p>
+    <p class="note">Орнатқаннан кейін қолданба өзі жаңарып отырады.<br>Android 8 және одан жаңа нұсқалар үшін · Жақында Google Play-де</p>
   </header>
 
   <section class="show" aria-label="Тікелей басты экранда">
     <div class="showtext"><h2 class="display">Тікелей басты экранда</h2><p>Өз тіліңде, ашық не қараңғы тақырыпта үш виджет.</p></div>
-    <div class="widgets">
-      <div class="w today"><img src="img/kk/pv_today.png" alt="" width="650" height="540" loading="lazy"></div>
-      <div class="w week"><img src="img/kk/pv_week.png" alt="" width="625" height="300" loading="lazy"></div>
-      <div class="w plan"><img src="img/kk/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div>
-    </div>
+    <div class="widgets"><div class="w today"><img src="img/kk/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/kk/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/kk/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
   </section>
 
-  <section class="features" aria-labelledby="f-kk">
+  <section class="section features" aria-labelledby="f-kk">
     <h2 class="eyebrow" id="f-kk">Не істей алады</h2>
-    <div class="grid"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Өзіңе ыңғайлы мақсаттар</h3><p>Әр әдетке күнге, аптаға немесе айға мақсат. Бір күнді өткізіп алдың ба? Апта ішінде кейінірек толықтырасың: апталық мақсаттар бірінші орында.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Тоқтамайтын таймер</h3><p>Экран сөніп, қолданба жабық тұрса да санай береді, кідіртіліп, қайта жалғасады және хабарландырудан тікелей тоқтатылады. Уақытты қолмен де қосуға болады.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Апта кестесі</h3><p>Нағыз 7 күндік күнтізбе: нақты және ықтимал блоктарды жоспарла, олардың үстінен шын мәнінде не істегеніңді көр және телефон күнтізбесіндегі оқиғаларды қос.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Апта ыдысы</h3><p>Әр әдет ыдысқа өз түсін құяды. Дүйсенбіде қорытынды мен өзің таңдаған сыйлық немесе жаза аласың.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Статистика</h3><p>Күндер сериясы, графиктер, белсенділік күнтізбесі және апта, ай, жыл мен барлық уақыттағы рекордтар.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Виджеттер</h3><p>Бастау түймесі бар бүгінгі әдеттер, бір қарағанда бүкіл апта және кесте бойынша келесі іс — тікелей басты экранда.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Еске салғыштар</h3><p>Мақсат әлі орындалмаса — кешкі еске салу, дүйсенбідегі қорытынды, өз еске салғыштарың және кестедегі блоктар туралы еске салғыштар.</p></div><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Телефон және планшет</h3><p>Өз Google Дискің арқылы міндетті емес синхрондау екі құрылғыны бірдей етіп ұстайды, ешқандай аккаунтсыз.</p></div></div>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Өзіңе ыңғайлы мақсаттар</h3><p>Әр әдетке күнге, аптаға немесе айға мақсат. Бір күнді өткізіп алдың ба? Апта ішінде кейінірек толықтырасың: апталық мақсаттар бірінші орында.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Тоқтамайтын таймер</h3><p>Экран сөніп, қолданба жабық тұрса да санай береді, кідіртіліп, қайта жалғасады және хабарландырудан тікелей тоқтатылады. Уақытты қолмен де қосуға болады.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Апта кестесі</h3><p>Нағыз 7 күндік күнтізбе: нақты және ықтимал блоктарды жоспарла, олардың үстінен шын мәнінде не істегеніңді көр және телефон күнтізбесіндегі оқиғаларды қос.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Апта ыдысы</h3><p>Әр әдет ыдысқа өз түсін құяды. Дүйсенбіде қорытынды мен өзің таңдаған сыйлық немесе жаза аласың.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Статистика</h3><p>Күндер сериясы, графиктер, белсенділік күнтізбесі және апта, ай, жыл мен барлық уақыттағы рекордтар.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Виджеттер</h3><p>Бастау түймесі бар бүгінгі әдеттер, бір қарағанда бүкіл апта және кесте бойынша келесі іс — тікелей басты экранда.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Еске салғыштар</h3><p>Мақсат әлі орындалмаса — кешкі еске салу, дүйсенбідегі қорытынды, өз еске салғыштарың және кестедегі блоктар туралы еске салғыштар.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Телефон және планшет</h3><p>Өз Google Дискің арқылы міндетті емес синхрондау екі құрылғыны бірдей етіп ұстайды, ешқандай аккаунтсыз.</p></div></div>
   </section>
 
-  <section class="extra" aria-labelledby="x-kk">
+
+  <section class="section extra" aria-labelledby="x-kk">
     <h2 class="eyebrow" id="x-kk">Тағы да</h2>
     <div class="chips"><span>12 тіл</span><span>Ашық және қараңғы тақырып</span><span>Дыбыстар мен діріл</span><span>Файлға сақтық көшірме</span><span>Планшетте екі баған</span></div>
   </section>
+
 
   <section class="private">
     <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
@@ -560,37 +551,36 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
 
   <p class="contact">Сұрақтар мен идеялар: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
-<article class="doc" lang="ru" data-lang="ru" data-title="Крапля: трекер привычек с таймером" data-app="Крапля" data-langlabel="Язык" hidden>
+<article class="langdoc" lang="ru" data-lang="ru" data-title="Крапля: трекер привычек с таймером" data-app="Крапля" data-langlabel="Язык" data-nav="Главная|Конфиденциальность" data-hub="PegasoHlib — все приложения" hidden>
   <header class="hero">
-    <img class="logo" src="icon.svg" alt="" width="104" height="104">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
     <h1>Крапля</h1>
     <p class="tagline">Капля камень точит</p>
     <p class="lead">Ставь цель для каждой привычки, включай таймер, когда занимаешься, и смотри, как неделя наполняется капля за каплей. Просто, спокойно и приватно.</p>
-    <div class="cta">
-      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Скачать для Android</span><span class="ver" hidden></span></a>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Скачать для Android</span><span class="ver badge" hidden></span></a>
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Политика конфиденциальности</span></a>
     </div>
-    <p class="small">После установки приложение обновляется само.<br>Для Android 8 и новее · Скоро в Google Play</p>
+    <p class="note">После установки приложение обновляется само.<br>Для Android 8 и новее · Скоро в Google Play</p>
   </header>
 
   <section class="show" aria-label="Прямо на главном экране">
     <div class="showtext"><h2 class="display">Прямо на главном экране</h2><p>Три виджета на твоём языке, в светлой или тёмной теме.</p></div>
-    <div class="widgets">
-      <div class="w today"><img src="img/ru/pv_today.png" alt="" width="650" height="540" loading="lazy"></div>
-      <div class="w week"><img src="img/ru/pv_week.png" alt="" width="625" height="300" loading="lazy"></div>
-      <div class="w plan"><img src="img/ru/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div>
-    </div>
+    <div class="widgets"><div class="w today"><img src="img/ru/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/ru/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/ru/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
   </section>
 
-  <section class="features" aria-labelledby="f-ru">
+  <section class="section features" aria-labelledby="f-ru">
     <h2 class="eyebrow" id="f-ru">Что она умеет</h2>
-    <div class="grid"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Цели как тебе удобно</h3><p>Цель на день, неделю или месяц для каждой привычки. Пропустил день? Наверстаешь позже на неделе: недельные цели в приоритете.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Таймер, который не останавливается</h3><p>Считает при выключенном экране и закрытом приложении, ставится на паузу и продолжается, останавливается прямо из уведомления. Время можно добавить и вручную.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Расписание недели</h3><p>Настоящий календарь на 7 дней: планируй точные и возможные блоки, смотри поверх них, что сделал на самом деле, и добавляй события из календаря телефона.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Сосуд недели</h3><p>Каждая привычка вливает в сосуд свой цвет. В понедельник — итоги и награда, которую ты сам себе выбрал, или наказание.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Статистика</h3><p>Серии дней, графики, календарь активности и рекорды за неделю, месяц, год и всё время.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Виджеты</h3><p>Привычки на сегодня с кнопкой старта, неделя одним взглядом и что дальше по расписанию — прямо на главном экране.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Напоминания</h3><p>Вечером, если цель ещё не достигнута, итоги в понедельник, твои собственные напоминания и напоминания о блоках из расписания.</p></div><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Телефон и планшет</h3><p>Необязательная синхронизация через твой собственный Google Диск делает оба устройства одинаковыми, без всякого аккаунта.</p></div></div>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Цели как тебе удобно</h3><p>Цель на день, неделю или месяц для каждой привычки. Пропустил день? Наверстаешь позже на неделе: недельные цели в приоритете.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Таймер, который не останавливается</h3><p>Считает при выключенном экране и закрытом приложении, ставится на паузу и продолжается, останавливается прямо из уведомления. Время можно добавить и вручную.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Расписание недели</h3><p>Настоящий календарь на 7 дней: планируй точные и возможные блоки, смотри поверх них, что сделал на самом деле, и добавляй события из календаря телефона.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Сосуд недели</h3><p>Каждая привычка вливает в сосуд свой цвет. В понедельник — итоги и награда, которую ты сам себе выбрал, или наказание.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Статистика</h3><p>Серии дней, графики, календарь активности и рекорды за неделю, месяц, год и всё время.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Виджеты</h3><p>Привычки на сегодня с кнопкой старта, неделя одним взглядом и что дальше по расписанию — прямо на главном экране.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Напоминания</h3><p>Вечером, если цель ещё не достигнута, итоги в понедельник, твои собственные напоминания и напоминания о блоках из расписания.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Телефон и планшет</h3><p>Необязательная синхронизация через твой собственный Google Диск делает оба устройства одинаковыми, без всякого аккаунта.</p></div></div>
   </section>
 
-  <section class="extra" aria-labelledby="x-ru">
+
+  <section class="section extra" aria-labelledby="x-ru">
     <h2 class="eyebrow" id="x-ru">А ещё</h2>
     <div class="chips"><span>12 языков</span><span>Светлая и тёмная тема</span><span>Звуки и вибрация</span><span>Резервные копии в файл</span><span>Планшет в две колонки</span></div>
   </section>
+
 
   <section class="private">
     <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
@@ -600,46 +590,35 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
 
   <p class="contact">Вопросы и идеи: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
-<script>
-(function () {
-  if (!window.fetch) return;
-  fetch("update.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (u) {
-    if (!u || typeof u.url !== "string" || u.url.indexOf("https://github.com/PegasoHlib/kraplya/releases/download/") !== 0) return;
-    var a = document.querySelectorAll("a.dl");
-    for (var i = 0; i < a.length; i++) {
-      a[i].href = u.url;
-      var v = a[i].querySelector(".ver"); if (v && u.name) { v.textContent = "v" + u.name; v.hidden = false; }
-    }
-  }).catch(function () {});
-})();
-</script>
 </main>
-<footer>© 2026 · <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></footer>
+<footer>© 2026 · <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a> · <a id="hublink" href="https://pegasohlib.github.io/?lang=en" data-keep-lang>PegasoHlib — all apps</a></footer>
 <script>
 (function () {
-  var docs = document.querySelectorAll(".doc"), sel = document.getElementById("lang");
+  var docs = document.querySelectorAll(".langdoc"), sel = document.getElementById("lang");
   var have = {}; for (var i = 0; i < docs.length; i++) have[docs[i].dataset.lang] = docs[i];
-  var alias = { "in": "id", "nb": "sv", "no": "sv" };
+  var alias = { "in": "id", "nb": "sv", "no": "sv" }, KEYS = ["siteLang","kraplya-lang"];
   function norm(c) { c = (c || "").toLowerCase(); if (alias[c]) c = alias[c]; if (have[c]) return c; c = c.split(/[-_]/)[0]; c = alias[c] || c; return have[c] ? c : null; }
   function pick() {
     var q = new URLSearchParams(location.search).get("lang"); if (norm(q)) return norm(q);
     var h = location.hash.slice(1); if (norm(h)) return norm(h);
     if (h && have[h.split("-")[0]]) return h.split("-")[0];
-    try { var s = localStorage.getItem("kraplya-lang"); if (norm(s)) return norm(s); } catch (e) {}
+    for (var k = 0; k < KEYS.length; k++) { try { var s = localStorage.getItem(KEYS[k]); if (norm(s)) return norm(s); } catch (e) {} }
     var nav = navigator.languages || [navigator.language];
     for (var j = 0; j < nav.length; j++) if (norm(nav[j])) return norm(nav[j]);
     return "en";
   }
+  function text(id, t) { var e = document.getElementById(id); if (e && t != null) e.textContent = t; }
   function show(c, save) {
     for (var k in have) have[k].hidden = k !== c;
     var d = have[c]; document.documentElement.lang = c; document.title = d.dataset.title;
     sel.value = c;
-    document.getElementById("appname").textContent = d.dataset.app;
-    document.getElementById("langlabel").textContent = d.dataset.langlabel;
+    text("appname", d.dataset.app); text("langlabel", d.dataset.langlabel); text("hublink", d.dataset.hub); text("footnote", d.dataset.footnote);
+    var names = (d.dataset.nav || "").split("|"), nav = document.querySelectorAll("a[data-nav]");
+    for (var n = 0; n < nav.length; n++) nav[n].textContent = names[+nav[n].dataset.nav] || nav[n].textContent;
     var links = document.querySelectorAll("a[data-keep-lang]");
     for (var m = 0; m < links.length; m++) { var u0 = new URL(links[m].getAttribute("href"), location.href); u0.searchParams.set("lang", c); links[m].href = u0.href; }
     if (save) {
-      try { localStorage.setItem("kraplya-lang", c); } catch (e) {}
+      try { localStorage.setItem(KEYS[0], c); } catch (e) {}
       var u = new URL(location.href); u.searchParams.set("lang", c); u.hash = ""; history.replaceState(null, "", u);
     }
   }
@@ -648,5 +627,20 @@ h1{font-size:clamp(36px,9vw,60px);line-height:1.05;margin:0}
   sel.addEventListener("change", function () { show(sel.value, true); window.scrollTo(0, 0); });
 })();
 </script>
+<script>
+(function () {
+  if (!window.fetch) return;
+  fetch("update.json", { cache: "no-cache" }).then(function (r) { return r.ok ? r.json() : null; }).then(function (u) {
+    var url = u && (u.url || u.apk), v = u && (u.name || u.versionName);
+    if (typeof url !== "string" || url.indexOf("https://github.com/PegasoHlib/kraplya/releases/download/") !== 0) return;
+    var a = document.querySelectorAll("a.dl");
+    for (var i = 0; i < a.length; i++) {
+      a[i].href = url;
+      var b = a[i].querySelector(".ver"); if (b && v) { b.textContent = "v" + v; b.hidden = false; }
+    }
+  }).catch(function () {});
+})();
+</script>
+<script src="https://pegasohlib.github.io/assets/kit.js" defer></script>
 </body>
 </html>

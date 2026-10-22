@@ -3,11 +3,14 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<script>try{var t=localStorage.getItem("pegasohlib-theme");if(t==="light"||t==="dark")document.documentElement.dataset.theme=t}catch(e){}</script>
 <title>Privacy policy · Kraplya</title>
 <meta name="description" content="Kraplya is a habit tracker with a timer. It is built so that your data stays yours: Kraplya has no servers of its own, no accounts, no ads and no analytics.">
-<meta name="theme-color" content="#22396F">
+<meta name="theme-color" content="#ECEEF3">
+<meta property="og:type" content="website">
 <meta property="og:title" content="Privacy policy · Kraplya">
 <meta property="og:description" content="Kraplya is a habit tracker with a timer. It is built so that your data stays yours: Kraplya has no servers of its own, no accounts, no ads and no analytics.">
+<meta property="og:url" content="https://pegasohlib.github.io/kraplya/privacy.html">
 <meta property="og:image" content="https://pegasohlib.github.io/kraplya/icon-512.png">
 <link rel="icon" href="icon.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="icon-512.png">
@@ -24,72 +27,55 @@
 <link rel="alternate" hreflang="ja" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=ja">
 <link rel="alternate" hreflang="kk" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=kk">
 <link rel="alternate" hreflang="ru" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=ru">
+<link rel="alternate" hreflang="x-default" href="https://pegasohlib.github.io/kraplya/privacy.html">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Onest:wght@400;500;600;700&family=Unbounded:wght@600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://pegasohlib.github.io/assets/kit.css">
 <style>
-:root{--bg:#ECEEF3;--surface:#fff;--surface2:#F2F3F7;--line:#DCDFE8;--ink:#12151C;--ink2:#454B5C;--ink3:#666C7E;--blue:#2A78D6;--navy1:#22396F;--navy2:#090E1C;
---h0:#2A78D6;--h1:#EB6834;--h2:#1BAF7A;--h3:#EDA100;--h4:#E87BA4;--h5:#008300;--h6:#6250D6;--h7:#E34948;--shadow:0 1px 2px rgba(18,21,28,.05),0 8px 24px rgba(18,21,28,.06);color-scheme:light}
-@media (prefers-color-scheme:dark){:root{--bg:#0D0F14;--surface:#181B22;--surface2:#21252E;--line:#2C313C;--ink:#EEF0F5;--ink2:#B4BACB;--ink3:#8A91A5;--blue:#5B9EF0;
---h0:#3987E5;--h1:#D95926;--h2:#199E70;--h3:#C98500;--h4:#D55181;--h5:#2E9A2E;--h6:#9085E9;--h7:#E66767;--shadow:none;color-scheme:dark}}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 Onest,system-ui,-apple-system,"Segoe UI",Roboto,"Hiragino Sans","Noto Sans JP",sans-serif;-webkit-text-size-adjust:100%}
-a{color:var(--blue);text-underline-offset:2px}
-code{font:.88em ui-monospace,SFMono-Regular,Consolas,monospace;background:var(--surface2);border:1px solid var(--line);border-radius:6px;padding:1px 6px}
-.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.bar{position:sticky;top:0;z-index:5;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);border-bottom:1px solid var(--line)}
-.bar .in{max-width:960px;margin:0 auto;padding:10px 16px;display:flex;align-items:center;gap:12px}
-.home{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-weight:700;min-width:0}
-.home img{width:32px;height:32px;border-radius:9px;flex:none}
-.home span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.lang{margin-left:auto;position:relative;display:flex;align-items:center;flex:none}
-.lang .ic{position:absolute;left:12px;width:18px;height:18px;pointer-events:none;color:var(--ink2)}
-.lang .chev{position:absolute;right:10px;left:auto;width:16px;height:16px;color:var(--ink3)}
-.lang select{appearance:none;-webkit-appearance:none;font:inherit;font-weight:600;font-size:15px;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 34px 8px 38px;min-height:42px;cursor:pointer;max-width:56vw}
-.lang select:focus-visible,.btn:focus-visible,.chips a:focus-visible{outline:3px solid color-mix(in srgb,var(--blue) 45%,transparent);outline-offset:2px}
-main{margin:0 auto;padding:8px 16px 72px}
-.ic{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
-.tile{flex:none;width:40px;height:40px;padding:9px;border-radius:12px;color:#fff;background:var(--h0)}
+:root{--g1:#2F7BFF;--g2:#13A77E;--on-accent:#fff;--accent:#2063D6;--accent2:#13A77E;--h0:#2A78D6;--h1:#EB6834;--h2:#1BAF7A;--h3:#EDA100;--h4:#E87BA4;--h5:#008300;--h6:#6250D6;--h7:#E34948;--navy1:#22396F;--navy2:#090E1C;--panel-line:transparent;--panel-ic:#7FB6FF}
+@media (prefers-color-scheme:dark){:root:not([data-theme=light]){--h0:#3987E5;--h1:#D95926;--h2:#199E70;--h3:#C98500;--h4:#D55181;--h5:#2E9A2E;--h6:#9085E9;--h7:#E66767;--panel-line:var(--line);--accent:#6AA5FF}}
+:root[data-theme=dark]{--h0:#3987E5;--h1:#D95926;--h2:#199E70;--h3:#C98500;--h4:#D55181;--h5:#2E9A2E;--h6:#9085E9;--h7:#E66767;--panel-line:var(--line);--accent:#6AA5FF}
+.tile{width:40px;height:40px;padding:9px;background:var(--h0)}
 .t0 .tile,.tile.t0{background:var(--h0)}.t1 .tile,.tile.t1{background:var(--h1)}.t2 .tile,.tile.t2{background:var(--h2)}.t3 .tile,.tile.t3{background:var(--h3)}.t4 .tile,.tile.t4{background:var(--h4)}.t5 .tile,.tile.t5{background:var(--h5)}.t6 .tile,.tile.t6{background:var(--h6)}.t7 .tile,.tile.t7{background:var(--h7)}
-.eyebrow{margin:0 0 10px;font-size:12.5px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--ink3)}
-.card{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:20px;box-shadow:var(--shadow)}
-h1,.display{font-family:Unbounded,Onest,system-ui,sans-serif;font-weight:700;letter-spacing:-.01em;text-wrap:balance}
-h1,h2,h3{overflow-wrap:break-word;hyphens:auto}
-html,body{overflow-x:clip}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chips a,.chips span{font-size:14px;font-weight:600;color:var(--ink);text-decoration:none;background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:6px 12px;white-space:nowrap}
-.chips a:hover{border-color:var(--blue);color:var(--blue)}
-footer{max-width:960px;margin:0 auto;padding:0 16px 40px;color:var(--ink3);font-size:14px;text-align:center}
-footer a{color:var(--ink2)}
+h2.eyebrow{font-family:inherit;line-height:1.4}
+.btn .ic{width:22px;height:22px}
+.btn.primary{background:linear-gradient(135deg,var(--g1),var(--g2));box-shadow:0 12px 30px -12px color-mix(in srgb,var(--g1) 80%,transparent)}
+.btn.primary .badge{background:color-mix(in srgb,var(--on-accent) 18%,transparent)}
+.home img{object-fit:cover}
 
 main{max-width:760px}
 .hero{text-align:center;padding:36px 4px 8px}
-.logo{display:block;margin:0 auto 14px;border-radius:22px;box-shadow:0 10px 30px rgba(9,14,28,.28)}
+.logo{display:block;margin:0 auto 14px;border-radius:22px;box-shadow:0 10px 30px -10px color-mix(in srgb,var(--g1) 70%,transparent)}
 .app{margin:0;font-weight:600;color:var(--ink3);letter-spacing:.02em}
-h1{font-size:clamp(28px,6.4vw,40px);line-height:1.12;margin:4px 0 12px}
+.hero h1{font-size:clamp(28px,6.4vw,40px);line-height:1.12;margin:4px 0 12px}
 .date{display:inline-block;margin:0 0 16px;font-size:13.5px;font-weight:600;color:var(--ink2);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
 .lead{margin:0 auto;max-width:600px;font-size:17.5px;color:var(--ink2);text-wrap:pretty}
 .glance{margin:32px 0 0}
-.glance ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:10px}
-.glance li{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow);font-weight:500;line-height:1.45}
+.glance ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:10px}
+.glance li{display:flex;gap:12px;align-items:flex-start;background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:14px;box-shadow:var(--shadow);font-weight:500;line-height:1.45;min-width:0}
 .toc{margin:28px 0 0}
-.toc .chips a{display:inline-flex;align-items:center;gap:7px}
+.toc .chips a{display:inline-flex;align-items:center;gap:7px;white-space:nowrap}
 .mini{width:16px;height:16px;color:var(--ink3)}
 .card{margin:14px 0 0}
 .tablecard{margin-top:28px}
-.card h2{font-size:19px;line-height:1.3;margin:0}
+.card h2{font-family:inherit;font-size:19px;line-height:1.3;margin:0}
 .tablecard h2{margin-bottom:14px}
 .sechead{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.sec{scroll-margin-top:76px}
 .sec p{margin:8px 0 0;color:var(--ink2)}
 .sec p:first-of-type{margin-top:0}
+.sec ul{margin:8px 0 0;padding-left:22px;color:var(--ink2)}
+.sec li{margin:4px 0}
+.sec li::marker{color:var(--accent)}
+.sec ul+p{margin-top:10px}
 table{width:100%;border-collapse:collapse;font-size:15px}
 th,td{text-align:left;vertical-align:top;padding:10px;border-top:1px solid var(--line)}
 thead th{border-top:0;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);font-weight:700;padding-top:0}
 tbody th{font-weight:600;color:var(--ink);width:38%}
 td{color:var(--ink2)}
 td:last-child{font-weight:600;color:var(--ink)}
-.perms{margin:0;display:grid;gap:8px}
+.perms{margin:10px 0 0;display:grid;gap:8px}
 .perms div{display:grid;grid-template-columns:minmax(150px,34%) 1fr;gap:4px 14px;background:var(--surface2);border-radius:14px;padding:10px 14px}
 .perms dt{font-weight:700}
 .perms dd{margin:0;color:var(--ink2)}
@@ -118,13 +104,15 @@ td:last-child{font-weight:600;color:var(--ink)}
 </head>
 <body>
 <div class="bar"><div class="in">
-  <a class="home" href="index.html"><img src="icon.svg" alt=""><span id="appname">Kraplya</span></a>
+  <a class="home" href="index.html" data-keep-lang><img src="icon.svg" alt="" width="32" height="32"><span id="appname">Kraplya</span></a>
+  <nav class="links"><a data-nav="0" href="index.html" data-keep-lang>Home</a><a class="on" aria-current="page" data-nav="1" href="privacy.html" data-keep-lang>Privacy</a></nav>
   <label class="lang"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5s1.1-5.9 3.6-8.5z"/></svg><span class="sr" id="langlabel">Language</span>
     <select id="lang" aria-labelledby="langlabel"><option value="en" lang="en">English</option><option value="uk" lang="uk">Українська</option><option value="es" lang="es">Español</option><option value="pt" lang="pt">Português</option><option value="fr" lang="fr">Français</option><option value="de" lang="de">Deutsch</option><option value="it" lang="it">Italiano</option><option value="sv" lang="sv">Svenska</option><option value="id" lang="id">Bahasa Indonesia</option><option value="ja" lang="ja">日本語</option><option value="kk" lang="kk">Қазақша</option><option value="ru" lang="ru">Русский</option></select><svg class="ic chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg>
   </label>
+  <button class="theme" id="theme" type="button"></button>
 </div></div>
 <main>
-<article class="doc" lang="en" data-lang="en" data-title="Privacy policy · Kraplya" data-app="Kraplya" data-langlabel="Language">
+<article class="langdoc" lang="en" data-lang="en" data-title="Privacy policy · Kraplya" data-app="Kraplya" data-langlabel="Language" data-nav="Home|Privacy" data-hub="PegasoHlib — all apps">
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -207,11 +195,11 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="doc" lang="uk" data-lang="uk" data-title="Політика конфіденційності · Крапля" data-app="Крапля" data-langlabel="Мова" hidden>
+<article class="langdoc" lang="uk" data-lang="uk" data-title="Політика конфіденційності · Крапля" data-app="Крапля" data-langlabel="Мова" data-nav="Головна|Конфіденційність" data-hub="PegasoHlib — всі застосунки" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Крапля</p>
-    <h1>Політика конфіденційності</h1>
+    <h1>Політика кон­фі­ден­цій­ності</h1>
     <p class="date">Оновлено 21 жовтня 2026 року · чинна з 13 жовтня 2026 року</p>
     <p class="lead">Крапля — трекер звичок із таймером. Вона зроблена так, щоб твої дані лишалися твоїми: у Краплі немає власних серверів, акаунтів, реклами й аналітики.</p>
   </header>
@@ -290,7 +278,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="doc" lang="es" data-lang="es" data-title="Política de privacidad · Kraplya" data-app="Kraplya" data-langlabel="Idioma" hidden>
+<article class="langdoc" lang="es" data-lang="es" data-title="Política de privacidad · Kraplya" data-app="Kraplya" data-langlabel="Idioma" data-nav="Inicio|Privacidad" data-hub="PegasoHlib — todas las apps" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -373,7 +361,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="doc" lang="pt" data-lang="pt" data-title="Política de privacidade · Kraplya" data-app="Kraplya" data-langlabel="Idioma" hidden>
+<article class="langdoc" lang="pt" data-lang="pt" data-title="Política de privacidade · Kraplya" data-app="Kraplya" data-langlabel="Idioma" data-nav="Início|Privacidade" data-hub="PegasoHlib — todos os apps" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -456,11 +444,11 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="doc" lang="fr" data-lang="fr" data-title="Politique de confidentialité · Kraplya" data-app="Kraplya" data-langlabel="Langue" hidden>
+<article class="langdoc" lang="fr" data-lang="fr" data-title="Politique de confidentialité · Kraplya" data-app="Kraplya" data-langlabel="Langue" data-nav="Accueil|Confidentialité" data-hub="PegasoHlib — toutes les applis" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
-    <h1>Politique de confidentialité</h1>
+    <h1>Politique de confi­den­tialité</h1>
     <p class="date">Mise à jour le 21 octobre 2026 · en vigueur depuis le 13 octobre 2026</p>
     <p class="lead">Kraplya est un suivi d’habitudes avec minuteur. Elle est conçue pour que tes données restent à toi : Kraplya n’a ni serveurs à elle, ni comptes, ni publicité, ni outils d’analyse.</p>
   </header>
@@ -539,11 +527,11 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="doc" lang="de" data-lang="de" data-title="Datenschutzerklärung · Kraplya" data-app="Kraplya" data-langlabel="Sprache" hidden>
+<article class="langdoc" lang="de" data-lang="de" data-title="Datenschutzerklärung · Kraplya" data-app="Kraplya" data-langlabel="Sprache" data-nav="Start|Datenschutz" data-hub="PegasoHlib — alle Apps" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
-    <h1>Datenschutzerklärung</h1>
+    <h1>Daten­schutz­erklärung</h1>
     <p class="date">Aktualisiert am 21. Oktober 2026 · gültig seit 13. Oktober 2026</p>
     <p class="lead">Kraplya ist ein Gewohnheitstracker mit Timer. Die App ist so gebaut, dass deine Daten dir gehören: Kraplya hat keine eigenen Server, keine Konten, keine Werbung und keine Analyse.</p>
   </header>
@@ -622,7 +610,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="doc" lang="it" data-lang="it" data-title="Informativa sulla privacy · Kraplya" data-app="Kraplya" data-langlabel="Lingua" hidden>
+<article class="langdoc" lang="it" data-lang="it" data-title="Informativa sulla privacy · Kraplya" data-app="Kraplya" data-langlabel="Lingua" data-nav="Home|Privacy" data-hub="PegasoHlib — tutte le app" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -705,11 +693,11 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="doc" lang="sv" data-lang="sv" data-title="Integritetspolicy · Kraplya" data-app="Kraplya" data-langlabel="Språk" hidden>
+<article class="langdoc" lang="sv" data-lang="sv" data-title="Integritetspolicy · Kraplya" data-app="Kraplya" data-langlabel="Språk" data-nav="Hem|Integritet" data-hub="PegasoHlib — alla appar" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
-    <h1>Integritetspolicy</h1>
+    <h1>Integritets­policy</h1>
     <p class="date">Uppdaterad 21 oktober 2026 · gäller från 13 oktober 2026</p>
     <p class="lead">Kraplya är en vanespårare med timer. Den är byggd så att dina data förblir dina: Kraplya har inga egna servrar, inga konton, ingen reklam och ingen analys.</p>
   </header>
@@ -788,7 +776,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="doc" lang="id" data-lang="id" data-title="Kebijakan privasi · Kraplya" data-app="Kraplya" data-langlabel="Bahasa" hidden>
+<article class="langdoc" lang="id" data-lang="id" data-title="Kebijakan privasi · Kraplya" data-app="Kraplya" data-langlabel="Bahasa" data-nav="Beranda|Privasi" data-hub="PegasoHlib — semua aplikasi" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -871,7 +859,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="doc" lang="ja" data-lang="ja" data-title="プライバシーポリシー · クラプリャ" data-app="クラプリャ" data-langlabel="言語" hidden>
+<article class="langdoc" lang="ja" data-lang="ja" data-title="プライバシーポリシー · クラプリャ" data-app="クラプリャ" data-langlabel="言語" data-nav="ホーム|プライバシー" data-hub="PegasoHlib — すべてのアプリ" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">クラプリャ</p>
@@ -954,7 +942,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="doc" lang="kk" data-lang="kk" data-title="Құпиялық саясаты · Крапля" data-app="Крапля" data-langlabel="Тіл" hidden>
+<article class="langdoc" lang="kk" data-lang="kk" data-title="Құпиялық саясаты · Крапля" data-app="Крапля" data-langlabel="Тіл" data-nav="Басты бет|Құпиялық" data-hub="PegasoHlib — барлық қолданбалар" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Крапля</p>
@@ -1037,11 +1025,11 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="doc" lang="ru" data-lang="ru" data-title="Политика конфиденциальности · Крапля" data-app="Крапля" data-langlabel="Язык" hidden>
+<article class="langdoc" lang="ru" data-lang="ru" data-title="Политика конфиденциальности · Крапля" data-app="Крапля" data-langlabel="Язык" data-nav="Главная|Конфиденциальность" data-hub="PegasoHlib — все приложения" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Крапля</p>
-    <h1>Политика конфиденциальности</h1>
+    <h1>Политика кон­фи­ден­ци­аль­ности</h1>
     <p class="date">Обновлено 21 октября 2026 года · действует с 13 октября 2026 года</p>
     <p class="lead">Крапля — трекер привычек с таймером. Приложение сделано так, чтобы твои данные оставались твоими: у Крапли нет собственных серверов, аккаунтов, рекламы и аналитики.</p>
   </header>
@@ -1121,32 +1109,34 @@ td:last-child{font-weight:600;color:var(--ink)}
   </section>
 </article>
 </main>
-<footer>© 2026 · <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></footer>
+<footer>© 2026 · <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a> · <a id="hublink" href="https://pegasohlib.github.io/?lang=en" data-keep-lang>PegasoHlib — all apps</a></footer>
 <script>
 (function () {
-  var docs = document.querySelectorAll(".doc"), sel = document.getElementById("lang");
+  var docs = document.querySelectorAll(".langdoc"), sel = document.getElementById("lang");
   var have = {}; for (var i = 0; i < docs.length; i++) have[docs[i].dataset.lang] = docs[i];
-  var alias = { "in": "id", "nb": "sv", "no": "sv" };
+  var alias = { "in": "id", "nb": "sv", "no": "sv" }, KEYS = ["siteLang","kraplya-lang"];
   function norm(c) { c = (c || "").toLowerCase(); if (alias[c]) c = alias[c]; if (have[c]) return c; c = c.split(/[-_]/)[0]; c = alias[c] || c; return have[c] ? c : null; }
   function pick() {
     var q = new URLSearchParams(location.search).get("lang"); if (norm(q)) return norm(q);
     var h = location.hash.slice(1); if (norm(h)) return norm(h);
     if (h && have[h.split("-")[0]]) return h.split("-")[0];
-    try { var s = localStorage.getItem("kraplya-lang"); if (norm(s)) return norm(s); } catch (e) {}
+    for (var k = 0; k < KEYS.length; k++) { try { var s = localStorage.getItem(KEYS[k]); if (norm(s)) return norm(s); } catch (e) {} }
     var nav = navigator.languages || [navigator.language];
     for (var j = 0; j < nav.length; j++) if (norm(nav[j])) return norm(nav[j]);
     return "en";
   }
+  function text(id, t) { var e = document.getElementById(id); if (e && t != null) e.textContent = t; }
   function show(c, save) {
     for (var k in have) have[k].hidden = k !== c;
     var d = have[c]; document.documentElement.lang = c; document.title = d.dataset.title;
     sel.value = c;
-    document.getElementById("appname").textContent = d.dataset.app;
-    document.getElementById("langlabel").textContent = d.dataset.langlabel;
+    text("appname", d.dataset.app); text("langlabel", d.dataset.langlabel); text("hublink", d.dataset.hub); text("footnote", d.dataset.footnote);
+    var names = (d.dataset.nav || "").split("|"), nav = document.querySelectorAll("a[data-nav]");
+    for (var n = 0; n < nav.length; n++) nav[n].textContent = names[+nav[n].dataset.nav] || nav[n].textContent;
     var links = document.querySelectorAll("a[data-keep-lang]");
     for (var m = 0; m < links.length; m++) { var u0 = new URL(links[m].getAttribute("href"), location.href); u0.searchParams.set("lang", c); links[m].href = u0.href; }
     if (save) {
-      try { localStorage.setItem("kraplya-lang", c); } catch (e) {}
+      try { localStorage.setItem(KEYS[0], c); } catch (e) {}
       var u = new URL(location.href); u.searchParams.set("lang", c); u.hash = ""; history.replaceState(null, "", u);
     }
   }
@@ -1155,5 +1145,7 @@ td:last-child{font-weight:600;color:var(--ink)}
   sel.addEventListener("change", function () { show(sel.value, true); window.scrollTo(0, 0); });
 })();
 </script>
+
+<script src="https://pegasohlib.github.io/assets/kit.js" defer></script>
 </body>
 </html>
