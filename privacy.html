@@ -25,6 +25,7 @@
 <link rel="alternate" hreflang="pt-BR" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=pt-BR">
 <link rel="alternate" hreflang="fr" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=fr">
 <link rel="alternate" hreflang="de" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=de">
+<link rel="alternate" hreflang="nl" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=nl">
 <link rel="alternate" hreflang="it" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=it">
 <link rel="alternate" hreflang="pl" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=pl">
 <link rel="alternate" hreflang="cs" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=cs">
@@ -32,9 +33,12 @@
 <link rel="alternate" hreflang="da" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=da">
 <link rel="alternate" hreflang="sv" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=sv">
 <link rel="alternate" hreflang="tr" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=tr">
+<link rel="alternate" hreflang="ar" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=ar">
+<link rel="alternate" hreflang="hi" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=hi">
 <link rel="alternate" hreflang="id" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=id">
 <link rel="alternate" hreflang="vi" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=vi">
 <link rel="alternate" hreflang="th" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=th">
+<link rel="alternate" hreflang="zh" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=zh">
 <link rel="alternate" hreflang="ko" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=ko">
 <link rel="alternate" hreflang="ja" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=ja">
 <link rel="alternate" hreflang="kk" href="https://pegasohlib.github.io/kraplya/privacy.html?lang=kk">
@@ -55,6 +59,19 @@ h2.eyebrow{font-family:inherit;line-height:1.4}
 :root:lang(th) :is(h1,h2,.display,.card.app h3){font-family:Unbounded,Onest,"Noto Sans Thai","Noto Sans Thai UI","Leelawadee UI",Leelawadee,Thonburi,Tahoma,sans-serif;line-height:1.35}
 :root:lang(ko) body{font-family:Onest,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR","Noto Sans CJK KR","Nanum Gothic",system-ui,sans-serif;word-break:keep-all;overflow-wrap:anywhere}
 :root:lang(ko) :is(h1,h2,.display,.card.app h3){font-family:Unbounded,Onest,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR","Noto Sans CJK KR","Nanum Gothic",sans-serif;line-height:1.25}
+:root:lang(hi) body{font-family:Onest,"Noto Sans Devanagari","Nirmala UI","Kohinoor Devanagari","Devanagari Sangam MN",Mangal,system-ui,sans-serif;line-height:1.75}
+:root:lang(hi) :is(h1,h2,.display,.card.app h3){font-family:Unbounded,Onest,"Noto Sans Devanagari","Nirmala UI","Kohinoor Devanagari","Devanagari Sangam MN",Mangal,sans-serif;line-height:1.4}
+:root:lang(zh) body{font-family:Onest,"PingFang SC","Microsoft YaHei","Noto Sans SC","Noto Sans CJK SC","Hiragino Sans GB","Source Han Sans SC",system-ui,sans-serif}
+:root:lang(zh) :is(h1,h2,.display,.card.app h3){font-family:Unbounded,Onest,"PingFang SC","Microsoft YaHei","Noto Sans SC","Noto Sans CJK SC","Hiragino Sans GB","Source Han Sans SC",sans-serif;line-height:1.3;letter-spacing:0}
+:root:lang(ar) body{font-family:Onest,"Noto Sans Arabic","Segoe UI","Geeza Pro",Tahoma,"Noto Naskh Arabic",system-ui,sans-serif;line-height:1.75}
+:root:lang(ar) :is(h1,h2,.display,.card.app h3){font-family:Unbounded,Onest,"Noto Sans Arabic","Segoe UI","Geeza Pro",Tahoma,"Noto Naskh Arabic",sans-serif;line-height:1.45}
+:root:lang(ar) *{letter-spacing:0!important}
+:root:is(:lang(hi),:lang(zh)) :is(.eyebrow,.cat,.kicker,thead th){letter-spacing:.02em}
+:root:is(:lang(hi),:lang(zh),:lang(ar)) :is(h1,h2,h3){hyphens:manual}
+[dir=rtl] .ic.flip{transform:scaleX(-1)}
+[dir=rtl] .ic.flip.down{transform:rotate(90deg)}
+[dir=rtl] .langdoc a[href^="mailto:"],[dir=rtl] .langdoc code,[dir=rtl] .ver,[dir=rtl] footer a[href^="mailto:"],[dir=rtl] .ltr{direction:ltr;unicode-bidi:isolate}
+[dir=rtl] select{text-align:start}
 .btn .ic{width:22px;height:22px}
 .btn.primary{background:linear-gradient(135deg,var(--g1),var(--g2));box-shadow:0 12px 30px -12px color-mix(in srgb,var(--g1) 80%,transparent)}
 .btn.primary .badge{background:color-mix(in srgb,var(--on-accent) 18%,transparent)}
@@ -81,12 +98,12 @@ main{max-width:760px}
 .sec{scroll-margin-top:76px}
 .sec p{margin:8px 0 0;color:var(--ink2)}
 .sec p:first-of-type{margin-top:0}
-.sec ul{margin:8px 0 0;padding-left:22px;color:var(--ink2)}
+.sec ul{margin:8px 0 0;padding-inline-start:22px;color:var(--ink2)}
 .sec li{margin:4px 0}
 .sec li::marker{color:var(--accent)}
 .sec ul+p{margin-top:10px}
 table{width:100%;border-collapse:collapse;font-size:15px}
-th,td{text-align:left;vertical-align:top;padding:10px;border-top:1px solid var(--line)}
+th,td{text-align:start;vertical-align:top;padding:10px;border-top:1px solid var(--line)}
 thead th{border-top:0;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink3);font-weight:700;padding-top:0}
 tbody th{font-weight:600;color:var(--ink);width:38%}
 td{color:var(--ink2)}
@@ -105,6 +122,7 @@ td:last-child{font-weight:600;color:var(--ink)}
   .toc .eyebrow{padding:0 16px}
   .toc .chips{flex-wrap:nowrap;overflow-x:auto;padding:0 16px 4px;scroll-snap-type:x proximity;scrollbar-width:none;
     -webkit-mask-image:linear-gradient(90deg,transparent 0,#000 16px,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(90deg,transparent 0,#000 16px,#000 calc(100% - 28px),transparent)}
+  [dir=rtl] .toc .chips{-webkit-mask-image:linear-gradient(270deg,transparent 0,#000 16px,#000 calc(100% - 28px),transparent);mask-image:linear-gradient(270deg,transparent 0,#000 16px,#000 calc(100% - 28px),transparent)}
   .toc .chips::-webkit-scrollbar{display:none}
   .toc .chips a{scroll-snap-align:start;flex:none}
   thead{display:none}
@@ -123,12 +141,12 @@ td:last-child{font-weight:600;color:var(--ink)}
   <a class="home" href="index.html" data-keep-lang><img src="icon.svg" alt="" width="32" height="32"><span id="appname">Kraplya</span></a>
   <nav class="links"><a data-nav="0" href="index.html" data-keep-lang>Home</a><a class="on" aria-current="page" data-nav="1" href="privacy.html" data-keep-lang>Privacy</a></nav>
   <label class="lang"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5s1.1-5.9 3.6-8.5z"/></svg><span class="sr" id="langlabel">Language</span>
-    <select id="lang" aria-labelledby="langlabel"><option value="en" lang="en">English</option><option value="uk" lang="uk">Українська</option><option value="es" lang="es">Español</option><option value="pt" lang="pt">Português</option><option value="pt-BR" lang="pt-BR">Português (Brasil)</option><option value="fr" lang="fr">Français</option><option value="de" lang="de">Deutsch</option><option value="it" lang="it">Italiano</option><option value="pl" lang="pl">Polski</option><option value="cs" lang="cs">Čeština</option><option value="sk" lang="sk">Slovenčina</option><option value="da" lang="da">Dansk</option><option value="sv" lang="sv">Svenska</option><option value="tr" lang="tr">Türkçe</option><option value="id" lang="id">Bahasa Indonesia</option><option value="vi" lang="vi">Tiếng Việt</option><option value="th" lang="th">ไทย</option><option value="ko" lang="ko">한국어</option><option value="ja" lang="ja">日本語</option><option value="kk" lang="kk">Қазақша</option><option value="ru" lang="ru">Русский</option></select><svg class="ic chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg>
+    <select id="lang" aria-labelledby="langlabel"><option value="en" lang="en">English</option><option value="uk" lang="uk">Українська</option><option value="es" lang="es">Español</option><option value="pt" lang="pt">Português</option><option value="pt-BR" lang="pt-BR">Português (Brasil)</option><option value="fr" lang="fr">Français</option><option value="de" lang="de">Deutsch</option><option value="nl" lang="nl">Nederlands</option><option value="it" lang="it">Italiano</option><option value="pl" lang="pl">Polski</option><option value="cs" lang="cs">Čeština</option><option value="sk" lang="sk">Slovenčina</option><option value="da" lang="da">Dansk</option><option value="sv" lang="sv">Svenska</option><option value="tr" lang="tr">Türkçe</option><option value="ar" lang="ar">العربية</option><option value="hi" lang="hi">हिन्दी</option><option value="id" lang="id">Bahasa Indonesia</option><option value="vi" lang="vi">Tiếng Việt</option><option value="th" lang="th">ไทย</option><option value="zh" lang="zh">简体中文</option><option value="ko" lang="ko">한국어</option><option value="ja" lang="ja">日本語</option><option value="kk" lang="kk">Қазақша</option><option value="ru" lang="ru">Русский</option></select><svg class="ic chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg>
   </label>
   <button class="theme" id="theme" type="button"></button>
 </div></div>
 <main>
-<article class="langdoc" lang="en" data-lang="en" data-title="Privacy policy · Kraplya" data-app="Kraplya" data-langlabel="Language" data-nav="Home|Privacy" data-hub="PegasoHlib — all apps">
+<article class="langdoc" lang="en" dir="ltr" data-lang="en" data-title="Privacy policy · Kraplya" data-app="Kraplya" data-langlabel="Language" data-nav="Home|Privacy" data-hub="PegasoHlib — all apps">
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -211,7 +229,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="uk" data-lang="uk" data-title="Політика конфіденційності · Крапля" data-app="Крапля" data-langlabel="Мова" data-nav="Головна|Конфіденційність" data-hub="PegasoHlib — всі застосунки" hidden>
+<article class="langdoc" lang="uk" dir="ltr" data-lang="uk" data-title="Політика конфіденційності · Крапля" data-app="Крапля" data-langlabel="Мова" data-nav="Головна|Конфіденційність" data-hub="PegasoHlib — всі застосунки" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Крапля</p>
@@ -294,7 +312,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="es" data-lang="es" data-title="Política de privacidad · Kraplya" data-app="Kraplya" data-langlabel="Idioma" data-nav="Inicio|Privacidad" data-hub="PegasoHlib — todas las apps" hidden>
+<article class="langdoc" lang="es" dir="ltr" data-lang="es" data-title="Política de privacidad · Kraplya" data-app="Kraplya" data-langlabel="Idioma" data-nav="Inicio|Privacidad" data-hub="PegasoHlib — todas las apps" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -377,7 +395,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="pt" data-lang="pt" data-title="Política de privacidade · Kraplya" data-app="Kraplya" data-langlabel="Idioma" data-nav="Início|Privacidade" data-hub="PegasoHlib — todos os apps" hidden>
+<article class="langdoc" lang="pt" dir="ltr" data-lang="pt" data-title="Política de privacidade · Kraplya" data-app="Kraplya" data-langlabel="Idioma" data-nav="Início|Privacidade" data-hub="PegasoHlib — todos os apps" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -460,7 +478,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="pt-BR" data-lang="pt-BR" data-title="Política de privacidade · Kraplya" data-app="Kraplya" data-langlabel="Idioma" data-nav="Início|Privacidade" data-hub="PegasoHlib — todos os apps" hidden>
+<article class="langdoc" lang="pt-BR" dir="ltr" data-lang="pt-BR" data-title="Política de privacidade · Kraplya" data-app="Kraplya" data-langlabel="Idioma" data-nav="Início|Privacidade" data-hub="PegasoHlib — todos os apps" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -543,7 +561,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="fr" data-lang="fr" data-title="Politique de confidentialité · Kraplya" data-app="Kraplya" data-langlabel="Langue" data-nav="Accueil|Confidentialité" data-hub="PegasoHlib — toutes les applis" hidden>
+<article class="langdoc" lang="fr" dir="ltr" data-lang="fr" data-title="Politique de confidentialité · Kraplya" data-app="Kraplya" data-langlabel="Langue" data-nav="Accueil|Confidentialité" data-hub="PegasoHlib — toutes les applis" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -626,7 +644,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="de" data-lang="de" data-title="Datenschutzerklärung · Kraplya" data-app="Kraplya" data-langlabel="Sprache" data-nav="Start|Datenschutz" data-hub="PegasoHlib — alle Apps" hidden>
+<article class="langdoc" lang="de" dir="ltr" data-lang="de" data-title="Datenschutzerklärung · Kraplya" data-app="Kraplya" data-langlabel="Sprache" data-nav="Start|Datenschutz" data-hub="PegasoHlib — alle Apps" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -709,7 +727,90 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="it" data-lang="it" data-title="Informativa sulla privacy · Kraplya" data-app="Kraplya" data-langlabel="Lingua" data-nav="Home|Privacy" data-hub="PegasoHlib — tutte le app" hidden>
+<article class="langdoc" lang="nl" dir="ltr" data-lang="nl" data-title="Privacybeleid · Kraplya" data-app="Kraplya" data-langlabel="Taal" data-nav="Start|Privacy" data-hub="PegasoHlib — alle apps" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Kraplya</p>
+    <h1>Privacybeleid</h1>
+    <p class="date">Bijgewerkt op 22 oktober 2026 · van kracht sinds 13 oktober 2026</p>
+    <p class="lead">Kraplya is een gewoontetracker met een timer. De app is zo gebouwd dat je gegevens van jou blijven: Kraplya heeft geen eigen servers, geen accounts, geen advertenties en geen analyse.</p>
+  </header>
+
+  <section class="glance" aria-labelledby="nl-glance">
+    <h2 id="nl-glance" class="eyebrow">In één oogopslag</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>Alles wat je invoert, wordt op je apparaat opgeslagen.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>Kraplya heeft geen servers. De ontwikkelaar ontvangt of ziet je gegevens nooit.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>Geen advertenties, geen analyse, geen tracking, geen verkoop van gegevens.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>Synchronisatie met Google Drive is optioneel en gebruikt alleen de eigen verborgen map van de app.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>Afspraken uit de agenda van je telefoon worden alleen op het apparaat gelezen, en alleen als je dit aanzet.</span></li></ul>
+  </section>
+
+  <nav class="toc" aria-label="Op deze pagina">
+    <p class="eyebrow">Op deze pagina</p>
+    <div class="chips"><a href="#nl-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Wat de app bewaart</a><a href="#nl-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>Synchronisatie via Google Drive (optioneel)</a><a href="#nl-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>Agenda van de telefoon (optioneel)</a><a href="#nl-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>Meldingen en herinneringen</a><a href="#nl-updates"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>Updates</a><a href="#nl-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>Toestemmingen die de app vraagt</a><a href="#nl-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>Back-ups en importeren</a><a href="#nl-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>Je gegevens verwijderen</a><a href="#nl-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>Kinderen</a><a href="#nl-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>Wijzigingen in dit beleid</a><a href="#nl-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>Contact</a></div>
+  </nav>
+
+  <section class="card tablecard" aria-labelledby="nl-table">
+    <h2 id="nl-table">Welke gegevens, waar ze staan, wie ze ziet</h2>
+    <table>
+      <thead><tr><th scope="col">Gegevens</th><th scope="col">Waar ze worden bewaard</th><th scope="col">Wie ze kan zien</th></tr></thead>
+      <tbody><tr><th scope="row">Gewoonten, categorieën, doelen, geregistreerde tijd, weekschema, beloningen en straffen, profielnaam, geboortedatum (optioneel)</th><td data-label="Waar ze worden bewaard">Op je apparaat; een kopie in je eigen Google Drive als je synchronisatie aanzet</td><td data-label="Wie ze kan zien">Alleen jij</td></tr><tr><th scope="row">Instellingen: taal, thema, geluid, herinneringen</th><td data-label="Waar ze worden bewaard">Op je apparaat; een paar ervan gaan bij synchronisatie mee met je gegevens</td><td data-label="Wie ze kan zien">Alleen jij</td></tr><tr><th scope="row">E-mailadres van je Google-account</th><td data-label="Waar ze worden bewaard">Op je apparaat, zolang synchronisatie aan staat</td><td data-label="Wie ze kan zien">Alleen jij</td></tr><tr><th scope="row">Afspraken uit de agenda van de telefoon</th><td data-label="Waar ze worden bewaard">Niet opgeslagen: ter plekke gelezen om het schema te tekenen</td><td data-label="Wie ze kan zien">Alleen jij, op het apparaat</td></tr><tr><th scope="row">Back-upbestanden</th><td data-label="Waar ze worden bewaard">Waar je ze opslaat</td><td data-label="Wie ze kan zien">Iedereen aan wie je het bestand geeft</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="card sec" id="nl-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>Wat de app bewaart</h2></div>
+    <p>Wat je zelf invoert: namen van gewoonten en categorieën, doelen, geregistreerde tijd, het weekschema, beloningen en straffen, de naam in je profiel en, als je die toevoegt, je geboortedatum. De geboortedatum wordt alleen gebruikt om te laten zien hoe oud je was toen je statistieken begonnen.</p><p>Instellingen: taal, thema, geluid, trillen en herinneringen.</p><p>Alles wordt bewaard in de privéopslag van de app op je apparaat. Andere apps kunnen het niet lezen.</p>
+    
+  </section>
+  <section class="card sec" id="nl-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>Synchronisatie via Google Drive (optioneel)</h2></div>
+    <p>Als je ervoor kiest om in te loggen met Google, krijgt de app alleen toegang tot haar eigen verborgen map in je Google Drive (de toestemming <code>drive.appdata</code>). Ze kan geen van je andere bestanden zien, openen of wijzigen.</p><p>In die map wordt een kopie van je gegevens geschreven, zodat je telefoon en tablet hetzelfde tonen. De app leest ook het e-mailadres van je account, alleen om te laten zien welk account is gekoppeld.</p><p>Deze gegevens gaan alleen tussen je apparaat en Google, via een versleutelde verbinding; de ontwikkelaar heeft er geen toegang toe. Je kunt synchronisatie op elk moment uitzetten in Profiel.</p><p>Het gebruik door de app van informatie die is ontvangen van Google API’s voldoet aan de <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, inclusief de vereisten voor beperkt gebruik (Limited Use).</p>
+    
+  </section>
+  <section class="card sec" id="nl-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>Agenda van de telefoon (optioneel)</h2></div>
+    <p>Als je ervoor kiest om agenda-afspraken in het schema te tonen en toegang tot de agenda toestaat, leest de app afspraken uit de agenda’s op je telefoon (ook Google Agenda, als die daar is ingesteld): de titel, de tijd en de kleur van elke afspraak.</p><p>Ze worden alleen gebruikt om ze in het weekschema te tonen. Afspraken worden alleen op het apparaat gelezen: ze worden niet in de app opgeslagen, niet meegenomen in back-ups of Google Drive, en nergens naartoe verzonden. De app wijzigt je agenda nooit.</p><p>Een afspraak komt pas in Kraplya als je die zelf aan het schema toevoegt; dan worden alleen de titel en de tijd bewaard die je hebt bevestigd. Je kunt de toegang intrekken in de instellingen van je telefoon of afspraken uitzetten in het schema.</p>
+    
+  </section>
+  <section class="card sec" id="nl-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>Meldingen en herinneringen</h2></div>
+    <p>Meldingen tonen de lopende timer en de herinneringen die je hebt aangezet. Ze worden op het apparaat gemaakt; er wordt niets verzonden.</p><p>Nadat de telefoon opnieuw is opgestart, plant de app haar herinneringen opnieuw in. Daarom vraagt ze om bij het opstarten te mogen starten.</p>
+    
+  </section>
+  <section class="card sec" id="nl-updates">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>Updates</h2></div>
+    <p>De versie van Kraplya die buiten Google Play wordt verspreid, controleert om de paar uur op de website van Kraplya (pegasohlib.github.io) of er een nieuwe versie is, en downloadt die van GitHub als je op Bijwerken tikt. Zoals bij elke website ziet GitHub het IP-adres van je apparaat; verder wordt er niets verzonden, en geen gegevens uit de app.</p><p>Je kunt automatische controles uitzetten in Profiel. Als de app uit Google Play komt, werkt Google Play haar in plaats daarvan bij.</p><p>GitHub telt ook hoe vaak elk bestand is gedownload. Dat is alleen een getal, zonder iets over wie het heeft gedownload; de website toont het als een geschat aantal downloads.</p>
+    
+  </section>
+  <section class="card sec" id="nl-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>Toestemmingen die de app vraagt</h2></div>
+    
+    <dl class="perms"><div><dt>Meldingen</dt><dd>de timer en je herinneringen.</dd></div><div><dt>Agenda (optioneel)</dt><dd>om je afspraken in het schema te tonen.</dd></div><div><dt>Internet</dt><dd>alleen voor inloggen met Google, synchronisatie met Drive en het controleren op updates.</dd></div><div><dt>Dienst op de voorgrond</dt><dd>zodat de timer blijft tellen met het scherm uit.</dd></div><div><dt>Starten bij opstarten</dt><dd>om je herinneringen na een herstart terug te zetten.</dd></div><div><dt>Apps installeren</dt><dd>om updates van de app zelf te installeren (alleen in de versie die buiten Google Play wordt verspreid).</dd></div><div><dt>Trillen</dt><dd>voor de timer en behaalde doelen.</dd></div></dl>
+  </section>
+  <section class="card sec" id="nl-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>Back-ups en importeren</h2></div>
+    <p>Een back-upbestand wordt alleen gemaakt als je er zelf een opslaat, op de plek die je kiest. Importeren leest alleen het bestand dat je kiest.</p>
+    
+  </section>
+  <section class="card sec" id="nl-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>Je gegevens verwijderen</h2></div>
+    <p>Verwijder een gewoonte, of verwijder de app, en de bijbehorende gegevens op het apparaat zijn weg.</p><p>Om de kopie uit Google Drive te verwijderen, open je Google Drive → Instellingen → Apps beheren → Kraplya → Verborgen app-gegevens verwijderen. Als je synchronisatie uitzet in Profiel, worden er geen nieuwe kopieën meer gemaakt.</p>
+    
+  </section>
+  <section class="card sec" id="nl-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>Kinderen</h2></div>
+    <p>De app verzamelt over niemand gegevens, ook niet over kinderen.</p>
+    
+  </section>
+  <section class="card sec" id="nl-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>Wijzigingen in dit beleid</h2></div>
+    <p>Als dit beleid verandert, verschijnt de nieuwe versie op deze pagina met een nieuwe datum.</p>
+    
+  </section>
+  <section class="card sec" id="nl-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>Contact</h2></div>
+    <p>Vragen over privacy: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="langdoc" lang="it" dir="ltr" data-lang="it" data-title="Informativa sulla privacy · Kraplya" data-app="Kraplya" data-langlabel="Lingua" data-nav="Home|Privacy" data-hub="PegasoHlib — tutte le app" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -792,7 +893,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="pl" data-lang="pl" data-title="Polityka prywatności · Kraplya" data-app="Kraplya" data-langlabel="Język" data-nav="Start|Prywatność" data-hub="PegasoHlib — wszystkie aplikacje" hidden>
+<article class="langdoc" lang="pl" dir="ltr" data-lang="pl" data-title="Polityka prywatności · Kraplya" data-app="Kraplya" data-langlabel="Język" data-nav="Start|Prywatność" data-hub="PegasoHlib — wszystkie aplikacje" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -875,7 +976,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="cs" data-lang="cs" data-title="Zásady ochrany soukromí · Kraplya" data-app="Kraplya" data-langlabel="Jazyk" data-nav="Domů|Soukromí" data-hub="PegasoHlib — všechny aplikace" hidden>
+<article class="langdoc" lang="cs" dir="ltr" data-lang="cs" data-title="Zásady ochrany soukromí · Kraplya" data-app="Kraplya" data-langlabel="Jazyk" data-nav="Domů|Soukromí" data-hub="PegasoHlib — všechny aplikace" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -958,7 +1059,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="sk" data-lang="sk" data-title="Zásady ochrany súkromia · Kraplya" data-app="Kraplya" data-langlabel="Jazyk" data-nav="Domov|Súkromie" data-hub="PegasoHlib — všetky aplikácie" hidden>
+<article class="langdoc" lang="sk" dir="ltr" data-lang="sk" data-title="Zásady ochrany súkromia · Kraplya" data-app="Kraplya" data-langlabel="Jazyk" data-nav="Domov|Súkromie" data-hub="PegasoHlib — všetky aplikácie" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -1041,7 +1142,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="da" data-lang="da" data-title="Privatlivspolitik · Kraplya" data-app="Kraplya" data-langlabel="Sprog" data-nav="Forside|Privatliv" data-hub="PegasoHlib — alle apps" hidden>
+<article class="langdoc" lang="da" dir="ltr" data-lang="da" data-title="Privatlivspolitik · Kraplya" data-app="Kraplya" data-langlabel="Sprog" data-nav="Forside|Privatliv" data-hub="PegasoHlib — alle apps" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -1124,7 +1225,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="sv" data-lang="sv" data-title="Integritetspolicy · Kraplya" data-app="Kraplya" data-langlabel="Språk" data-nav="Hem|Integritet" data-hub="PegasoHlib — alla appar" hidden>
+<article class="langdoc" lang="sv" dir="ltr" data-lang="sv" data-title="Integritetspolicy · Kraplya" data-app="Kraplya" data-langlabel="Språk" data-nav="Hem|Integritet" data-hub="PegasoHlib — alla appar" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -1207,7 +1308,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="tr" data-lang="tr" data-title="Gizlilik politikası · Kraplya" data-app="Kraplya" data-langlabel="Dil" data-nav="Ana sayfa|Gizlilik" data-hub="PegasoHlib — tüm uygulamalar" hidden>
+<article class="langdoc" lang="tr" dir="ltr" data-lang="tr" data-title="Gizlilik politikası · Kraplya" data-app="Kraplya" data-langlabel="Dil" data-nav="Ana sayfa|Gizlilik" data-hub="PegasoHlib — tüm uygulamalar" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -1290,7 +1391,173 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="id" data-lang="id" data-title="Kebijakan privasi · Kraplya" data-app="Kraplya" data-langlabel="Bahasa" data-nav="Beranda|Privasi" data-hub="PegasoHlib — semua aplikasi" hidden>
+<article class="langdoc" lang="ar" dir="rtl" data-lang="ar" data-title="سياسة الخصوصية · Kraplya" data-app="Kraplya" data-langlabel="اللغة" data-nav="الرئيسية|الخصوصية" data-hub="PegasoHlib — كل التطبيقات" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Kraplya</p>
+    <h1>سياسة الخصوصية</h1>
+    <p class="date">تاريخ التحديث: 22 أكتوبر 2026 · سارية منذ 13 أكتوبر 2026</p>
+    <p class="lead">تطبيق Kraplya متتبّع عادات مع مؤقّت. وقد صُمّم بحيث تبقى بياناتك ملكك: ليس لدى Kraplya خوادم خاصة به، ولا حسابات، ولا إعلانات، ولا أدوات تحليل.</p>
+  </header>
+
+  <section class="glance" aria-labelledby="ar-glance">
+    <h2 id="ar-glance" class="eyebrow">نظرة سريعة</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>كل ما تُدخله يُخزَّن على جهازك.</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>ليس لدى Kraplya أي خوادم. ولا يتلقى المطوّر بياناتك ولا يراها أبدًا.</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>لا إعلانات، ولا أدوات تحليل، ولا تتبّع، ولا بيع للبيانات.</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>المزامنة مع Google Drive اختيارية ولا تستخدم إلا المجلد المخفي الخاص بالتطبيق.</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>تُقرأ أحداث تقويم الهاتف على الجهاز فقط، وفقط إذا فعّلت ذلك.</span></li></ul>
+  </section>
+
+  <nav class="toc" aria-label="في هذه الصفحة">
+    <p class="eyebrow">في هذه الصفحة</p>
+    <div class="chips"><a href="#ar-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>ما الذي يحتفظ به التطبيق</a><a href="#ar-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>المزامنة عبر Google Drive (اختيارية)</a><a href="#ar-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>تقويم الهاتف (اختياري)</a><a href="#ar-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>الإشعارات والتذكيرات</a><a href="#ar-updates"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>التحديثات</a><a href="#ar-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>الأذونات التي يطلبها التطبيق</a><a href="#ar-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>النسخ الاحتياطي والاستيراد</a><a href="#ar-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>حذف بياناتك</a><a href="#ar-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>الأطفال</a><a href="#ar-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>التغييرات على هذه السياسة</a><a href="#ar-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>التواصل</a></div>
+  </nav>
+
+  <section class="card tablecard" aria-labelledby="ar-table">
+    <h2 id="ar-table">ما البيانات، وأين تُحفظ، ومن يراها</h2>
+    <table>
+      <thead><tr><th scope="col">البيانات</th><th scope="col">مكان الحفظ</th><th scope="col">من يمكنه رؤيتها</th></tr></thead>
+      <tbody><tr><th scope="row">العادات، والفئات، والأهداف، والوقت المسجَّل، والجدول الأسبوعي، والمكافآت والعقوبات، واسم الملف الشخصي، وتاريخ الميلاد (اختياري)</th><td data-label="مكان الحفظ">على جهازك؛ ونسخة في Google Drive الخاص بك إذا فعّلت المزامنة</td><td data-label="من يمكنه رؤيتها">أنت فقط</td></tr><tr><th scope="row">الإعدادات: اللغة، والسمة، والصوت، والتذكيرات</th><td data-label="مكان الحفظ">على جهازك؛ وينتقل بعضها مع بياناتك أثناء المزامنة</td><td data-label="من يمكنه رؤيتها">أنت فقط</td></tr><tr><th scope="row">عنوان البريد الإلكتروني لحساب Google الخاص بك</th><td data-label="مكان الحفظ">على جهازك، ما دامت المزامنة مفعّلة</td><td data-label="من يمكنه رؤيتها">أنت فقط</td></tr><tr><th scope="row">أحداث تقويم الهاتف</th><td data-label="مكان الحفظ">لا تُخزَّن: تُقرأ لحظيًا لرسم الجدول</td><td data-label="من يمكنه رؤيتها">أنت فقط، على الجهاز</td></tr><tr><th scope="row">ملفات النسخ الاحتياطي</th><td data-label="مكان الحفظ">حيث تحفظها</td><td data-label="من يمكنه رؤيتها">أي شخص تعطيه الملف</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="card sec" id="ar-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>ما الذي يحتفظ به التطبيق</h2></div>
+    <p>ما تُدخله بنفسك: أسماء العادات والفئات، والأهداف، والوقت المسجَّل، والجدول الأسبوعي، والمكافآت والعقوبات، والاسم في ملفك الشخصي، وتاريخ ميلادك إذا أضفته. ولا يُستخدم تاريخ الميلاد إلا لإظهار عمرك حين بدأت إحصاءاتك.</p><p>الإعدادات: اللغة، والسمة، والصوت، والاهتزاز، والتذكيرات.</p><p>يُحفظ كل ذلك في مساحة التخزين الخاصة بالتطبيق على جهازك. ولا تستطيع التطبيقات الأخرى قراءته.</p>
+    
+  </section>
+  <section class="card sec" id="ar-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>المزامنة عبر Google Drive (اختيارية)</h2></div>
+    <p>إذا اخترت تسجيل الدخول باستخدام Google، لا يحصل التطبيق إلا على الوصول إلى مجلده المخفي الخاص في Google Drive الخاص بك (إذن <code>drive.appdata</code>). ولا يمكنه رؤية أي من ملفاتك الأخرى أو فتحها أو تغييرها.</p><p>تُكتب نسخة من بياناتك في ذلك المجلد كي يعرض هاتفك وجهازك اللوحي المحتوى نفسه. ويقرأ التطبيق أيضًا عنوان البريد الإلكتروني لحسابك، فقط لإظهار الحساب المتصل.</p><p>تنتقل هذه البيانات بين جهازك وGoogle فقط عبر اتصال مشفّر؛ ولا يملك المطوّر أي وصول إليها. ويمكنك إيقاف المزامنة من «الملف الشخصي» في أي وقت.</p><p>يلتزم استخدام التطبيق للمعلومات التي يتلقاها من واجهات Google البرمجية (Google APIs) بـ <a href="https://developers.google.com/terms/api-services-user-data-policy">سياسة بيانات المستخدم لخدمات Google API</a>، بما في ذلك متطلبات الاستخدام المحدود.</p>
+    
+  </section>
+  <section class="card sec" id="ar-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>تقويم الهاتف (اختياري)</h2></div>
+    <p>إذا اخترت عرض أحداث التقويم في الجدول وسمحت بالوصول إلى التقويم، يقرأ التطبيق الأحداث من التقاويم الموجودة على هاتفك (بما فيها تقويم Google إذا كان مُعدًّا عليه): عنوان كل حدث ووقته ولونه.</p><p>ولا تُستخدم إلا لعرضها في الجدول الأسبوعي. تُقرأ الأحداث على الجهاز فقط: فلا تُخزَّن في التطبيق، ولا تُضمَّن في النسخ الاحتياطية أو في Google Drive، ولا تُرسل إلى أي مكان. ولا يغيّر التطبيق تقويمك أبدًا.</p><p>لا يدخل الحدث إلى Kraplya إلا عندما تضيفه إلى الجدول بنفسك؛ وعندها لا يُحفظ إلا العنوان والوقت اللذان أكّدتهما. ويمكنك سحب الإذن من إعدادات الهاتف أو إيقاف الأحداث في الجدول.</p>
+    
+  </section>
+  <section class="card sec" id="ar-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>الإشعارات والتذكيرات</h2></div>
+    <p>تعرض الإشعارات المؤقّت الجاري والتذكيرات التي فعّلتها. وهي تُنشأ على الجهاز؛ ولا يُرسل أي شيء إلى أي مكان.</p><p>بعد إعادة تشغيل الهاتف، يعيد التطبيق جدولة تذكيراته. ولهذا يطلب إذن البدء عند تشغيل الجهاز.</p>
+    
+  </section>
+  <section class="card sec" id="ar-updates">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>التحديثات</h2></div>
+    <p>يتحقق إصدار Kraplya الموزَّع خارج Google Play من موقع Kraplya (pegasohlib.github.io) كل بضع ساعات بحثًا عن إصدار جديد، ويُنزّله من GitHub عندما تنقر على «تحديث». وكما هو الحال مع أي موقع، يرى GitHub عنوان IP لجهازك؛ ولا يُرسل أي شيء آخر، ولا أي بيانات من التطبيق.</p><p>يمكنك إيقاف التحقق التلقائي من «الملف الشخصي». وعندما يكون التطبيق من Google Play، يتولى Google Play تحديثه بدلًا من ذلك.</p><p>يحصي GitHub أيضًا عدد مرات تنزيل كل ملف. وهو مجرد رقم، لا يتضمن أي شيء عمّن قام بالتنزيل؛ ويعرضه الموقع كعدد تقريبي للتنزيلات.</p>
+    
+  </section>
+  <section class="card sec" id="ar-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>الأذونات التي يطلبها التطبيق</h2></div>
+    
+    <dl class="perms"><div><dt>الإشعارات</dt><dd>المؤقّت وتذكيراتك.</dd></div><div><dt>التقويم (اختياري)</dt><dd>لعرض أحداثك في الجدول.</dd></div><div><dt>الإنترنت</dt><dd>فقط لتسجيل الدخول باستخدام Google، والمزامنة مع Drive، والتحقق من التحديثات.</dd></div><div><dt>خدمة تعمل في المقدمة</dt><dd>كي يواصل المؤقّت العدّ والشاشة مطفأة.</dd></div><div><dt>البدء عند تشغيل الجهاز</dt><dd>لإعادة تذكيراتك بعد إعادة التشغيل.</dd></div><div><dt>تثبيت التطبيقات</dt><dd>لتثبيت تحديثات التطبيق نفسه (فقط في الإصدار الموزَّع خارج Google Play).</dd></div><div><dt>الاهتزاز</dt><dd>للمؤقّت وللأهداف المحقَّقة.</dd></div></dl>
+  </section>
+  <section class="card sec" id="ar-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>النسخ الاحتياطي والاستيراد</h2></div>
+    <p>لا يُنشأ ملف النسخ الاحتياطي إلا عندما تحفظه بنفسك، في المكان الذي تختاره. ولا يقرأ الاستيراد إلا الملف الذي تختاره.</p>
+    
+  </section>
+  <section class="card sec" id="ar-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>حذف بياناتك</h2></div>
+    <p>احذف عادةً، أو ألغِ تثبيت التطبيق، فتزول بياناتها من الجهاز.</p><p>لحذف النسخة من Google Drive، افتح Google Drive ← الإعدادات ← إدارة التطبيقات ← Kraplya ← حذف بيانات التطبيق المخفية. وإيقاف المزامنة من «الملف الشخصي» يوقف إنشاء نسخ جديدة.</p>
+    
+  </section>
+  <section class="card sec" id="ar-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>الأطفال</h2></div>
+    <p>لا يجمع التطبيق بيانات عن أي شخص، بمن في ذلك الأطفال.</p>
+    
+  </section>
+  <section class="card sec" id="ar-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>التغييرات على هذه السياسة</h2></div>
+    <p>إذا تغيّرت هذه السياسة، فسيظهر الإصدار الجديد في هذه الصفحة بتاريخ جديد.</p>
+    
+  </section>
+  <section class="card sec" id="ar-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>التواصل</h2></div>
+    <p>للأسئلة المتعلقة بالخصوصية: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="langdoc" lang="hi" dir="ltr" data-lang="hi" data-title="गोपनीयता नीति · Kraplya" data-app="Kraplya" data-langlabel="भाषा" data-nav="होम|निजता" data-hub="PegasoHlib — सभी ऐप" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Kraplya</p>
+    <h1>गोपनीयता नीति</h1>
+    <p class="date">22 अक्टूबर 2026 को अपडेट की गई · 13 अक्टूबर 2026 से लागू</p>
+    <p class="lead">Kraplya टाइमर वाला एक आदत ट्रैकर है। इसे इस तरह बनाया गया है कि आपका डेटा आपका ही रहे: Kraplya के अपने कोई सर्वर नहीं हैं, कोई अकाउंट नहीं, कोई विज्ञापन नहीं और कोई एनालिटिक्स नहीं।</p>
+  </header>
+
+  <section class="glance" aria-labelledby="hi-glance">
+    <h2 id="hi-glance" class="eyebrow">एक नज़र में</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>आप जो कुछ भी दर्ज करते हैं, वह आपके डिवाइस पर सहेजा जाता है।</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>Kraplya के कोई सर्वर नहीं हैं। डेवलपर को आपका डेटा कभी नहीं मिलता और वह उसे कभी नहीं देखता।</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>कोई विज्ञापन नहीं, कोई एनालिटिक्स नहीं, कोई ट्रैकिंग नहीं, डेटा की कोई बिक्री नहीं।</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>Google Drive सिंक वैकल्पिक है और सिर्फ़ ऐप के अपने छिपे फ़ोल्डर का इस्तेमाल करता है।</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>फ़ोन कैलेंडर के इवेंट सिर्फ़ डिवाइस पर पढ़े जाते हैं, और सिर्फ़ तब जब आप इसे चालू करें।</span></li></ul>
+  </section>
+
+  <nav class="toc" aria-label="इस पेज पर">
+    <p class="eyebrow">इस पेज पर</p>
+    <div class="chips"><a href="#hi-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>ऐप में क्या रहता है</a><a href="#hi-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>Google Drive से सिंक (वैकल्पिक)</a><a href="#hi-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>फ़ोन कैलेंडर (वैकल्पिक)</a><a href="#hi-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>सूचनाएँ और रिमाइंडर</a><a href="#hi-updates"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>अपडेट</a><a href="#hi-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>ऐप कौन-सी अनुमतियाँ माँगता है</a><a href="#hi-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>बैकअप और इंपोर्ट</a><a href="#hi-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>अपना डेटा हटाना</a><a href="#hi-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>बच्चे</a><a href="#hi-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>इस नीति में बदलाव</a><a href="#hi-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>संपर्क</a></div>
+  </nav>
+
+  <section class="card tablecard" aria-labelledby="hi-table">
+    <h2 id="hi-table">कौन-सा डेटा, कहाँ रहता है, कौन देखता है</h2>
+    <table>
+      <thead><tr><th scope="col">डेटा</th><th scope="col">कहाँ रखा जाता है</th><th scope="col">कौन देख सकता है</th></tr></thead>
+      <tbody><tr><th scope="row">आदतें, श्रेणियाँ, लक्ष्य, दर्ज किया गया समय, हफ़्ते का शेड्यूल, इनाम और सज़ाएँ, प्रोफ़ाइल का नाम, जन्मतिथि (वैकल्पिक)</th><td data-label="कहाँ रखा जाता है">आपके डिवाइस पर; अगर आप सिंक चालू करें, तो आपकी अपनी Google Drive में एक कॉपी</td><td data-label="कौन देख सकता है">सिर्फ़ आप</td></tr><tr><th scope="row">सेटिंग्स: भाषा, थीम, आवाज़, रिमाइंडर</th><td data-label="कहाँ रखा जाता है">आपके डिवाइस पर; इनमें से कुछ सिंक में आपके डेटा के साथ जाती हैं</td><td data-label="कौन देख सकता है">सिर्फ़ आप</td></tr><tr><th scope="row">आपके Google अकाउंट का ईमेल पता</th><td data-label="कहाँ रखा जाता है">आपके डिवाइस पर, जब तक सिंक चालू है</td><td data-label="कौन देख सकता है">सिर्फ़ आप</td></tr><tr><th scope="row">फ़ोन कैलेंडर के इवेंट</th><td data-label="कहाँ रखा जाता है">सहेजे नहीं जाते: शेड्यूल बनाने के लिए उसी समय पढ़े जाते हैं</td><td data-label="कौन देख सकता है">सिर्फ़ आप, डिवाइस पर</td></tr><tr><th scope="row">बैकअप फ़ाइलें</th><td data-label="कहाँ रखा जाता है">जहाँ आप उन्हें सहेजते हैं</td><td data-label="कौन देख सकता है">जिसे भी आप फ़ाइल दें</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="card sec" id="hi-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>ऐप में क्या रहता है</h2></div>
+    <p>जो आप ख़ुद दर्ज करते हैं: आदतों और श्रेणियों के नाम, लक्ष्य, दर्ज किया गया समय, हफ़्ते का शेड्यूल, इनाम और सज़ाएँ, आपकी प्रोफ़ाइल का नाम और, अगर आप जोड़ें, आपकी जन्मतिथि। जन्मतिथि का इस्तेमाल सिर्फ़ यह दिखाने के लिए होता है कि आपके आँकड़े शुरू होते समय आपकी उम्र कितनी थी।</p><p>सेटिंग्स: भाषा, थीम, आवाज़, वाइब्रेशन और रिमाइंडर।</p><p>यह सब आपके डिवाइस पर ऐप के निजी स्टोरेज में रखा जाता है। दूसरे ऐप इसे नहीं पढ़ सकते।</p>
+    
+  </section>
+  <section class="card sec" id="hi-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>Google Drive से सिंक (वैकल्पिक)</h2></div>
+    <p>अगर आप Google से साइन इन करना चुनते हैं, तो ऐप को सिर्फ़ आपकी Google Drive में उसके अपने छिपे फ़ोल्डर का ऐक्सेस मिलता है (<code>drive.appdata</code> अनुमति)। वह आपकी कोई भी दूसरी फ़ाइल न देख सकता है, न खोल सकता है, न बदल सकता है।</p><p>आपके डेटा की एक कॉपी उस फ़ोल्डर में लिखी जाती है, ताकि आपका फ़ोन और टैबलेट एक जैसा दिखाएँ। ऐप आपके अकाउंट का ईमेल पता भी पढ़ता है, सिर्फ़ यह दिखाने के लिए कि कौन-सा अकाउंट जुड़ा है।</p><p>यह डेटा सिर्फ़ आपके डिवाइस और Google के बीच एन्क्रिप्टेड कनेक्शन से जाता है; डेवलपर के पास इसका कोई ऐक्सेस नहीं है। आप प्रोफ़ाइल में कभी भी सिंक बंद कर सकते हैं।</p><p>Google API से मिली जानकारी का ऐप द्वारा उपयोग <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a> का पालन करता है, जिसमें Limited Use (सीमित उपयोग) की शर्तें भी शामिल हैं।</p>
+    
+  </section>
+  <section class="card sec" id="hi-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>फ़ोन कैलेंडर (वैकल्पिक)</h2></div>
+    <p>अगर आप शेड्यूल में कैलेंडर इवेंट दिखाना चुनते हैं और कैलेंडर का ऐक्सेस देते हैं, तो ऐप आपके फ़ोन के कैलेंडरों से इवेंट पढ़ता है (Google Calendar समेत, अगर वह फ़ोन पर सेट है): हर इवेंट का शीर्षक, समय और रंग।</p><p>इनका इस्तेमाल सिर्फ़ इन्हें हफ़्ते के शेड्यूल में दिखाने के लिए होता है। इवेंट सिर्फ़ डिवाइस पर पढ़े जाते हैं: वे ऐप में सहेजे नहीं जाते, बैकअप या Google Drive में शामिल नहीं होते, और कहीं नहीं भेजे जाते। ऐप आपका कैलेंडर कभी नहीं बदलता।</p><p>कोई इवेंट Kraplya में तभी आता है जब आप उसे ख़ुद शेड्यूल में जोड़ते हैं; तब सिर्फ़ वही शीर्षक और समय रखा जाता है जिसकी आपने पुष्टि की। आप फ़ोन की सेटिंग्स में ऐक्सेस वापस ले सकते हैं या शेड्यूल में इवेंट बंद कर सकते हैं।</p>
+    
+  </section>
+  <section class="card sec" id="hi-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>सूचनाएँ और रिमाइंडर</h2></div>
+    <p>सूचनाएँ चल रहा टाइमर और आपके चालू किए गए रिमाइंडर दिखाती हैं। वे डिवाइस पर ही बनती हैं; कहीं कुछ नहीं भेजा जाता।</p><p>फ़ोन रीस्टार्ट होने के बाद ऐप अपने रिमाइंडर फिर से शेड्यूल करता है। इसीलिए वह बूट पर शुरू होने की अनुमति माँगता है।</p>
+    
+  </section>
+  <section class="card sec" id="hi-updates">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>अपडेट</h2></div>
+    <p>Google Play के बाहर बाँटा गया Kraplya का वर्ज़न हर कुछ घंटों में Kraplya की वेबसाइट (pegasohlib.github.io) पर नए वर्ज़न की जाँच करता है, और जब आप अपडेट पर टैप करते हैं, तो उसे GitHub से डाउनलोड करता है। किसी भी वेबसाइट की तरह, GitHub आपके डिवाइस का IP पता देखता है; इसके अलावा कुछ नहीं भेजा जाता, और ऐप का कोई डेटा नहीं।</p><p>आप प्रोफ़ाइल में अपने-आप होने वाली जाँच बंद कर सकते हैं। जब ऐप Google Play से आता है, तो उसे इसके बजाय Google Play अपडेट करता है।</p><p>GitHub यह भी गिनता है कि हर फ़ाइल कितनी बार डाउनलोड हुई। यह सिर्फ़ एक संख्या है, जिसमें यह कुछ नहीं होता कि किसने डाउनलोड किया; वेबसाइट इसे डाउनलोड की अनुमानित संख्या के रूप में दिखाती है।</p>
+    
+  </section>
+  <section class="card sec" id="hi-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>ऐप कौन-सी अनुमतियाँ माँगता है</h2></div>
+    
+    <dl class="perms"><div><dt>सूचनाएँ</dt><dd>टाइमर और आपके रिमाइंडर।</dd></div><div><dt>कैलेंडर (वैकल्पिक)</dt><dd>शेड्यूल में आपके इवेंट दिखाने के लिए।</dd></div><div><dt>इंटरनेट</dt><dd>सिर्फ़ Google साइन-इन, Drive सिंक और अपडेट जाँचने के लिए।</dd></div><div><dt>फ़ोरग्राउंड सेवा</dt><dd>ताकि स्क्रीन बंद होने पर भी टाइमर गिनता रहे।</dd></div><div><dt>बूट पर शुरू होना</dt><dd>रीस्टार्ट के बाद आपके रिमाइंडर वापस लाने के लिए।</dd></div><div><dt>ऐप इंस्टॉल करना</dt><dd>ख़ुद ऐप के अपडेट इंस्टॉल करने के लिए (सिर्फ़ Google Play के बाहर बाँटे गए वर्ज़न में)।</dd></div><div><dt>वाइब्रेशन</dt><dd>टाइमर और पूरे हुए लक्ष्यों के लिए।</dd></div></dl>
+  </section>
+  <section class="card sec" id="hi-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>बैकअप और इंपोर्ट</h2></div>
+    <p>बैकअप फ़ाइल सिर्फ़ तब बनती है जब आप ख़ुद उसे सहेजते हैं, आपकी चुनी हुई जगह पर। इंपोर्ट सिर्फ़ वही फ़ाइल पढ़ता है जो आप चुनते हैं।</p>
+    
+  </section>
+  <section class="card sec" id="hi-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>अपना डेटा हटाना</h2></div>
+    <p>कोई आदत हटाएँ, या ऐप अनइंस्टॉल करें, तो डिवाइस पर उसका डेटा हट जाता है।</p><p>Google Drive से कॉपी हटाने के लिए, Google Drive → सेटिंग्स → ऐप्स मैनेज करें → Kraplya → छिपा हुआ ऐप डेटा मिटाएँ खोलें। प्रोफ़ाइल में सिंक बंद करने से नई कॉपियाँ बननी बंद हो जाती हैं।</p>
+    
+  </section>
+  <section class="card sec" id="hi-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>बच्चे</h2></div>
+    <p>ऐप किसी के बारे में भी डेटा इकट्ठा नहीं करता, बच्चों के बारे में भी नहीं।</p>
+    
+  </section>
+  <section class="card sec" id="hi-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>इस नीति में बदलाव</h2></div>
+    <p>अगर यह नीति बदलती है, तो नया वर्ज़न नई तारीख़ के साथ इसी पेज पर दिखेगा।</p>
+    
+  </section>
+  <section class="card sec" id="hi-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>संपर्क</h2></div>
+    <p>गोपनीयता से जुड़े सवाल: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="langdoc" lang="id" dir="ltr" data-lang="id" data-title="Kebijakan privasi · Kraplya" data-app="Kraplya" data-langlabel="Bahasa" data-nav="Beranda|Privasi" data-hub="PegasoHlib — semua aplikasi" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -1373,7 +1640,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="vi" data-lang="vi" data-title="Chính sách quyền riêng tư · Kraplya" data-app="Kraplya" data-langlabel="Ngôn ngữ" data-nav="Trang chủ|Quyền riêng tư" data-hub="PegasoHlib — tất cả ứng dụng" hidden>
+<article class="langdoc" lang="vi" dir="ltr" data-lang="vi" data-title="Chính sách quyền riêng tư · Kraplya" data-app="Kraplya" data-langlabel="Ngôn ngữ" data-nav="Trang chủ|Quyền riêng tư" data-hub="PegasoHlib — tất cả ứng dụng" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -1456,7 +1723,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="th" data-lang="th" data-title="นโยบายความเป็นส่วนตัว · Kraplya" data-app="Kraplya" data-langlabel="ภาษา" data-nav="หน้าแรก|ความเป็นส่วนตัว" data-hub="PegasoHlib — แอปทั้งหมด" hidden>
+<article class="langdoc" lang="th" dir="ltr" data-lang="th" data-title="นโยบายความเป็นส่วนตัว · Kraplya" data-app="Kraplya" data-langlabel="ภาษา" data-nav="หน้าแรก|ความเป็นส่วนตัว" data-hub="PegasoHlib — แอปทั้งหมด" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -1539,7 +1806,90 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="ko" data-lang="ko" data-title="개인정보 처리방침 · Kraplya" data-app="Kraplya" data-langlabel="언어" data-nav="홈|개인정보" data-hub="PegasoHlib — 모든 앱" hidden>
+<article class="langdoc" lang="zh" dir="ltr" data-lang="zh" data-title="隐私政策 · Kraplya" data-app="Kraplya" data-langlabel="语言" data-nav="首页|隐私" data-hub="PegasoHlib — 全部应用" hidden>
+  <header class="hero">
+    <img class="logo" src="icon.svg" alt="" width="76" height="76">
+    <p class="app">Kraplya</p>
+    <h1>隐私政策</h1>
+    <p class="date">更新于2026年10月22日 · 自2026年10月13日起生效</p>
+    <p class="lead">Kraplya 是一款带计时器的习惯追踪应用。它的设计让你的数据始终属于你：Kraplya 没有自己的服务器，没有账号，没有广告，也没有分析。</p>
+  </header>
+
+  <section class="glance" aria-labelledby="zh-glance">
+    <h2 id="zh-glance" class="eyebrow">概览</h2>
+    <ul><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><span>你输入的所有内容都保存在你的设备上。</span></li><li class="t6"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="4" width="17" height="6.5" rx="2"/><rect x="3.5" y="13.5" width="17" height="6.5" rx="2"/><path d="M7 7.2h.01M7 16.8h.01M4 4l16 16"/></svg><span>Kraplya 没有服务器。开发者从不接收也看不到你的数据。</span></li><li class="t7"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M6 6l12 12"/></svg><span>没有广告，没有分析，没有跟踪，不出售数据。</span></li><li class="t0"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><span>Google 云端硬盘同步是可选的，只使用应用自己的隐藏文件夹。</span></li><li class="t1"><svg class="ic tile" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><span>手机日历中的事件只在设备上读取，并且只有在你开启此功能时才会读取。</span></li></ul>
+  </section>
+
+  <nav class="toc" aria-label="本页内容">
+    <p class="eyebrow">本页内容</p>
+    <div class="chips"><a href="#zh-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>应用保存哪些内容</a><a href="#zh-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>通过 Google 云端硬盘同步（可选）</a><a href="#zh-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>手机日历（可选）</a><a href="#zh-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>通知和提醒</a><a href="#zh-updates"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>更新</a><a href="#zh-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>应用请求的权限</a><a href="#zh-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>备份和导入</a><a href="#zh-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>删除你的数据</a><a href="#zh-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>儿童</a><a href="#zh-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>本政策的变更</a><a href="#zh-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>联系方式</a></div>
+  </nav>
+
+  <section class="card tablecard" aria-labelledby="zh-table">
+    <h2 id="zh-table">有哪些数据、存在哪里、谁能看到</h2>
+    <table>
+      <thead><tr><th scope="col">数据</th><th scope="col">保存位置</th><th scope="col">谁能看到</th></tr></thead>
+      <tbody><tr><th scope="row">习惯、类别、目标、记录的时间、每周日程、奖励和惩罚、个人资料名称、出生日期（可选）</th><td data-label="保存位置">在你的设备上；如果你开启同步，你自己的 Google 云端硬盘中也会有一份副本</td><td data-label="谁能看到">只有你</td></tr><tr><th scope="row">设置：语言、主题、声音、提醒</th><td data-label="保存位置">在你的设备上；其中少数几项会在同步时随你的数据一起传输</td><td data-label="谁能看到">只有你</td></tr><tr><th scope="row">你的 Google 账号的电子邮件地址</th><td data-label="保存位置">在你的设备上，仅在同步开启期间</td><td data-label="谁能看到">只有你</td></tr><tr><th scope="row">手机日历中的事件</th><td data-label="保存位置">不保存：只在绘制日程时即时读取</td><td data-label="谁能看到">只有你，在设备上</td></tr><tr><th scope="row">备份文件</th><td data-label="保存位置">保存在你选择的位置</td><td data-label="谁能看到">你把文件交给的任何人</td></tr></tbody>
+    </table>
+  </section>
+
+  <section class="card sec" id="zh-data">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg><h2>应用保存哪些内容</h2></div>
+    <p>你自己输入的内容：习惯和类别的名称、目标、记录的时间、每周日程、奖励和惩罚、个人资料中的名称，以及你添加的出生日期（如有）。出生日期只用于显示你的统计开始时你的年龄。</p><p>设置：语言、主题、声音、振动和提醒。</p><p>所有这些都保存在你设备上应用的私有存储空间中。其他应用无法读取。</p>
+    
+  </section>
+  <section class="card sec" id="zh-drive">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h2>通过 Google 云端硬盘同步（可选）</h2></div>
+    <p>如果你选择使用 Google 登录，应用只能访问你 Google 云端硬盘中它自己的隐藏文件夹（<code>drive.appdata</code> 权限）。它无法查看、打开或更改你的任何其他文件。</p><p>你的数据会有一份副本写入该文件夹，让你的手机和平板显示相同的内容。应用还会读取你账号的电子邮件地址，仅用于显示已连接的是哪个账号。</p><p>这些数据只通过加密连接在你的设备和 Google 之间传输；开发者无法访问。你可以随时在“个人资料”中关闭同步。</p><p>本应用对从 Google API 获取的信息的使用，遵守 <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API 服务用户数据政策</a>，包括其中的“有限使用”要求。</p>
+    
+  </section>
+  <section class="card sec" id="zh-calendar">
+    <div class="sechead"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h2>手机日历（可选）</h2></div>
+    <p>如果你选择在日程中显示日历事件并允许访问日历，应用会读取你手机上各个日历中的事件（包括已在手机上设置的 Google 日历）：每个事件的标题、时间和颜色。</p><p>这些事件只用于在每周日程中显示。事件只在设备上读取：不会保存在应用中，不会包含在备份或 Google 云端硬盘中，也不会发送到任何地方。应用从不更改你的日历。</p><p>只有当你自己把某个事件添加到日程中时，它才会进入 Kraplya；此时只保存你确认过的标题和时间。你可以在手机设置中撤销访问权限，或在日程中关闭事件显示。</p>
+    
+  </section>
+  <section class="card sec" id="zh-notifications">
+    <div class="sechead"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h2>通知和提醒</h2></div>
+    <p>通知会显示正在运行的计时器和你开启的提醒。它们在设备上生成；不会发送任何内容。</p><p>手机重启后，应用会重新安排提醒。这就是它请求开机启动权限的原因。</p>
+    
+  </section>
+  <section class="card sec" id="zh-updates">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>更新</h2></div>
+    <p>在 Google Play 之外分发的 Kraplya 版本每隔几小时会在 Kraplya 网站（pegasohlib.github.io）上检查是否有新版本，并在你点击“更新”时从 GitHub 下载。和访问任何网站一样，GitHub 会看到你设备的 IP 地址；除此之外不会发送任何内容，也不会发送应用中的任何数据。</p><p>你可以在“个人资料”中关闭自动检查。如果应用来自 Google Play，则由 Google Play 负责更新。</p><p>GitHub 还会统计每个文件被下载的次数。这只是一个数字，不包含任何关于下载者的信息；网站会把它显示为大致的下载量。</p>
+    
+  </section>
+  <section class="card sec" id="zh-permissions">
+    <div class="sechead"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg><h2>应用请求的权限</h2></div>
+    
+    <dl class="perms"><div><dt>通知</dt><dd>计时器和你的提醒。</dd></div><div><dt>日历（可选）</dt><dd>用于在日程中显示你的事件。</dd></div><div><dt>网络</dt><dd>仅用于 Google 登录、云端硬盘同步和检查更新。</dd></div><div><dt>前台服务</dt><dd>让计时器在屏幕关闭时继续计时。</dd></div><div><dt>开机启动</dt><dd>在重启后恢复你的提醒。</dd></div><div><dt>安装应用</dt><dd>用于安装应用自身的更新（仅限在 Google Play 之外分发的版本）。</dd></div><div><dt>振动</dt><dd>用于计时器和达成目标时。</dd></div></dl>
+  </section>
+  <section class="card sec" id="zh-backups">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg><h2>备份和导入</h2></div>
+    <p>只有当你自己保存备份时，才会在你选择的位置创建备份文件。导入只读取你选择的文件。</p>
+    
+  </section>
+  <section class="card sec" id="zh-delete">
+    <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>删除你的数据</h2></div>
+    <p>删除某个习惯或卸载应用后，设备上的相应数据就会消失。</p><p>要删除 Google 云端硬盘中的副本，请打开 Google 云端硬盘 → 设置 → 管理应用 → Kraplya → 删除隐藏的应用数据。在“个人资料”中关闭同步后，将不再生成新的副本。</p>
+    
+  </section>
+  <section class="card sec" id="zh-children">
+    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>儿童</h2></div>
+    <p>本应用不收集任何人的数据，包括儿童。</p>
+    
+  </section>
+  <section class="card sec" id="zh-changes">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg><h2>本政策的变更</h2></div>
+    <p>如果本政策发生变更，新版本将以新的日期发布在本页面上。</p>
+    
+  </section>
+  <section class="card sec" id="zh-contact">
+    <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>联系方式</h2></div>
+    <p>隐私相关问题：<a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+    
+  </section>
+</article>
+<article class="langdoc" lang="ko" dir="ltr" data-lang="ko" data-title="개인정보 처리방침 · Kraplya" data-app="Kraplya" data-langlabel="언어" data-nav="홈|개인정보" data-hub="PegasoHlib — 모든 앱" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Kraplya</p>
@@ -1622,7 +1972,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="ja" data-lang="ja" data-title="プライバシーポリシー · クラプリャ" data-app="クラプリャ" data-langlabel="言語" data-nav="ホーム|プライバシー" data-hub="PegasoHlib — すべてのアプリ" hidden>
+<article class="langdoc" lang="ja" dir="ltr" data-lang="ja" data-title="プライバシーポリシー · クラプリャ" data-app="クラプリャ" data-langlabel="言語" data-nav="ホーム|プライバシー" data-hub="PegasoHlib — すべてのアプリ" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">クラプリャ</p>
@@ -1705,7 +2055,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="kk" data-lang="kk" data-title="Құпиялық саясаты · Крапля" data-app="Крапля" data-langlabel="Тіл" data-nav="Басты бет|Құпиялық" data-hub="PegasoHlib — барлық қолданбалар" hidden>
+<article class="langdoc" lang="kk" dir="ltr" data-lang="kk" data-title="Құпиялық саясаты · Крапля" data-app="Крапля" data-langlabel="Тіл" data-nav="Басты бет|Құпиялық" data-hub="PegasoHlib — барлық қолданбалар" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Крапля</p>
@@ -1788,7 +2138,7 @@ td:last-child{font-weight:600;color:var(--ink)}
     
   </section>
 </article>
-<article class="langdoc" lang="ru" data-lang="ru" data-title="Политика конфиденциальности · Крапля" data-app="Крапля" data-langlabel="Язык" data-nav="Главная|Конфиденциальность" data-hub="PegasoHlib — все приложения" hidden>
+<article class="langdoc" lang="ru" dir="ltr" data-lang="ru" data-title="Политика конфиденциальности · Крапля" data-app="Крапля" data-langlabel="Язык" data-nav="Главная|Конфиденциальность" data-hub="PegasoHlib — все приложения" hidden>
   <header class="hero">
     <img class="logo" src="icon.svg" alt="" width="76" height="76">
     <p class="app">Крапля</p>
@@ -1877,7 +2227,8 @@ td:last-child{font-weight:600;color:var(--ink)}
 (function () {
   var docs = document.querySelectorAll(".langdoc"), sel = document.getElementById("lang");
   var have = {}; for (var i = 0; i < docs.length; i++) have[docs[i].dataset.lang] = docs[i];
-  var alias = { "in": "id", "nb": "sv", "no": "sv", "nn": "sv" }, KEYS = ["siteLang","kraplya-lang"], low = {};
+  // Chinese: zh-CN, zh-Hans, zh-SG, zh-TW, zh-Hant… all take "zh" (Simplified) through the first part of the code.
+  var alias = { "in": "id", "nb": "sv", "no": "sv", "nn": "sv" }, KEYS = ["siteLang","kraplya-lang"], RTL = ["ar"], low = {};
   for (var l in have) low[l.toLowerCase()] = l;
   // "pt-BR", "pt-br", "pt_BR" → pt-BR; "pt-PT" → pt (or pt-BR when the site has only that); "uk-data" (an anchor) → uk; "pt-BR-data" → pt-BR.
   function norm(c) {
@@ -1897,7 +2248,8 @@ td:last-child{font-weight:600;color:var(--ink)}
   function text(id, t) { var e = document.getElementById(id); if (e && t != null) e.textContent = t; }
   function show(c, save) {
     for (var k in have) have[k].hidden = k !== c;
-    var d = have[c]; document.documentElement.lang = c; document.title = d.dataset.title;
+    // The whole page (bar and footer too) turns right to left with Arabic and back with every other language.
+    var d = have[c]; document.documentElement.lang = c; document.documentElement.dir = RTL.indexOf(c) >= 0 ? "rtl" : "ltr"; document.title = d.dataset.title;
     sel.value = c;
     text("appname", d.dataset.app); text("langlabel", d.dataset.langlabel); text("hublink", d.dataset.hub); text("footnote", d.dataset.footnote);
     var names = (d.dataset.nav || "").split("|"), nav = document.querySelectorAll("a[data-nav]");
