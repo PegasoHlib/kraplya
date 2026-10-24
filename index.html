@@ -22,11 +22,20 @@
 <link rel="alternate" hreflang="uk" href="https://pegasohlib.github.io/kraplya/?lang=uk">
 <link rel="alternate" hreflang="es" href="https://pegasohlib.github.io/kraplya/?lang=es">
 <link rel="alternate" hreflang="pt" href="https://pegasohlib.github.io/kraplya/?lang=pt">
+<link rel="alternate" hreflang="pt-BR" href="https://pegasohlib.github.io/kraplya/?lang=pt-BR">
 <link rel="alternate" hreflang="fr" href="https://pegasohlib.github.io/kraplya/?lang=fr">
 <link rel="alternate" hreflang="de" href="https://pegasohlib.github.io/kraplya/?lang=de">
 <link rel="alternate" hreflang="it" href="https://pegasohlib.github.io/kraplya/?lang=it">
+<link rel="alternate" hreflang="pl" href="https://pegasohlib.github.io/kraplya/?lang=pl">
+<link rel="alternate" hreflang="cs" href="https://pegasohlib.github.io/kraplya/?lang=cs">
+<link rel="alternate" hreflang="sk" href="https://pegasohlib.github.io/kraplya/?lang=sk">
+<link rel="alternate" hreflang="da" href="https://pegasohlib.github.io/kraplya/?lang=da">
 <link rel="alternate" hreflang="sv" href="https://pegasohlib.github.io/kraplya/?lang=sv">
+<link rel="alternate" hreflang="tr" href="https://pegasohlib.github.io/kraplya/?lang=tr">
 <link rel="alternate" hreflang="id" href="https://pegasohlib.github.io/kraplya/?lang=id">
+<link rel="alternate" hreflang="vi" href="https://pegasohlib.github.io/kraplya/?lang=vi">
+<link rel="alternate" hreflang="th" href="https://pegasohlib.github.io/kraplya/?lang=th">
+<link rel="alternate" hreflang="ko" href="https://pegasohlib.github.io/kraplya/?lang=ko">
 <link rel="alternate" hreflang="ja" href="https://pegasohlib.github.io/kraplya/?lang=ja">
 <link rel="alternate" hreflang="kk" href="https://pegasohlib.github.io/kraplya/?lang=kk">
 <link rel="alternate" hreflang="ru" href="https://pegasohlib.github.io/kraplya/?lang=ru">
@@ -42,6 +51,10 @@
 .tile{width:40px;height:40px;padding:9px;background:var(--h0)}
 .t0 .tile,.tile.t0{background:var(--h0)}.t1 .tile,.tile.t1{background:var(--h1)}.t2 .tile,.tile.t2{background:var(--h2)}.t3 .tile,.tile.t3{background:var(--h3)}.t4 .tile,.tile.t4{background:var(--h4)}.t5 .tile,.tile.t5{background:var(--h5)}.t6 .tile,.tile.t6{background:var(--h6)}.t7 .tile,.tile.t7{background:var(--h7)}
 h2.eyebrow{font-family:inherit;line-height:1.4}
+:root:lang(th) body{font-family:Onest,"Noto Sans Thai","Noto Sans Thai UI","Leelawadee UI",Leelawadee,Thonburi,Tahoma,system-ui,sans-serif}
+:root:lang(th) :is(h1,h2,.display,.card.app h3){font-family:Unbounded,Onest,"Noto Sans Thai","Noto Sans Thai UI","Leelawadee UI",Leelawadee,Thonburi,Tahoma,sans-serif;line-height:1.35}
+:root:lang(ko) body{font-family:Onest,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR","Noto Sans CJK KR","Nanum Gothic",system-ui,sans-serif;word-break:keep-all;overflow-wrap:anywhere}
+:root:lang(ko) :is(h1,h2,.display,.card.app h3){font-family:Unbounded,Onest,"Apple SD Gothic Neo","Malgun Gothic","Noto Sans KR","Noto Sans CJK KR","Nanum Gothic",sans-serif;line-height:1.25}
 .btn .ic{width:22px;height:22px}
 .btn.primary{background:linear-gradient(135deg,var(--g1),var(--g2));box-shadow:0 12px 30px -12px color-mix(in srgb,var(--g1) 80%,transparent)}
 .btn.primary .badge{background:color-mix(in srgb,var(--on-accent) 18%,transparent)}
@@ -124,7 +137,7 @@ main{max-width:960px}
   <a class="home" href="index.html" data-keep-lang><img src="icon.svg" alt="" width="32" height="32"><span id="appname">Kraplya</span></a>
   <nav class="links"><a class="on" aria-current="page" data-nav="0" href="index.html" data-keep-lang>Home</a><a data-nav="1" href="privacy.html" data-keep-lang>Privacy</a></nav>
   <label class="lang"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.5 2.6 3.6 5.4 3.6 8.5s-1.1 5.9-3.6 8.5c-2.5-2.6-3.6-5.4-3.6-8.5s1.1-5.9 3.6-8.5z"/></svg><span class="sr" id="langlabel">Language</span>
-    <select id="lang" aria-labelledby="langlabel"><option value="en" lang="en">English</option><option value="uk" lang="uk">Українська</option><option value="es" lang="es">Español</option><option value="pt" lang="pt">Português</option><option value="fr" lang="fr">Français</option><option value="de" lang="de">Deutsch</option><option value="it" lang="it">Italiano</option><option value="sv" lang="sv">Svenska</option><option value="id" lang="id">Bahasa Indonesia</option><option value="ja" lang="ja">日本語</option><option value="kk" lang="kk">Қазақша</option><option value="ru" lang="ru">Русский</option></select><svg class="ic chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg>
+    <select id="lang" aria-labelledby="langlabel"><option value="en" lang="en">English</option><option value="uk" lang="uk">Українська</option><option value="es" lang="es">Español</option><option value="pt" lang="pt">Português</option><option value="pt-BR" lang="pt-BR">Português (Brasil)</option><option value="fr" lang="fr">Français</option><option value="de" lang="de">Deutsch</option><option value="it" lang="it">Italiano</option><option value="pl" lang="pl">Polski</option><option value="cs" lang="cs">Čeština</option><option value="sk" lang="sk">Slovenčina</option><option value="da" lang="da">Dansk</option><option value="sv" lang="sv">Svenska</option><option value="tr" lang="tr">Türkçe</option><option value="id" lang="id">Bahasa Indonesia</option><option value="vi" lang="vi">Tiếng Việt</option><option value="th" lang="th">ไทย</option><option value="ko" lang="ko">한국어</option><option value="ja" lang="ja">日本語</option><option value="kk" lang="kk">Қазақша</option><option value="ru" lang="ru">Русский</option></select><svg class="ic chev" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg>
   </label>
   <button class="theme" id="theme" type="button"></button>
 </div></div>
@@ -141,7 +154,7 @@ main{max-width:960px}
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Privacy policy</span></a>
     </div>
     <p class="note">After installing, the app updates itself.<br>For Android 8 and newer · Coming soon to Google Play</p>
-    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Downloads: ≈ <b data-count="kraplya">15</b></p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Downloads: ≈ <b data-count="kraplya">25</b></p>
   </header>
 
   <section class="show" aria-label="Right on your home screen">
@@ -157,7 +170,7 @@ main{max-width:960px}
 
   <section class="section extra" aria-labelledby="x-en">
     <h2 class="eyebrow" id="x-en">And also</h2>
-    <div class="chips"><span>12 languages</span><span>Light and dark theme</span><span>Sounds and vibration</span><span>Backups to a file</span><span>Tablet layout in two columns</span></div>
+    <div class="chips"><span>21 languages</span><span>Light and dark theme</span><span>Sounds and vibration</span><span>Backups to a file</span><span>Tablet layout in two columns</span></div>
   </section>
 
 
@@ -181,7 +194,7 @@ main{max-width:960px}
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Політика конфіденційності</span></a>
     </div>
     <p class="note">Після встановлення застосунок оновлюється сам.<br>Для Android 8 і новіших · Незабаром у Google Play</p>
-    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Завантажень: ≈ <b data-count="kraplya">15</b></p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Завантажень: ≈ <b data-count="kraplya">25</b></p>
   </header>
 
   <section class="show" aria-label="Просто на головному екрані">
@@ -197,7 +210,7 @@ main{max-width:960px}
 
   <section class="section extra" aria-labelledby="x-uk">
     <h2 class="eyebrow" id="x-uk">А ще</h2>
-    <div class="chips"><span>12 мов</span><span>Світла й темна тема</span><span>Звуки й вібрація</span><span>Резервна копія у файл</span><span>Планшет у дві колонки</span></div>
+    <div class="chips"><span>21 мова</span><span>Світла й темна тема</span><span>Звуки й вібрація</span><span>Резервна копія у файл</span><span>Планшет у дві колонки</span></div>
   </section>
 
 
@@ -221,7 +234,7 @@ main{max-width:960px}
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Política de privacidad</span></a>
     </div>
     <p class="note">Una vez instalada, la app se actualiza sola.<br>Para Android 8 y versiones posteriores · Muy pronto en Google Play</p>
-    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Descargas: ≈ <b data-count="kraplya">15</b></p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Descargas: ≈ <b data-count="kraplya">25</b></p>
   </header>
 
   <section class="show" aria-label="Directamente en tu pantalla de inicio">
@@ -237,7 +250,7 @@ main{max-width:960px}
 
   <section class="section extra" aria-labelledby="x-es">
     <h2 class="eyebrow" id="x-es">Y además</h2>
-    <div class="chips"><span>12 idiomas</span><span>Tema claro y oscuro</span><span>Sonidos y vibración</span><span>Copias de seguridad en un archivo</span><span>Diseño de tableta en dos columnas</span></div>
+    <div class="chips"><span>21 idiomas</span><span>Tema claro y oscuro</span><span>Sonidos y vibración</span><span>Copias de seguridad en un archivo</span><span>Diseño de tableta en dos columnas</span></div>
   </section>
 
 
@@ -261,7 +274,7 @@ main{max-width:960px}
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Política de privacidade</span></a>
     </div>
     <p class="note">Depois de instalada, a app atualiza-se sozinha.<br>Para Android 8 ou mais recente · Em breve no Google Play</p>
-    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Transferências: ≈ <b data-count="kraplya">15</b></p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Transferências: ≈ <b data-count="kraplya">25</b></p>
   </header>
 
   <section class="show" aria-label="Diretamente no teu ecrã principal">
@@ -277,7 +290,7 @@ main{max-width:960px}
 
   <section class="section extra" aria-labelledby="x-pt">
     <h2 class="eyebrow" id="x-pt">E ainda</h2>
-    <div class="chips"><span>12 idiomas</span><span>Tema claro e escuro</span><span>Sons e vibração</span><span>Cópias de segurança num ficheiro</span><span>Tablet com duas colunas</span></div>
+    <div class="chips"><span>21 idiomas</span><span>Tema claro e escuro</span><span>Sons e vibração</span><span>Cópias de segurança num ficheiro</span><span>Tablet com duas colunas</span></div>
   </section>
 
 
@@ -288,6 +301,46 @@ main{max-width:960px}
   </section>
 
   <p class="contact">Perguntas e ideias: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+</article>
+<article class="langdoc" lang="pt-BR" data-lang="pt-BR" data-title="Kraplya: rastreador de hábitos com cronômetro" data-app="Kraplya" data-langlabel="Idioma" data-nav="Início|Privacidade" data-hub="PegasoHlib — todos os apps" hidden>
+  <header class="hero">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
+    <h1>Kraplya</h1>
+    <p class="tagline">Água mole em pedra dura, tanto bate até que fura</p>
+    <p class="lead">Defina uma meta para cada hábito, ligue o cronômetro quando estiver praticando e veja a semana se encher gota a gota. Simples, tranquilo e privado.</p>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Baixar para Android</span><span class="ver badge" hidden></span></a>
+      <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Política de privacidade</span></a>
+    </div>
+    <p class="note">Depois de instalado, o app se atualiza sozinho.<br>Para Android 8 ou mais recente · Em breve no Google Play</p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Downloads: ≈ <b data-count="kraplya">25</b></p>
+  </header>
+
+  <section class="show" aria-label="Direto na sua tela inicial">
+    <div class="showtext"><h2 class="display">Direto na sua tela inicial</h2><p>Três widgets, no seu idioma, no tema claro ou escuro.</p></div>
+    <div class="widgets"><div class="w today"><img src="img/pt-BR/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/pt-BR/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/pt-BR/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
+  </section>
+
+  <section class="section features" aria-labelledby="f-pt-BR">
+    <h2 class="eyebrow" id="f-pt-BR">O que ele faz</h2>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Metas do seu jeito</h3><p>Uma meta por dia, semana ou mês para cada hábito. Perdeu um dia? Compense mais tarde na semana: as metas semanais vêm primeiro.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Um cronômetro que não para</h3><p>Ele conta com a tela desligada e o app fechado, pausa e retoma, e pode ser parado direto pela notificação. Também dá para adicionar tempo à mão.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Agenda semanal</h3><p>Um calendário de 7 dias de verdade: planeje blocos certos e talvez, veja por cima o que você realmente fez e traga eventos do calendário do celular.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>O vaso da semana</h3><p>Cada hábito despeja a sua cor no vaso. Na segunda-feira você recebe um resumo e uma recompensa que você escolheu para si, ou uma penalidade.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Estatísticas</h3><p>Sequências de dias, gráficos, um calendário de atividade e recordes da semana, do mês, do ano e de todos os tempos.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Os hábitos de hoje com botão de iniciar, a semana num relance e o que vem a seguir na sua agenda, direto na tela inicial.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Lembretes</h3><p>Um empurrãozinho à noite se uma meta ainda não foi cumprida, um resumo na segunda-feira, seus próprios lembretes e lembretes dos blocos agendados.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Celular e tablet</h3><p>A sincronização opcional pelo seu próprio Google Drive deixa os dois aparelhos iguais, sem nenhuma conta.</p></div></div>
+  </section>
+
+
+  <section class="section extra" aria-labelledby="x-pt-BR">
+    <h2 class="eyebrow" id="x-pt-BR">E também</h2>
+    <div class="chips"><span>21 idiomas</span><span>Tema claro e escuro</span><span>Sons e vibração</span><span>Backups em arquivo</span><span>Layout para tablet em duas colunas</span></div>
+  </section>
+
+
+  <section class="private">
+    <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
+    <div><h2 class="display">Seus dados continuam sendo seus</h2><p>Sem anúncios, sem contas, sem análises. Tudo fica guardado no seu aparelho, e só você decide se quer manter uma cópia no seu próprio Google Drive.</p>
+    <a class="btn light" href="privacy.html" data-keep-lang><span>Ler a política de privacidade</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </section>
+
+  <p class="contact">Dúvidas e ideias: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
 <article class="langdoc" lang="fr" data-lang="fr" data-title="Kraplya : suivi d’habitudes avec minuteur" data-app="Kraplya" data-langlabel="Langue" data-nav="Accueil|Confidentialité" data-hub="PegasoHlib — toutes les applis" hidden>
   <header class="hero">
@@ -301,7 +354,7 @@ main{max-width:960px}
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Politique de confidentialité</span></a>
     </div>
     <p class="note">Une fois installée, l’appli se met à jour toute seule.<br>Pour Android 8 et versions ultérieures · Bientôt sur Google Play</p>
-    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Téléchargements: ≈ <b data-count="kraplya">15</b></p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Téléchargements: ≈ <b data-count="kraplya">25</b></p>
   </header>
 
   <section class="show" aria-label="Directement sur ton écran d’accueil">
@@ -317,7 +370,7 @@ main{max-width:960px}
 
   <section class="section extra" aria-labelledby="x-fr">
     <h2 class="eyebrow" id="x-fr">Et aussi</h2>
-    <div class="chips"><span>12 langues</span><span>Thème clair et sombre</span><span>Sons et vibrations</span><span>Sauvegardes dans un fichier</span><span>Affichage tablette en deux colonnes</span></div>
+    <div class="chips"><span>21 langues</span><span>Thème clair et sombre</span><span>Sons et vibrations</span><span>Sauvegardes dans un fichier</span><span>Affichage tablette en deux colonnes</span></div>
   </section>
 
 
@@ -341,7 +394,7 @@ main{max-width:960px}
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Datenschutzerklärung</span></a>
     </div>
     <p class="note">Nach der Installation aktualisiert sich die App von selbst.<br>Für Android 8 und neuer · Bald bei Google Play</p>
-    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Downloads: ≈ <b data-count="kraplya">15</b></p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Downloads: ≈ <b data-count="kraplya">25</b></p>
   </header>
 
   <section class="show" aria-label="Direkt auf deinem Startbildschirm">
@@ -357,7 +410,7 @@ main{max-width:960px}
 
   <section class="section extra" aria-labelledby="x-de">
     <h2 class="eyebrow" id="x-de">Außerdem</h2>
-    <div class="chips"><span>12 Sprachen</span><span>Helles und dunkles Design</span><span>Töne und Vibration</span><span>Sicherungen in eine Datei</span><span>Tablet-Ansicht in zwei Spalten</span></div>
+    <div class="chips"><span>21 Sprachen</span><span>Helles und dunkles Design</span><span>Töne und Vibration</span><span>Sicherungen in eine Datei</span><span>Tablet-Ansicht in zwei Spalten</span></div>
   </section>
 
 
@@ -381,7 +434,7 @@ main{max-width:960px}
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Informativa sulla privacy</span></a>
     </div>
     <p class="note">Dopo l’installazione l’app si aggiorna da sola.<br>Per Android 8 e versioni successive · Presto su Google Play</p>
-    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Download: ≈ <b data-count="kraplya">15</b></p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Download: ≈ <b data-count="kraplya">25</b></p>
   </header>
 
   <section class="show" aria-label="Direttamente nella schermata Home">
@@ -397,7 +450,7 @@ main{max-width:960px}
 
   <section class="section extra" aria-labelledby="x-it">
     <h2 class="eyebrow" id="x-it">E inoltre</h2>
-    <div class="chips"><span>12 lingue</span><span>Tema chiaro e scuro</span><span>Suoni e vibrazione</span><span>Backup su file</span><span>Layout per tablet a due colonne</span></div>
+    <div class="chips"><span>21 lingue</span><span>Tema chiaro e scuro</span><span>Suoni e vibrazione</span><span>Backup su file</span><span>Layout per tablet a due colonne</span></div>
   </section>
 
 
@@ -408,6 +461,166 @@ main{max-width:960px}
   </section>
 
   <p class="contact">Domande e idee: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+</article>
+<article class="langdoc" lang="pl" data-lang="pl" data-title="Kraplya: tracker nawyków z timerem" data-app="Kraplya" data-langlabel="Język" data-nav="Start|Prywatność" data-hub="PegasoHlib — wszystkie aplikacje" hidden>
+  <header class="hero">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
+    <h1>Kraplya</h1>
+    <p class="tagline">Kropla drąży skałę</p>
+    <p class="lead">Ustal cel dla każdego nawyku, włącz timer, gdy ćwiczysz, i patrz, jak tydzień wypełnia się kropla po kropli. Prosto, spokojnie i prywatnie.</p>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Pobierz na Androida</span><span class="ver badge" hidden></span></a>
+      <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Polityka prywatności</span></a>
+    </div>
+    <p class="note">Po instalacji aplikacja aktualizuje się sama.<br>Dla Androida 8 i nowszych · Wkrótce w Google Play</p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Pobrania: ≈ <b data-count="kraplya">25</b></p>
+  </header>
+
+  <section class="show" aria-label="Prosto na ekranie głównym">
+    <div class="showtext"><h2 class="display">Prosto na ekranie głównym</h2><p>Trzy widżety, w Twoim języku, jasne lub ciemne.</p></div>
+    <div class="widgets"><div class="w today"><img src="img/pl/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/pl/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/pl/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
+  </section>
+
+  <section class="section features" aria-labelledby="f-pl">
+    <h2 class="eyebrow" id="f-pl">Co potrafi</h2>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Cele na Twój sposób</h3><p>Cel na dzień, tydzień lub miesiąc dla każdego nawyku. Opuszczony dzień? Nadrób go później w tygodniu: cele tygodniowe są najważniejsze.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Timer, który nie staje</h3><p>Liczy przy wyłączonym ekranie i zamkniętej aplikacji, pauzuje i wznawia, a zatrzymać go można prosto z powiadomienia. Czas da się też dodać ręcznie.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Plan tygodnia</h3><p>Prawdziwy 7-dniowy kalendarz: planuj bloki pewne i może, zobacz na nich, co naprawdę udało się zrobić, i dodaj wydarzenia z kalendarza w telefonie.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Naczynie tygodnia</h3><p>Każdy nawyk wlewa swój kolor do naczynia. W poniedziałek dostajesz podsumowanie oraz nagrodę, którą wybierasz dla siebie, albo karę.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statystyki</h3><p>Serie dni, wykresy, kalendarz aktywności i rekordy z tygodnia, miesiąca, roku i całego czasu.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widżety</h3><p>Dzisiejsze nawyki z przyciskiem startu, tydzień w skrócie i to, co następne w planie, prosto na ekranie głównym.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Przypomnienia</h3><p>Wieczorne szturchnięcie, jeśli cel nie jest jeszcze osiągnięty, poniedziałkowe podsumowanie, własne przypomnienia i przypomnienia o zaplanowanych blokach.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Telefon i tablet</h3><p>Opcjonalna synchronizacja przez Twój własny Dysk Google utrzymuje oba urządzenia w zgodzie, bez żadnego konta.</p></div></div>
+  </section>
+
+
+  <section class="section extra" aria-labelledby="x-pl">
+    <h2 class="eyebrow" id="x-pl">A także</h2>
+    <div class="chips"><span>21 języków</span><span>Jasny i ciemny motyw</span><span>Dźwięki i wibracje</span><span>Kopie zapasowe do pliku</span><span>Układ na tablet w dwóch kolumnach</span></div>
+  </section>
+
+
+  <section class="private">
+    <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
+    <div><h2 class="display">Twoje dane zostają Twoje</h2><p>Bez reklam, bez kont, bez analityki. Wszystko jest przechowywane na Twoim urządzeniu i tylko Ty decydujesz, czy trzymać kopię na własnym Dysku Google.</p>
+    <a class="btn light" href="privacy.html" data-keep-lang><span>Przeczytaj politykę prywatności</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </section>
+
+  <p class="contact">Pytania i pomysły: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+</article>
+<article class="langdoc" lang="cs" data-lang="cs" data-title="Kraplya: sledování návyků s časovačem" data-app="Kraplya" data-langlabel="Jazyk" data-nav="Domů|Soukromí" data-hub="PegasoHlib — všechny aplikace" hidden>
+  <header class="hero">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
+    <h1>Kraplya</h1>
+    <p class="tagline">Kapka po kapce vyhloubí i kámen</p>
+    <p class="lead">Nastav si cíl pro každý návyk, při cvičení spusť časovač a sleduj, jak se týden plní kapku po kapce. Jednoduše, v klidu a soukromě.</p>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Stáhnout pro Android</span><span class="ver badge" hidden></span></a>
+      <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Zásady ochrany soukromí</span></a>
+    </div>
+    <p class="note">Po instalaci se aplikace aktualizuje sama.<br>Pro Android 8 a novější · Brzy na Google Play</p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Stažení: ≈ <b data-count="kraplya">25</b></p>
+  </header>
+
+  <section class="show" aria-label="Přímo na domovské obrazovce">
+    <div class="showtext"><h2 class="display">Přímo na domovské obrazovce</h2><p>Tři widgety, ve tvém jazyce, světlé nebo tmavé.</p></div>
+    <div class="widgets"><div class="w today"><img src="img/cs/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/cs/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/cs/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
+  </section>
+
+  <section class="section features" aria-labelledby="f-cs">
+    <h2 class="eyebrow" id="f-cs">Co umí</h2>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Cíle podle tebe</h3><p>Cíl na den, týden nebo měsíc pro každý návyk. Vynechaný den? Dožeň ho později v týdnu: týdenní cíle mají přednost.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Časovač, který běží dál</h3><p>Počítá i se zhasnutou obrazovkou a zavřenou aplikací, dá se pozastavit a obnovit a zastavit přímo z oznámení. Čas jde přidat i ručně.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Týdenní plán</h3><p>Opravdový 7denní kalendář: plánuj jisté a možná bloky, nad nimi uvidíš, co se opravdu podařilo, a přidej události z kalendáře v telefonu.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Nádoba týdne</h3><p>Každý návyk do nádoby vlije svou barvu. V pondělí dostaneš shrnutí a odměnu podle vlastního výběru, nebo trest.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statistiky</h3><p>Série dní, grafy, kalendář aktivity a rekordy za týden, měsíc, rok i za celou dobu.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgety</h3><p>Dnešní návyky s tlačítkem start, týden na první pohled a co tě v plánu čeká dál, přímo na domovské obrazovce.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Připomínky</h3><p>Večerní šťouchnutí, když cíl ještě není splněný, pondělní shrnutí, vlastní připomínky a připomínky naplánovaných bloků.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Telefon a tablet</h3><p>Volitelná synchronizace přes tvůj vlastní Disk Google udrží obě zařízení stejná, bez jakéhokoli účtu.</p></div></div>
+  </section>
+
+
+  <section class="section extra" aria-labelledby="x-cs">
+    <h2 class="eyebrow" id="x-cs">A také</h2>
+    <div class="chips"><span>21 jazyků</span><span>Světlý a tmavý motiv</span><span>Zvuky a vibrace</span><span>Zálohy do souboru</span><span>Rozvržení pro tablet ve dvou sloupcích</span></div>
+  </section>
+
+
+  <section class="private">
+    <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
+    <div><h2 class="display">Tvoje data zůstávají tvoje</h2><p>Žádné reklamy, žádné účty, žádná analytika. Vše je uložené v tvém zařízení a jen ty rozhoduješ, jestli si necháš kopii na vlastním Disku Google.</p>
+    <a class="btn light" href="privacy.html" data-keep-lang><span>Přečíst zásady ochrany soukromí</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </section>
+
+  <p class="contact">Dotazy a nápady: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+</article>
+<article class="langdoc" lang="sk" data-lang="sk" data-title="Kraplya: sledovanie návykov s časovačom" data-app="Kraplya" data-langlabel="Jazyk" data-nav="Domov|Súkromie" data-hub="PegasoHlib — všetky aplikácie" hidden>
+  <header class="hero">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
+    <h1>Kraplya</h1>
+    <p class="tagline">Kvapka po kvapke vyhĺbi aj kameň</p>
+    <p class="lead">Nastav si cieľ pre každý návyk, pri cvičení spusti časovač a sleduj, ako sa týždeň plní kvapku po kvapke. Jednoducho, pokojne a súkromne.</p>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Stiahnuť pre Android</span><span class="ver badge" hidden></span></a>
+      <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Zásady ochrany súkromia</span></a>
+    </div>
+    <p class="note">Po inštalácii sa aplikácia aktualizuje sama.<br>Pre Android 8 a novší · Čoskoro na Google Play</p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Stiahnutia: ≈ <b data-count="kraplya">25</b></p>
+  </header>
+
+  <section class="show" aria-label="Priamo na domovskej obrazovke">
+    <div class="showtext"><h2 class="display">Priamo na domovskej obrazovke</h2><p>Tri widgety, v tvojom jazyku, svetlé alebo tmavé.</p></div>
+    <div class="widgets"><div class="w today"><img src="img/sk/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/sk/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/sk/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
+  </section>
+
+  <section class="section features" aria-labelledby="f-sk">
+    <h2 class="eyebrow" id="f-sk">Čo dokáže</h2>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Ciele po tvojom</h3><p>Cieľ na deň, týždeň alebo mesiac pre každý návyk. Vynechaný deň? Dobehni ho neskôr v týždni: týždenné ciele majú prednosť.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Časovač, ktorý beží ďalej</h3><p>Počíta aj pri zhasnutej obrazovke a zatvorenej aplikácii, dá sa pozastaviť a obnoviť a zastaviť priamo z upozornenia. Čas sa dá pridať aj ručne.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Týždenný plán</h3><p>Skutočný 7-dňový kalendár: plánuj isté a možno bloky, nad nimi uvidíš, čo sa naozaj podarilo, a pridaj udalosti z kalendára v telefóne.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Nádoba týždňa</h3><p>Každý návyk do nádoby vleje svoju farbu. V pondelok dostaneš zhrnutie a odmenu podľa vlastného výberu, alebo trest.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Štatistiky</h3><p>Série dní, grafy, kalendár aktivity a rekordy za týždeň, mesiac, rok aj za celý čas.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgety</h3><p>Dnešné návyky s tlačidlom štart, týždeň na prvý pohľad a čo ťa v pláne čaká ďalej, priamo na domovskej obrazovke.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Pripomienky</h3><p>Večerné štuchnutie, ak cieľ ešte nie je splnený, pondelkové zhrnutie, vlastné pripomienky a pripomienky naplánovaných blokov.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Telefón a tablet</h3><p>Voliteľná synchronizácia cez tvoj vlastný Disk Google udrží obe zariadenia rovnaké, bez akéhokoľvek účtu.</p></div></div>
+  </section>
+
+
+  <section class="section extra" aria-labelledby="x-sk">
+    <h2 class="eyebrow" id="x-sk">A tiež</h2>
+    <div class="chips"><span>21 jazykov</span><span>Svetlá a tmavá téma</span><span>Zvuky a vibrácie</span><span>Zálohy do súboru</span><span>Rozloženie pre tablet v dvoch stĺpcoch</span></div>
+  </section>
+
+
+  <section class="private">
+    <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
+    <div><h2 class="display">Tvoje údaje zostávajú tvoje</h2><p>Žiadne reklamy, žiadne účty, žiadna analytika. Všetko je uložené v tvojom zariadení a len ty rozhoduješ, či si necháš kópiu na vlastnom Disku Google.</p>
+    <a class="btn light" href="privacy.html" data-keep-lang><span>Prečítať zásady ochrany súkromia</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </section>
+
+  <p class="contact">Otázky a nápady: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+</article>
+<article class="langdoc" lang="da" data-lang="da" data-title="Kraplya: vanetracker med timer" data-app="Kraplya" data-langlabel="Sprog" data-nav="Forside|Privatliv" data-hub="PegasoHlib — alle apps" hidden>
+  <header class="hero">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
+    <h1>Kraplya</h1>
+    <p class="tagline">Dråben udhuler stenen</p>
+    <p class="lead">Sæt et mål for hver vane, start timeren, når du øver dig, og se ugen fyldes dråbe for dråbe. Enkelt, roligt og privat.</p>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Download til Android</span><span class="ver badge" hidden></span></a>
+      <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Privatlivspolitik</span></a>
+    </div>
+    <p class="note">Efter installationen opdaterer appen sig selv.<br>Til Android 8 og nyere · Snart på Google Play</p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Downloads: ≈ <b data-count="kraplya">25</b></p>
+  </header>
+
+  <section class="show" aria-label="Lige på din startskærm">
+    <div class="showtext"><h2 class="display">Lige på din startskærm</h2><p>Tre widgets, på dit sprog, lyse eller mørke.</p></div>
+    <div class="widgets"><div class="w today"><img src="img/da/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/da/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/da/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
+  </section>
+
+  <section class="section features" aria-labelledby="f-da">
+    <h2 class="eyebrow" id="f-da">Det kan den</h2>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Mål på din måde</h3><p>Et mål pr. dag, uge eller måned for hver vane. Gik du glip af en dag? Indhent den senere på ugen: ugentlige mål kommer først.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>En timer, der bliver ved</h3><p>Den tæller med skærmen slukket og appen lukket, kan sættes på pause og fortsættes og kan stoppes direkte fra notifikationen. Tid kan også lægges til manuelt.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Ugeskema</h3><p>En rigtig 7-dages kalender: planlæg sikre blokke og måske-blokke, se ovenpå, hvad du faktisk nåede, og hent begivenheder fra telefonens kalender ind.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Ugens kar</h3><p>Hver vane hælder sin farve i karret. Om mandagen får du en opsummering og en belønning, du selv har valgt, eller en straf.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Statistik</h3><p>Stribe af dage, grafer, en aktivitetskalender og rekorder for ugen, måneden, året og hele tiden.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widgets</h3><p>Dagens vaner med en startknap, ugen på et øjeblik og det næste i dit skema, direkte på startskærmen.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Påmindelser</h3><p>Et lille skub om aftenen, hvis et mål ikke er nået endnu, en opsummering om mandagen, dine egne påmindelser og påmindelser om planlagte blokke.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Telefon og tablet</h3><p>Valgfri synkronisering via dit eget Google Drev holder begge enheder ens, uden nogen konto.</p></div></div>
+  </section>
+
+
+  <section class="section extra" aria-labelledby="x-da">
+    <h2 class="eyebrow" id="x-da">Og desuden</h2>
+    <div class="chips"><span>21 sprog</span><span>Lyst og mørkt tema</span><span>Lyde og vibration</span><span>Sikkerhedskopier til en fil</span><span>Tabletlayout i to kolonner</span></div>
+  </section>
+
+
+  <section class="private">
+    <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
+    <div><h2 class="display">Dine data forbliver dine</h2><p>Ingen reklamer, ingen konti, ingen analyse. Alt gemmes på din enhed, og kun du bestemmer, om der skal ligge en kopi i dit eget Google Drev.</p>
+    <a class="btn light" href="privacy.html" data-keep-lang><span>Læs privatlivspolitikken</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </section>
+
+  <p class="contact">Spørgsmål og idéer: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
 <article class="langdoc" lang="sv" data-lang="sv" data-title="Kraplya: vanespårare med timer" data-app="Kraplya" data-langlabel="Språk" data-nav="Hem|Integritet" data-hub="PegasoHlib — alla appar" hidden>
   <header class="hero">
@@ -421,7 +634,7 @@ main{max-width:960px}
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Integritetspolicy</span></a>
     </div>
     <p class="note">Efter installationen uppdaterar appen sig själv.<br>För Android 8 och senare · Snart på Google Play</p>
-    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Nedladdningar: ≈ <b data-count="kraplya">15</b></p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Nedladdningar: ≈ <b data-count="kraplya">25</b></p>
   </header>
 
   <section class="show" aria-label="Direkt på hemskärmen">
@@ -437,7 +650,7 @@ main{max-width:960px}
 
   <section class="section extra" aria-labelledby="x-sv">
     <h2 class="eyebrow" id="x-sv">Dessutom</h2>
-    <div class="chips"><span>12 språk</span><span>Ljust och mörkt tema</span><span>Ljud och vibration</span><span>Säkerhetskopior till fil</span><span>Surfplattelayout i två kolumner</span></div>
+    <div class="chips"><span>21 språk</span><span>Ljust och mörkt tema</span><span>Ljud och vibration</span><span>Säkerhetskopior till fil</span><span>Surfplattelayout i två kolumner</span></div>
   </section>
 
 
@@ -448,6 +661,46 @@ main{max-width:960px}
   </section>
 
   <p class="contact">Frågor och idéer: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+</article>
+<article class="langdoc" lang="tr" data-lang="tr" data-title="Kraplya: zamanlayıcılı alışkanlık takipçisi" data-app="Kraplya" data-langlabel="Dil" data-nav="Ana sayfa|Gizlilik" data-hub="PegasoHlib — tüm uygulamalar" hidden>
+  <header class="hero">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
+    <h1>Kraplya</h1>
+    <p class="tagline">Damlaya damlaya göl olur</p>
+    <p class="lead">Her alışkanlık için bir hedef koy, çalışırken zamanlayıcıyı başlat ve haftanın damla damla dolmasını izle. Sade, sakin ve gizli.</p>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Android için indir</span><span class="ver badge" hidden></span></a>
+      <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Gizlilik politikası</span></a>
+    </div>
+    <p class="note">Kurulumdan sonra uygulama kendini günceller.<br>Android 8 ve üzeri için · Yakında Google Play’de</p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>İndirmeler: ≈ <b data-count="kraplya">25</b></p>
+  </header>
+
+  <section class="show" aria-label="Doğrudan ana ekranında">
+    <div class="showtext"><h2 class="display">Doğrudan ana ekranında</h2><p>Senin dilinde, açık veya koyu üç widget.</p></div>
+    <div class="widgets"><div class="w today"><img src="img/tr/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/tr/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/tr/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
+  </section>
+
+  <section class="section features" aria-labelledby="f-tr">
+    <h2 class="eyebrow" id="f-tr">Neler yapabilir</h2>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Sana göre hedefler</h3><p>Her alışkanlık için günlük, haftalık veya aylık bir hedef. Bir günü mü kaçırdın? Haftanın ilerleyen günlerinde telafi et: haftalık hedefler önce gelir.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Durmayan bir zamanlayıcı</h3><p>Ekran kapalıyken ve uygulama kapalıyken de sayar, duraklar ve devam eder, doğrudan bildirimden durdurulabilir. Süre elle de eklenebilir.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Haftalık plan</h3><p>Gerçek bir 7 günlük takvim: kesin ve belki bloklarını planla, gerçekte ne yaptığını üstünde gör ve telefon takvimindeki etkinlikleri getir.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Haftanın kabı</h3><p>Her alışkanlık rengini kaba döker. Pazartesi bir özet alırsın; ayrıca kendin için seçtiğin bir ödül ya da bir ceza.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>İstatistikler</h3><p>Gün serileri, grafikler, bir etkinlik takvimi ve hafta, ay, yıl ve tüm zamanların rekorları.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Widget’lar</h3><p>Başlat düğmesiyle bugünün alışkanlıkları, bir bakışta hafta ve planındaki sıradaki şey, doğrudan ana ekranda.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Hatırlatıcılar</h3><p>Bir hedefe henüz ulaşılmadıysa akşam küçük bir dürtme, pazartesi özeti, kendi hatırlatıcıların ve planlanan bloklar için hatırlatıcılar.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Telefon ve tablet</h3><p>Kendi Google Drive’ın üzerinden isteğe bağlı eşitleme, iki cihazı da hiçbir hesap olmadan aynı tutar.</p></div></div>
+  </section>
+
+
+  <section class="section extra" aria-labelledby="x-tr">
+    <h2 class="eyebrow" id="x-tr">Ayrıca</h2>
+    <div class="chips"><span>21 dil</span><span>Açık ve koyu tema</span><span>Sesler ve titreşim</span><span>Dosyaya yedekleme</span><span>Tablette iki sütunlu düzen</span></div>
+  </section>
+
+
+  <section class="private">
+    <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
+    <div><h2 class="display">Verilerin sende kalır</h2><p>Reklam yok, hesap yok, analiz yok. Her şey cihazında saklanır; kendi Google Drive’ında bir kopya tutup tutmayacağına yalnızca sen karar verirsin.</p>
+    <a class="btn light" href="privacy.html" data-keep-lang><span>Gizlilik politikasını oku</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </section>
+
+  <p class="contact">Sorular ve fikirler: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
 <article class="langdoc" lang="id" data-lang="id" data-title="Kraplya: pelacak kebiasaan dengan timer" data-app="Kraplya" data-langlabel="Bahasa" data-nav="Beranda|Privasi" data-hub="PegasoHlib — semua aplikasi" hidden>
   <header class="hero">
@@ -461,7 +714,7 @@ main{max-width:960px}
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Kebijakan privasi</span></a>
     </div>
     <p class="note">Setelah dipasang, aplikasi memperbarui dirinya sendiri.<br>Untuk Android 8 dan yang lebih baru · Segera hadir di Google Play</p>
-    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Unduhan: ≈ <b data-count="kraplya">15</b></p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Unduhan: ≈ <b data-count="kraplya">25</b></p>
   </header>
 
   <section class="show" aria-label="Langsung di layar utamamu">
@@ -477,7 +730,7 @@ main{max-width:960px}
 
   <section class="section extra" aria-labelledby="x-id">
     <h2 class="eyebrow" id="x-id">Selain itu</h2>
-    <div class="chips"><span>12 bahasa</span><span>Tema terang dan gelap</span><span>Suara dan getaran</span><span>Cadangan ke file</span><span>Tata letak tablet dua kolom</span></div>
+    <div class="chips"><span>21 bahasa</span><span>Tema terang dan gelap</span><span>Suara dan getaran</span><span>Cadangan ke file</span><span>Tata letak tablet dua kolom</span></div>
   </section>
 
 
@@ -488,6 +741,126 @@ main{max-width:960px}
   </section>
 
   <p class="contact">Pertanyaan dan ide: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+</article>
+<article class="langdoc" lang="vi" data-lang="vi" data-title="Kraplya: theo dõi thói quen kèm hẹn giờ" data-app="Kraplya" data-langlabel="Ngôn ngữ" data-nav="Trang chủ|Quyền riêng tư" data-hub="PegasoHlib — tất cả ứng dụng" hidden>
+  <header class="hero">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
+    <h1>Kraplya</h1>
+    <p class="tagline">Nước chảy đá mòn</p>
+    <p class="lead">Đặt mục tiêu cho từng thói quen, bật hẹn giờ khi bạn luyện tập và ngắm tuần của bạn đầy dần từng giọt. Đơn giản, nhẹ nhàng và riêng tư.</p>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Tải cho Android</span><span class="ver badge" hidden></span></a>
+      <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Chính sách quyền riêng tư</span></a>
+    </div>
+    <p class="note">Sau khi cài, ứng dụng tự cập nhật.<br>Dành cho Android 8 trở lên · Sắp có trên Google Play</p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Lượt tải: ≈ <b data-count="kraplya">25</b></p>
+  </header>
+
+  <section class="show" aria-label="Ngay trên màn hình chính">
+    <div class="showtext"><h2 class="display">Ngay trên màn hình chính</h2><p>Ba tiện ích, bằng ngôn ngữ của bạn, sáng hoặc tối.</p></div>
+    <div class="widgets"><div class="w today"><img src="img/vi/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/vi/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/vi/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
+  </section>
+
+  <section class="section features" aria-labelledby="f-vi">
+    <h2 class="eyebrow" id="f-vi">Ứng dụng làm được gì</h2>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>Mục tiêu theo cách của bạn</h3><p>Mục tiêu theo ngày, tuần hoặc tháng cho từng thói quen. Lỡ một ngày? Bù lại vào cuối tuần: mục tiêu tuần được ưu tiên.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>Hẹn giờ không ngừng</h3><p>Vẫn đếm khi tắt màn hình và đóng ứng dụng, tạm dừng rồi tiếp tục, và có thể dừng ngay từ thông báo. Cũng có thể thêm thời gian thủ công.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>Lịch tuần</h3><p>Một lịch 7 ngày thực thụ: lên kế hoạch khối chắc chắn và khối có thể, xem những gì bạn thực sự đã làm chồng lên trên, và đưa sự kiện từ lịch điện thoại vào.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>Chiếc bình của tuần</h3><p>Mỗi thói quen rót màu của mình vào bình. Vào thứ Hai, bạn nhận được bản tóm tắt cùng phần thưởng bạn tự chọn, hoặc một hình phạt.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>Thống kê</h3><p>Chuỗi ngày, biểu đồ, lịch hoạt động và kỷ lục theo tuần, tháng, năm và mọi thời điểm.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>Tiện ích</h3><p>Thói quen hôm nay kèm nút bắt đầu, cả tuần trong một cái nhìn và việc tiếp theo trong lịch, ngay trên màn hình chính.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>Lời nhắc</h3><p>Một lời nhắc nhẹ buổi tối nếu chưa đạt mục tiêu, bản tóm tắt thứ Hai, lời nhắc của riêng bạn và lời nhắc cho các khối đã lên lịch.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>Điện thoại và máy tính bảng</h3><p>Đồng bộ tùy chọn qua Google Drive của chính bạn giữ hai thiết bị giống nhau, không cần tài khoản nào.</p></div></div>
+  </section>
+
+
+  <section class="section extra" aria-labelledby="x-vi">
+    <h2 class="eyebrow" id="x-vi">Và còn nữa</h2>
+    <div class="chips"><span>21 ngôn ngữ</span><span>Giao diện sáng và tối</span><span>Âm thanh và rung</span><span>Sao lưu ra tệp</span><span>Bố cục hai cột cho máy tính bảng</span></div>
+  </section>
+
+
+  <section class="private">
+    <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
+    <div><h2 class="display">Dữ liệu của bạn vẫn là của bạn</h2><p>Không quảng cáo, không tài khoản, không phân tích. Mọi thứ được lưu trên thiết bị của bạn, và chỉ bạn quyết định có giữ một bản sao trong Google Drive của mình hay không.</p>
+    <a class="btn light" href="privacy.html" data-keep-lang><span>Đọc chính sách quyền riêng tư</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </section>
+
+  <p class="contact">Câu hỏi và ý tưởng: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+</article>
+<article class="langdoc" lang="th" data-lang="th" data-title="Kraplya: แอปติดตามนิสัยพร้อมตัวจับเวลา" data-app="Kraplya" data-langlabel="ภาษา" data-nav="หน้าแรก|ความเป็นส่วนตัว" data-hub="PegasoHlib — แอปทั้งหมด" hidden>
+  <header class="hero">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
+    <h1>Kraplya</h1>
+    <p class="tagline">น้ำหยดลงหินทุกวัน หินมันยังกร่อน</p>
+    <p class="lead">ตั้งเป้าหมายให้ทุกนิสัย เริ่มจับเวลาเมื่อฝึก แล้วดูสัปดาห์ค่อย ๆ เต็มทีละหยด เรียบง่าย สงบ และเป็นส่วนตัว</p>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>ดาวน์โหลดสำหรับ Android</span><span class="ver badge" hidden></span></a>
+      <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>นโยบายความเป็นส่วนตัว</span></a>
+    </div>
+    <p class="note">หลังติดตั้งแล้ว แอปจะอัปเดตตัวเอง<br>สำหรับ Android 8 ขึ้นไป · เร็ว ๆ นี้บน Google Play</p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>ดาวน์โหลด: ≈ <b data-count="kraplya">25</b></p>
+  </header>
+
+  <section class="show" aria-label="อยู่บนหน้าจอหลักของคุณเลย">
+    <div class="showtext"><h2 class="display">อยู่บนหน้าจอหลักของคุณเลย</h2><p>วิดเจ็ตสามแบบ ในภาษาของคุณ ทั้งธีมสว่างและมืด</p></div>
+    <div class="widgets"><div class="w today"><img src="img/th/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/th/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/th/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
+  </section>
+
+  <section class="section features" aria-labelledby="f-th">
+    <h2 class="eyebrow" id="f-th">ทำอะไรได้บ้าง</h2>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>เป้าหมายในแบบของคุณ</h3><p>เป้าหมายรายวัน รายสัปดาห์ หรือรายเดือนสำหรับทุกนิสัย พลาดไปหนึ่งวัน? ชดเชยได้ในวันอื่นของสัปดาห์ เพราะเป้าหมายรายสัปดาห์มาก่อน</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>ตัวจับเวลาที่ไม่หยุด</h3><p>นับต่อแม้ปิดหน้าจอและปิดแอป หยุดชั่วคราวและเล่นต่อได้ และหยุดได้จากการแจ้งเตือนโดยตรง เพิ่มเวลาเองก็ได้</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>ตารางรายสัปดาห์</h3><p>ปฏิทิน 7 วันของจริง: วางแผนช่วงเวลาที่แน่นอนและที่อาจจะ ดูสิ่งที่ทำจริงซ้อนอยู่ด้านบน และดึงกิจกรรมจากปฏิทินในโทรศัพท์มาได้</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>ภาชนะประจำสัปดาห์</h3><p>ทุกนิสัยเทสีของตัวเองลงในภาชนะ ทุกวันจันทร์คุณจะได้สรุป พร้อมรางวัลที่เลือกไว้ให้ตัวเอง หรือบทลงโทษ</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>สถิติ</h3><p>สถิติวันต่อเนื่อง กราฟ ปฏิทินกิจกรรม และสถิติสูงสุดของสัปดาห์ เดือน ปี และตลอดกาล</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>วิดเจ็ต</h3><p>นิสัยของวันนี้พร้อมปุ่มเริ่ม ภาพรวมของสัปดาห์ และสิ่งที่จะมาถัดไปในตาราง อยู่บนหน้าจอหลักเลย</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>การเตือน</h3><p>เตือนเบา ๆ ตอนเย็นถ้ายังไม่ถึงเป้า สรุปวันจันทร์ การเตือนของคุณเอง และการเตือนสำหรับช่วงเวลาที่วางแผนไว้</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>โทรศัพท์และแท็บเล็ต</h3><p>ซิงค์ผ่าน Google Drive ของคุณเองได้ตามต้องการ ทำให้ทั้งสองเครื่องตรงกัน โดยไม่ต้องมีบัญชีใด ๆ</p></div></div>
+  </section>
+
+
+  <section class="section extra" aria-labelledby="x-th">
+    <h2 class="eyebrow" id="x-th">และยังมี</h2>
+    <div class="chips"><span>21 ภาษา</span><span>ธีมสว่างและมืด</span><span>เสียงและการสั่น</span><span>สำรองข้อมูลเป็นไฟล์</span><span>เลย์เอาต์สองคอลัมน์บนแท็บเล็ต</span></div>
+  </section>
+
+
+  <section class="private">
+    <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
+    <div><h2 class="display">ข้อมูลของคุณยังเป็นของคุณ</h2><p>ไม่มีโฆษณา ไม่มีบัญชี ไม่มีการวิเคราะห์ ทุกอย่างเก็บไว้บนอุปกรณ์ของคุณ และมีเพียงคุณที่ตัดสินใจว่าจะเก็บสำเนาไว้ใน Google Drive ของคุณเองหรือไม่</p>
+    <a class="btn light" href="privacy.html" data-keep-lang><span>อ่านนโยบายความเป็นส่วนตัว</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </section>
+
+  <p class="contact">คำถามและไอเดีย: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
+</article>
+<article class="langdoc" lang="ko" data-lang="ko" data-title="Kraplya: 타이머가 있는 습관 트래커" data-app="Kraplya" data-langlabel="언어" data-nav="홈|개인정보" data-hub="PegasoHlib — 모든 앱" hidden>
+  <header class="hero">
+    <img class="appicon" src="icon.svg" alt="" width="112" height="112">
+    
+    <h1>Kraplya</h1>
+    <p class="tagline">낙숫물이 댓돌을 뚫어요</p>
+    <p class="lead">습관마다 목표를 정하고, 연습할 때 타이머를 켜고, 한 주가 한 방울씩 채워지는 걸 지켜보세요. 단순하고, 차분하고, 프라이빗해요.</p>
+    <div class="actions">
+      <a class="btn primary dl" href="https://github.com/PegasoHlib/kraplya/releases/latest"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg><span>Android용 다운로드</span><span class="ver badge" hidden></span></a>
+      <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>개인정보 처리방침</span></a>
+    </div>
+    <p class="note">설치 후에는 앱이 스스로 업데이트해요.<br>Android 8 이상 · Google Play 출시 예정</p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>다운로드: ≈ <b data-count="kraplya">25</b></p>
+  </header>
+
+  <section class="show" aria-label="홈 화면에서 바로">
+    <div class="showtext"><h2 class="display">홈 화면에서 바로</h2><p>내 언어로, 밝게 또는 어둡게 쓰는 위젯 세 가지.</p></div>
+    <div class="widgets"><div class="w today"><img src="img/ko/pv_today.png" alt="" width="650" height="540" loading="lazy"></div><div class="w week"><img src="img/ko/pv_week.png" alt="" width="625" height="300" loading="lazy"></div><div class="w plan"><img src="img/ko/pv_plan.png" alt="" width="650" height="425" loading="lazy"></div></div>
+  </section>
+
+  <section class="section features" aria-labelledby="f-ko">
+    <h2 class="eyebrow" id="f-ko">할 수 있는 일</h2>
+    <div class="grid n4"><div class="card feat"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><circle cx="12" cy="12" r="4.5"/><circle cx="12" cy="12" r=".6"/></svg><h3>내 방식대로 목표</h3><p>습관마다 하루, 한 주, 한 달 단위 목표. 하루를 놓쳤나요? 그 주 안에 채우면 돼요. 주간 목표가 먼저예요.</p></div><div class="card feat"><svg class="ic tile t1" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13.5" r="7.5"/><path d="M12 13.5V9.5M9.5 2.5h5M18.5 6.5l1.5-1.5"/></svg><h3>멈추지 않는 타이머</h3><p>화면이 꺼지고 앱을 닫아도 계속 세고, 일시정지와 재개가 되며, 알림에서 바로 멈출 수 있어요. 시간을 직접 추가할 수도 있어요.</p></div><div class="card feat"><svg class="ic tile t6" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg><h3>주간 일정</h3><p>제대로 된 7일 캘린더: 확정 블록과 미정 블록을 계획하고, 실제로 한 일을 그 위에서 보고, 휴대폰 캘린더의 일정도 가져와요.</p></div><div class="card feat"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.2c3.3 4 5.7 7 5.7 10.2a5.7 5.7 0 0 1-11.4 0c0-3.2 2.4-6.2 5.7-10.2z"/><path d="M7 14.5c1.7-1 3.4-1 5 0s3.3 1 5 0"/></svg><h3>이번 주의 그릇</h3><p>습관마다 자기 색을 그릇에 부어요. 월요일에는 요약과 함께 스스로 고른 보상, 또는 벌칙을 받아요.</p></div><div class="card feat"><svg class="ic tile t3" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20.5h16M7 17V11M12 17V6M17 17v-4"/></svg><h3>통계</h3><p>연속 기록, 차트, 활동 캘린더, 그리고 주·월·연·전체 기간 최고 기록.</p></div><div class="card feat"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="13" y="3.5" width="7.5" height="7.5" rx="2"/><rect x="3.5" y="13" width="17" height="7.5" rx="2"/></svg><h3>위젯</h3><p>시작 버튼이 있는 오늘의 습관, 한눈에 보는 한 주, 일정의 다음 항목을 홈 화면에서 바로.</p></div><div class="card feat"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg><h3>알림</h3><p>아직 목표에 못 미쳤을 때 저녁에 살짝 알려 주고, 월요일 요약, 직접 만든 알림, 계획한 블록 알림까지.</p></div><div class="card feat"><svg class="ic tile t5" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg><h3>휴대폰과 태블릿</h3><p>내 Google Drive를 통한 선택형 동기화로 계정 없이도 두 기기를 똑같이 유지해요.</p></div></div>
+  </section>
+
+
+  <section class="section extra" aria-labelledby="x-ko">
+    <h2 class="eyebrow" id="x-ko">그리고</h2>
+    <div class="chips"><span>21개 언어</span><span>라이트·다크 테마</span><span>소리와 진동</span><span>파일로 백업</span><span>태블릿 2열 레이아웃</span></div>
+  </section>
+
+
+  <section class="private">
+    <svg class="ic big" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>
+    <div><h2 class="display">내 데이터는 내 것</h2><p>광고도, 계정도, 분석도 없어요. 모든 데이터는 기기에 저장되고, 내 Google Drive에 사본을 둘지는 나만 정해요.</p>
+    <a class="btn light" href="privacy.html" data-keep-lang><span>개인정보 처리방침 읽기</span><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></div>
+  </section>
+
+  <p class="contact">질문과 아이디어: <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
 </article>
 <article class="langdoc" lang="ja" data-lang="ja" data-title="クラプリャ：タイマー付き習慣トラッカー" data-app="クラプリャ" data-langlabel="言語" data-nav="ホーム|プライバシー" data-hub="PegasoHlib — すべてのアプリ" hidden>
   <header class="hero">
@@ -501,7 +874,7 @@ main{max-width:960px}
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>プライバシーポリシー</span></a>
     </div>
     <p class="note">インストール後は、アプリが自動でアップデートされます。<br>Android 8 以降に対応 · Google Play で近日公開</p>
-    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>ダウンロード数: ≈ <b data-count="kraplya">15</b></p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>ダウンロード数: ≈ <b data-count="kraplya">25</b></p>
   </header>
 
   <section class="show" aria-label="ホーム画面にそのまま">
@@ -517,7 +890,7 @@ main{max-width:960px}
 
   <section class="section extra" aria-labelledby="x-ja">
     <h2 class="eyebrow" id="x-ja">さらに</h2>
-    <div class="chips"><span>12言語に対応</span><span>ライト・ダークテーマ</span><span>サウンドとバイブレーション</span><span>ファイルへのバックアップ</span><span>タブレット向け2列レイアウト</span></div>
+    <div class="chips"><span>21言語に対応</span><span>ライト・ダークテーマ</span><span>サウンドとバイブレーション</span><span>ファイルへのバックアップ</span><span>タブレット向け2列レイアウト</span></div>
   </section>
 
 
@@ -541,7 +914,7 @@ main{max-width:960px}
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Құпиялық саясаты</span></a>
     </div>
     <p class="note">Орнатқаннан кейін қолданба өзі жаңарып отырады.<br>Android 8 және одан жаңа нұсқалар үшін · Жақында Google Play-де</p>
-    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Жүктеулер: ≈ <b data-count="kraplya">15</b></p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Жүктеулер: ≈ <b data-count="kraplya">25</b></p>
   </header>
 
   <section class="show" aria-label="Тікелей басты экранда">
@@ -557,7 +930,7 @@ main{max-width:960px}
 
   <section class="section extra" aria-labelledby="x-kk">
     <h2 class="eyebrow" id="x-kk">Тағы да</h2>
-    <div class="chips"><span>12 тіл</span><span>Ашық және қараңғы тақырып</span><span>Дыбыстар мен діріл</span><span>Файлға сақтық көшірме</span><span>Планшетте екі баған</span></div>
+    <div class="chips"><span>21 тіл</span><span>Ашық және қараңғы тақырып</span><span>Дыбыстар мен діріл</span><span>Файлға сақтық көшірме</span><span>Планшетте екі баған</span></div>
   </section>
 
 
@@ -581,7 +954,7 @@ main{max-width:960px}
       <a class="btn" href="privacy.html" data-keep-lang><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><span>Политика конфиденциальности</span></a>
     </div>
     <p class="note">После установки приложение обновляется само.<br>Для Android 8 и новее · Скоро в Google Play</p>
-    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Загрузок: ≈ <b data-count="kraplya">15</b></p>
+    <p class="note count"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3.5v11.5M7 10.5l5 5 5-5M4.5 20h15"/></svg>Загрузок: ≈ <b data-count="kraplya">25</b></p>
   </header>
 
   <section class="show" aria-label="Прямо на главном экране">
@@ -597,7 +970,7 @@ main{max-width:960px}
 
   <section class="section extra" aria-labelledby="x-ru">
     <h2 class="eyebrow" id="x-ru">А ещё</h2>
-    <div class="chips"><span>12 языков</span><span>Светлая и тёмная тема</span><span>Звуки и вибрация</span><span>Резервные копии в файл</span><span>Планшет в две колонки</span></div>
+    <div class="chips"><span>21 язык</span><span>Светлая и тёмная тема</span><span>Звуки и вибрация</span><span>Резервные копии в файл</span><span>Планшет в две колонки</span></div>
   </section>
 
 
@@ -615,12 +988,18 @@ main{max-width:960px}
 (function () {
   var docs = document.querySelectorAll(".langdoc"), sel = document.getElementById("lang");
   var have = {}; for (var i = 0; i < docs.length; i++) have[docs[i].dataset.lang] = docs[i];
-  var alias = { "in": "id", "nb": "sv", "no": "sv" }, KEYS = ["siteLang","kraplya-lang"];
-  function norm(c) { c = (c || "").toLowerCase(); if (alias[c]) c = alias[c]; if (have[c]) return c; c = c.split(/[-_]/)[0]; c = alias[c] || c; return have[c] ? c : null; }
+  var alias = { "in": "id", "nb": "sv", "no": "sv", "nn": "sv" }, KEYS = ["siteLang","kraplya-lang"], low = {};
+  for (var l in have) low[l.toLowerCase()] = l;
+  // "pt-BR", "pt-br", "pt_BR" → pt-BR; "pt-PT" → pt (or pt-BR when the site has only that); "uk-data" (an anchor) → uk; "pt-BR-data" → pt-BR.
+  function norm(c) {
+    var p = (c || "").toLowerCase().split(/[-_]/);
+    for (var n = Math.min(p.length, 2); n > 0; n--) { var x = p.slice(0, n).join("-"); x = alias[x] || x; if (low[x]) return low[x]; }
+    if (p[0].length === 2) for (var k in low) if (k.split("-")[0] === p[0]) return low[k]; // a site with only pt-BR still serves "pt-PT"
+    return null;
+  }
   function pick() {
     var q = new URLSearchParams(location.search).get("lang"); if (norm(q)) return norm(q);
     var h = location.hash.slice(1); if (norm(h)) return norm(h);
-    if (h && have[h.split("-")[0]]) return h.split("-")[0];
     for (var k = 0; k < KEYS.length; k++) { try { var s = localStorage.getItem(KEYS[k]); if (norm(s)) return norm(s); } catch (e) {} }
     var nav = navigator.languages || [navigator.language];
     for (var j = 0; j < nav.length; j++) if (norm(nav[j])) return norm(nav[j]);
