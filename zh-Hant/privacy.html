@@ -86,7 +86,6 @@ main{max-width:760px}
 .hero h1{font-size:clamp(28px,6.4vw,40px);line-height:1.12;margin:4px 0 12px}
 .date{display:inline-block;margin:0 0 16px;font-size:13.5px;font-weight:600;color:var(--ink2);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:4px 12px}
 .lead{margin:0 auto;max-width:600px;font-size:17.5px;color:var(--ink2);text-wrap:pretty}
-.refnote{margin:22px 0 0;text-align:center;font-size:14px;color:var(--ink3)}
 .glance{margin:32px 0 0}
 .glance ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:10px}
 @media (min-width:480px){.glance ul>li:last-child:nth-child(odd){grid-column:1/-1}}
@@ -166,14 +165,14 @@ td:last-child{font-weight:600;color:var(--ink)}
 
   <nav class="toc" aria-label="本頁內容">
     <p class="eyebrow">本頁內容</p>
-    <div class="chips"><a href="#zh-Hant-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>應用程式會儲存哪些內容</a><a href="#zh-Hant-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>透過 Google 雲端硬碟同步（選用）</a><a href="#zh-Hant-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>手機日曆（選用）</a><a href="#zh-Hant-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>通知和提醒</a><a href="#zh-Hant-updates"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>更新</a><a href="#zh-Hant-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>應用程式要求的權限</a><a href="#zh-Hant-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>備份和匯入</a><a href="#zh-Hant-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>刪除你的資料</a><a href="#zh-Hant-children"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg>兒童</a><a href="#zh-Hant-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>本政策的變更</a><a href="#zh-Hant-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>聯絡方式</a></div>
+    <div class="chips"><a href="#zh-Hant-data"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>應用程式會儲存哪些內容</a><a href="#zh-Hant-drive"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18.5h10a4.5 4.5 0 0 0 .6-8.96A6 6 0 0 0 6.1 10.6 4 4 0 0 0 7 18.5z"/></svg>透過 Google 雲端硬碟同步（選用）</a><a href="#zh-Hant-calendar"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3.5" y="5" width="17" height="15.5" rx="2.5"/><path d="M3.5 10h17M8 3v4M16 3v4"/></svg>手機日曆（選用）</a><a href="#zh-Hant-notifications"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 16.5V11a6 6 0 0 1 12 0v5.5l1.5 2h-15z"/><path d="M10 20.5a2 2 0 0 0 4 0"/></svg>通知和提醒</a><a href="#zh-Hant-updates"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>更新</a><a href="#zh-Hant-permissions"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><circle cx="8" cy="15" r="4.5"/><path d="M11.2 11.8L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></svg>應用程式要求的權限</a><a href="#zh-Hant-backups"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 2.5h8l4.5 4.5v14.5H6z"/><path d="M14 2.5V7h4.5M9 13h6M9 16.5h6"/></svg>備份和匯入</a><a href="#zh-Hant-delete"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg>刪除你的資料</a><a href="#zh-Hant-changes"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3M19.5 4v4.5H15"/></svg>本政策的變更</a><a href="#zh-Hant-legal"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg>你的權利與法律細節</a><a href="#zh-Hant-contact"><svg class="ic mini" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg>聯絡方式</a></div>
   </nav>
 
   <section class="card tablecard" aria-labelledby="zh-Hant-table">
     <h2 id="zh-Hant-table">有哪些資料、存在哪裡、誰能看到</h2>
     <table>
       <thead><tr><th scope="col">資料</th><th scope="col">儲存位置</th><th scope="col">誰能看到</th></tr></thead>
-      <tbody><tr><th scope="row">習慣、分類、目標、記錄的時間、每週行程、獎勵和懲罰、個人檔案名稱、出生日期（選填）</th><td data-label="儲存位置">在你的裝置上；如果你開啟同步，你自己的 Google 雲端硬碟中也會有一份副本</td><td data-label="誰能看到">只有你</td></tr><tr><th scope="row">設定：語言、主題、聲音、提醒</th><td data-label="儲存位置">只在你的裝置上。姓名、出生日期和每週設定會隨你的資料一起同步</td><td data-label="誰能看到">只有你</td></tr><tr><th scope="row">你的 Google 帳號的電子郵件地址</th><td data-label="儲存位置">在你的裝置上，僅限同步開啟期間</td><td data-label="誰能看到">只有你</td></tr><tr><th scope="row">Android 裝置識別碼</th><td data-label="儲存位置">在同步開啟期間，包含在雲端硬碟資料夾中你的裝置檔案的名稱裡</td><td data-label="誰能看到">只有你，以及作為代管方的 Google</td></tr><tr><th scope="row">手機日曆中的活動</th><td data-label="儲存位置">不儲存：只在繪製行程時即時讀取</td><td data-label="誰能看到">只有你，在裝置上</td></tr><tr><th scope="row">檢查和下載更新時的 IP 位址</th><td data-label="儲存位置">應用程式不儲存</td><td data-label="誰能看到">網站的代管方和 GitHub，和任何網站一樣</td></tr><tr><th scope="row">備份檔案</th><td data-label="儲存位置">儲存在你選擇的位置</td><td data-label="誰能看到">你把檔案交給的任何人</td></tr></tbody>
+      <tbody><tr><th scope="row">習慣、分類、目標、記錄的時間、每週行程、獎勵和懲罰、個人檔案名稱、出生日期（選填）</th><td data-label="儲存位置">在你的裝置上；如果你開啟同步，你自己的 Google 雲端硬碟中也會有一份副本</td><td data-label="誰能看到">你自己，以及作為雲端硬碟副本代管方的 Google</td></tr><tr><th scope="row">設定：語言、主題、聲音、提醒</th><td data-label="儲存位置">只在你的裝置上。姓名、出生日期和每週設定會隨你的資料一起同步</td><td data-label="誰能看到">你自己，以及作為雲端硬碟副本代管方的 Google</td></tr><tr><th scope="row">你的 Google 帳號的電子郵件地址</th><td data-label="儲存位置">在你的裝置上，僅限同步開啟期間</td><td data-label="誰能看到">只有你</td></tr><tr><th scope="row">Android 裝置識別碼</th><td data-label="儲存位置">在同步開啟期間，包含在雲端硬碟資料夾中你的裝置檔案的名稱裡</td><td data-label="誰能看到">只有你，以及作為代管方的 Google</td></tr><tr><th scope="row">手機日曆中的活動</th><td data-label="儲存位置">不儲存：只在繪製行程時即時讀取</td><td data-label="誰能看到">只有你，在裝置上</td></tr><tr><th scope="row">檢查和下載更新時的 IP 位址</th><td data-label="儲存位置">應用程式不儲存</td><td data-label="誰能看到">網站的代管方和 GitHub，和任何網站一樣</td></tr><tr><th scope="row">備份檔案</th><td data-label="儲存位置">儲存在你選擇的位置</td><td data-label="誰能看到">你把檔案交給的任何人</td></tr></tbody>
     </table>
   </section>
 
@@ -214,12 +213,7 @@ td:last-child{font-weight:600;color:var(--ink)}
   </section>
   <section class="card sec" id="zh-Hant-delete">
     <div class="sechead"><svg class="ic tile t7" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5h16M9.5 6.5V4h5v2.5M6 6.5l1 14h10l1-14M10 10.5v6M14 10.5v6"/></svg><h2>刪除你的資料</h2></div>
-    <p>刪除一個習慣、一筆記錄的計時、一個類別、一項獎勵或懲罰，或一個行程時段後，它的內容會立即從裝置上移除。只留下一個空白標記：該項目的 ID 和變更的時間。刪除一個習慣也會刪除它的行程時段。</p><p>這些空白標記會進入你的 Google 雲端硬碟副本和新的備份檔案，這樣你的其他裝置也會刪除該項目。舊版本遺留的資料，會在更新到 0.9.17 後應用程式首次啟動時被清空。之前儲存的備份檔案，以及另一台裝置在更新之前的雲端硬碟檔案，仍然保留它們原有的內容。</p><p>解除安裝應用程式會從裝置上移除它的資料。它不會移除 Google 雲端硬碟中或你儲存的備份檔案中的任何內容。如果你重新安裝並再次開啟同步，你的資料會從雲端硬碟副本中復原。</p><p>要刪除 Google 雲端硬碟中的副本，請開啟 Google 雲端硬碟 → 設定 → 管理應用程式 → Kraplya → 刪除隱藏的應用程式資料。在「個人檔案」中關閉同步後，就不會再產生新的副本。</p>
-    
-  </section>
-  <section class="card sec" id="zh-Hant-children">
-    <div class="sechead"><svg class="ic tile t4" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.4 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></svg><h2>兒童</h2></div>
-    <p>本應用程式不會收集任何人的資料，包括兒童。</p>
+    <p>刪除一個習慣、一筆記錄的計時、一個類別、一項獎勵或懲罰，或一個行程時段後，它的內容會立即從裝置上移除。只留下一個空白標記：該項目的 ID 和變更的時間。刪除一個習慣也會刪除它的行程時段。</p><p>這些空白標記會進入你的 Google 雲端硬碟副本和新的備份檔案，這樣你的其他裝置也會刪除該項目。舊版本遺留的資料，會在更新到 0.9.17 後應用程式首次啟動時被清空。之前儲存的備份檔案，以及另一台裝置在更新之前的雲端硬碟檔案，仍然保留它們原有的內容。</p><p>解除安裝應用程式會從裝置上移除它的資料。它不會移除 Google 雲端硬碟中或你儲存的備份檔案中的任何內容。如果你重新安裝並再次開啟同步，你的資料會從雲端硬碟副本中復原。</p><p>要刪除 Google 雲端硬碟中的副本，請在「個人資料」中點一下「從 Google 雲端硬碟刪除我的副本」。它會刪除本應用程式在雲端硬碟中的檔案（涵蓋你所有的裝置），並關閉這台裝置上的同步。仍開啟著同步的裝置會再次上傳它的資料，除非你也在那台裝置上關閉同步。你也可以在 Google 雲端硬碟 → 設定 → 管理應用程式 → Kraplya → 刪除隱藏的應用程式資料中完成。僅關閉同步會停止產生新的副本，但雲端硬碟中已有的副本會保留。</p>
     
   </section>
   <section class="card sec" id="zh-Hant-changes">
@@ -227,12 +221,16 @@ td:last-child{font-weight:600;color:var(--ink)}
     <p>如果本政策有所變更，新版本將以新的日期發布在本頁面上。</p>
     
   </section>
+  <section class="card sec" id="zh-Hant-legal">
+    <div class="sechead"><svg class="ic tile t2" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.8l7.5 3v5.6c0 4.6-3.2 8.3-7.5 9.8-4.3-1.5-7.5-5.2-7.5-9.8V5.8z"/><path d="M8.8 12.2l2.2 2.2 4.4-4.6"/></svg><h2>你的權利與法律細節</h2></div>
+    <p><b>誰負責。</b>開發這些應用程式的自然人 PegasoHlib 對此處所述資料負責。聯絡方式：<a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a>。</p><p><b>為什麼使用資料，法律依據是什麼。</b></p><dl class="perms"><div><dt>應用程式的運作，以及你開啟的備份或同步</dt><dd>契約：為提供你所要求的內容所必需（GDPR 第 6(1)(b) 條）</dd></div><div><dt>更新檢查與安全</dt><dd>正當利益：保障應用程式安全並保持最新（第 6(1)(f) 條）</dd></div><div><dt>你寄送的電子郵件</dt><dd>正當利益：回覆你（第 6(1)(f) 條）</dd></div></dl><p><b>誰會收到，以及向歐盟以外的傳輸。</b>Google（你的雲端硬碟和登入，如果你開啟同步）和 GitHub（更新檢查和下載）。 其中一些公司位於美國或歐盟以外的其他國家。這些傳輸依據歐盟－美國資料隱私框架（EU–US Data Privacy Framework，前提是該公司參與其中），或該公司的標準契約條款。</p><p><b>保存多久。</b>應用程式中的資料會一直保存，直到你刪除它或解除安裝應用程式。你自己雲端儲存空間中的副本會一直保存，直到你刪除它們。你寄送的電子郵件會保存到事情辦結為止，且不超過 2 年。</p><p><b>你的權利。</b>你可以要求存取你的資料、更正、刪除、限制處理、取得副本以便移轉到別處（可攜性），也可以隨時反對處理或撤回同意。請寫信到上面的地址。你會在一個月內收到回覆。大部分資料只在你的裝置上，所以你通常可以直接在應用程式中自行完成這些操作。</p><p><b>申訴。</b>你可以向資料保護主管機關申訴，例如法國的 <a href="https://www.cnil.fr/en/complaints">CNIL</a>，或你所在國家的機關。</p><p><b>年齡。</b>你必須年滿 15 歲，才能自行使用本應用程式。如果你未滿 15 歲，請先取得父母或監護人的同意。</p><p><b>語言。</b>本政策的譯文借助 AI 製作。如果譯文與英文文本不一致，適用對你較有利的版本。</p>
+    
+  </section>
   <section class="card sec" id="zh-Hant-contact">
     <div class="sechead"><svg class="ic tile t0" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2.5"/><path d="M3.5 6.5l8.5 6.5 8.5-6.5"/></svg><h2>聯絡方式</h2></div>
     <p>隱私相關問題：<a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a></p>
     
   </section>
-  <p class="refnote">本頁面最初以英文撰寫。若譯文與英文有出入，以英文為準。</p>
 </article>
 </main>
 <footer>© 2026 · <a href="mailto:pegasohlib12@gmail.com">pegasohlib12@gmail.com</a> · <a href="https://pegasohlib.github.io/zh-Hant/">PegasoHlib — 所有應用程式</a> · <a href="https://pegasohlib.github.io/zh-Hant/terms.html">使用條款</a> · <a href="https://pegasohlib.github.io/zh-Hant/site-privacy.html">網站隱私權</a><small class="legal">本譯文由 AI 完成，可能有不準確之處。 代管服務：GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA。 Microsoft、Defender、Windows、Android、Google Play、Roblox、YouTube 和 TikTok 是其各自所有者的商標；PegasoHlib 與它們沒有關聯。</small></footer>
